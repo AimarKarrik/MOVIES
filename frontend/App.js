@@ -1,13 +1,13 @@
 import { NavigationContainer } from "@react-navigation/native"
 import "./src/App.css"
-import MainPage from "./src/Views/MainPage"
-import MovieDetails from "./src/Views/MovieDetails"
-import ProfilePage from "./src/Views/ProfilePage";
+import MainPage from "./src/views/MainPage"
+import MovieDetails from "./src/views/MovieDetails"
+import ProfilePage from "./src/views/ProfilePage";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Register from "./src/Views/Register";
-import LoginPage from "./src/Views/LoginPage";
-import Auth from "./src/Views/Auth";
-import Feed from "./src/Views/Feed";
+import Register from "./src/views/Register";
+import LoginPage from "./src/views/LoginPage";
+import Auth from "./src/views/Auth";
+import Feed from "./src/views/Feed";
 
 
 export default function App() {

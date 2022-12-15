@@ -17,7 +17,7 @@ export default function MainPage({navigation}) {
   }
 
   return (
-    <div>
+    <>
       <Button title="Go to Profile"
       onPress={() => navigation.navigate('Profile', {username:"Lord Farquaad", info:"Mirror, Mirror on the wall.."})} />
       <Text style={{fontSize:"20px", padding:"8px"}}>Populaarsed filmid</Text>
@@ -32,7 +32,7 @@ export default function MainPage({navigation}) {
       <MoviePreview title="Shrek 2" content="Enesearmastus on tähtis" imageUrl={Shrekposter} id="2"/>
       <MoviePreview title="Shrek 3" content="Kuningas sureb." imageUrl={Shrekposter} id="3"/>
       </div>
-    </div>
+    </>
     
   )
 }

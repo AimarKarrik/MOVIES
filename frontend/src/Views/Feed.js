@@ -1,17 +1,19 @@
 import React from 'react'
+import { View, Text } from 'react-native'
 
 export default function Feed() {
 
     const NewPost = ({name,content,title, movieName,date})=>{
-        if (title="watched"){
+        if (title=="watched"){
             return(
+                <div style={{}}>
                 <View style={{}}>
                     <Text>{name} watched {movieName}</Text>
                     <Text>{date}</Text>
                 </View>
+                </div>
             )
-
-        if (title="reviewed"){
+            } else if (title=="reviewed"){
             return(
                 <View>
                     <Text>{name}</Text>
@@ -20,9 +22,7 @@ export default function Feed() {
                     <Text>{content}</Text>
                 </View>
             )
-        }
-
-        if(title="liked"){
+        } else if(title=="liked"){
             return(
                 <View>
                     <Text>{name} liked {movieName}</Text>
@@ -30,9 +30,11 @@ export default function Feed() {
             )
         }
         }
+        return (
+            <div>
+            <NewPost title="liked" name="laura" movieName="shrek 1"/>
+            <NewPost title="reviewed" name="aimar" movieName="shrek 2" content="väga halb oli."/>
+            </div>
+          )
     }
 
-  return (
-    <Text>News</Text>
-  )
-}
