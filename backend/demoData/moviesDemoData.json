@@ -1,0 +1,298 @@
+[
+    {
+        "id": 1,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "release_date": "1977-05-25",
+        "director": "George Lucas",
+        "producer": "Gary Kurtz, Rick McCallum",
+        "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader."
+    },
+    {
+        "id": 2,
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "release_date": "1980-05-17",
+        "director": "Irvin Kershner",
+        "producer": "Gary Kurtz, Rick McCallum",
+        "description": "After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader as part of his plan to capture Luke."
+    },
+    {
+        "id": 3,
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "release_date": "1983-05-25",
+        "director": "Richard Marquand",
+        "producer": "Howard G. Kazanjian, George Lucas, Rick McCallum",
+        "description": "After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force."
+    },
+    {
+        "id": 4,
+        "title": "Star Wars: Episode I - The Phantom Menace",
+        "release_date": "1999-05-19",
+        "director": "George Lucas",
+        "producer": "Rick McCallum",
+        "description": "The Planet of Naboo is blocalled by the Trade Federation, in response to Queen Amidala's vote against granting them unlimited power. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi are sent to settle the conflict."
+    },
+    {
+        "id": 5,
+        "title": "Star Wars: Episode II - Attack of the Clones",
+        "release_date": "2002-05-16",
+        "director": "George Lucas",
+        "producer": "Rick McCallum",
+        "description": "Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi investigates an assassination attempt on the senator and discovers a secret clone army crafted for the Jedi."
+
+    },
+    {
+        "id": 6,
+        "title": "Star Wars: Episode III - Revenge of the Sith",
+        "release_date": "2005-05-19",
+        "director": "George Lucas",
+        "producer": "Rick McCallum",
+        "description": "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy."
+    },
+    {
+        "id": 7,
+        "title": "Star Wars: Episode VII - The Force Awakens",
+        "release_date": "2015-12-11",
+        "director": "J. J. Abrams",
+        "producer": "Kathleen Kennedy, J. J. Abrams, Bryan Burk",
+        "description": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance."
+    },
+    {
+        "id": 8,
+        "title": "Star Wars: Episode VIII - The Last Jedi",
+        "release_date": "2017-12-15",
+        "director": "Rian Johnson",
+        "producer": "Kathleen Kennedy, Ram Bergman",
+        "description": "Having taken her first steps into a larger world in Star Wars: The Force Awakens (2015), Rey continues her epic journey with Finn, Poe, and Luke Skywalker in the next chapter of the saga."
+    },
+    {
+        "id": 9,
+        "title": "Star Wars: Episode IX - The Rise of Skywalker",
+        "release_date": "2019-12-20",
+        "director": "J. J. Abrams",
+        "producer": "Kathleen Kennedy, Michelle Rejwan",
+        "description": "The surviving Resistance faces the First Order once more in the final chapter of the Skywalker saga."
+    },
+    {
+        "id": 10,
+        "title": "Rogue One: A Star Wars Story",
+        "release_date": "2016-12-16",
+        "director": "Gareth Edwards",
+        "producer": "Kathleen Kennedy, Allison Shearmur, Simon Emanuel",
+        "description": "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow."
+    },
+    {
+        "id": 11,
+        "title": "Solo: A Star Wars Story",
+        "release_date": "2018-05-25",
+        "director": "Ron Howard",
+        "producer": "Kathleen Kennedy, Allison Shearmur, Simon Emanuel",
+        "description": "During an adventure into the criminal underworld, Han Solo meets his future copilot Chewbacca and encounters Lando Calrissian years before joining the Rebellion."
+    },
+    {
+        "id": 12,
+        "title": "Star Wars: The Clone Wars",
+        "release_date": "2008-08-15",
+        "director": "Dave Filoni",
+        "producer": "George Lucas, Rick McCallum",
+        "description": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu, and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists."
+    },
+    {
+        "id": 13,
+        "title": "Avatar",
+        "release_date": "2009-12-18",
+        "director": "James Cameron",
+        "producer": "James Cameron",
+        "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
+    },
+    {
+        "id": 14,
+        "title": "Titanic",
+        "release_date": "1997-11-18",
+        "director": "James Cameron",
+        "producer": "Jon Landau, James Cameron",
+        "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+    },
+    {
+        "id": 15,
+        "title": "The Terminator",
+        "release_date": "1984-10-26",
+        "director": "James Cameron",
+        "producer": "Gale Anne Hurd, James Cameron",
+        "description": "A seemingly indestructible humanoid cyborg is sent from 2029 to 1984 to assassinate a young waitress, whose unborn son will lead humanity in a war against sentient machines, while a human soldier from the same war is sent to protect her at all costs."
+    },
+    {
+        "id": 16,
+        "title": "Terminator 2: Judgment Day",
+        "release_date": "1991-07-03",
+        "director": "James Cameron",
+        "producer": "Gale Anne Hurd, James Cameron",
+        "description": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced cyborg, made out of liquid metal."
+    },
+    {
+        "id": 17,
+        "title": "Terminator 3: Rise of the Machines",
+        "release_date": "2003-05-21",
+        "director": "Jonathan Mostow",
+        "producer": "Gale Anne Hurd, Jonathan Mostow, James Cameron",
+        "description": "A cybernetic warrior from a post-apocalyptic future travels back in time to protect a 25-year-old drifter and his future wife from an advanced robotic assassin and to ensure they both survive a nuclear attack."
+    },
+    {
+        "id": 18,
+        "title": "Star Trek The motion picture",
+        "release_date": "1979-12-07",
+        "director": "Robert Wise",
+        "producer": "Gene Roddenberry",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 19,
+        "title": "Star Trek II: The Wrath of Khan",
+        "release_date": "1982-06-04",
+        "director": "Nicholas Meyer",
+        "producer": "Gene Roddenberry",
+        "description": "The crew of the Enterprise find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis."
+    },
+    {
+        "id": 20,
+        "title": "Star Trek III: The Search for Spock",
+        "release_date": "1984-06-01",
+        "director": "Leonard Nimoy",
+        "producer": "Gene Roddenberry",
+        "description": "The Enterprise crew explores the furthest reaches of uncharted space, where they encounter a new ruthless enemy who puts them and everything the Federation stands for to the test."
+    },
+    {
+        "id": 21,
+        "title": "Star Trek IV: The Voyage Home",
+        "release_date": "1986-12-06",
+        "director": "Leonard Nimoy",
+        "producer": "Gene Roddenberry",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 22,
+        "title": "Star Trek V: The Final Frontier",
+        "release_date": "1989-06-09",
+        "director": "William Shatner",
+        "producer": "Gene Roddenberry",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 23,
+        "title": "Star Trek VI: The Undiscovered Country",
+        "release_date": "1991-12-06",
+        "director": "Nicholas Meyer",
+        "producer": "Gene Roddenberry",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 24,
+        "title": "Star Trek: Generations",
+        "release_date": "1994-11-18",
+        "director": "David Carson",
+        "producer": "Rick Berman",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 25,
+        "title": "Star Trek: First Contact",
+        "release_date": "1996-11-22",
+        "director": "Jonathan Frakes",
+        "producer": "Rick Berman",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 26,
+        "title": "Star Trek: Insurrection",
+        "release_date": "1998-11-26",
+        "director": "Jonathan Frakes",
+        "producer": "Rick Berman",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 27,
+        "title": "Star Trek: Nemesis",
+        "release_date": "2002-12-13",
+        "director": "Stuart Baird",
+        "producer": "Rick Berman",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 28,
+        "title": "Star Trek",
+        "release_date": "2009-05-07",
+        "director": "J.J. Abrams",
+        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
+        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
+    },
+    {
+        "id": 29,
+        "title": "Star Trek Into Darkness",
+        "release_date": "2013-05-16",
+        "director": "J.J. Abrams",
+        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
+        "description": "A Shady part of starfleet has been exposed and Kirk and his crew must stop them from using a device that will destroy the Federation."
+    },
+    {
+        "id": 30,
+        "title": "Star Trek Beyond",
+        "release_date": "2016-07-22",
+        "director": "Justin Lin",
+        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
+        "description": "The Enterprise Arrives At The Yorktown Starbase For A Routine Mission, But When A Mysterious Alien Ship Attacks, Kirk And His Crew Must Defend The Starbase And The Federation Against The Unknown Threat."
+    },
+    {
+        "id": 31,
+        "title": "Stargate",
+        "release_date": "1994-08-09",
+        "director": "Roland Emmerich",
+        "producer": "Harvey Bernhard, Dean Devlin",
+        "description": "A desperate egiptologist and a team of scientists and soldiers travel through a Stargate to a distant planet to save Earth from a deadly plague."
+    },
+    {
+        "id": 32,
+        "title": "Stargate: The Ark of Truth",
+        "release_date": "2008-04-28",
+        "director": "Martin Wood",
+        "producer": "Harvey Bernhard, Dean Devlin",
+        "description": "The Ark of Truth is a 2008 American direct-to-DVD science fiction adventure film and the second sequel to the 1994 film Stargate. It was directed by Martin Wood and written by Brad Wright and Jonathan Glassner. It was released on April 28, 2008."
+    },
+    {
+        "id": 33,
+        "title": "Stargate: Continuum",
+        "release_date": "2008-04-28",
+        "director": "Martin Wood",
+        "producer": "Harvey Bernhard, Dean Devlin",
+        "description": "Sg-1 must travel back in time to prevent the Ori from destroying Earth."
+    },
+    {
+        "id": 34,
+        "title": "Martian",
+        "release_date": "2015-10-02",
+        "director": "Ridley Scott",
+        "producer": "Simon Kinberg, Ridley Scott, Michael Schaefer, Aditya Sood",
+        "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive."
+    },
+    {
+        "id": 35,
+        "title": "Interstellar",
+        "release_date": "2014-11-07",
+        "director": "Christopher Nolan",
+        "producer": "Christopher Nolan, Emma Thomas",
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+        "id": 36,
+        "title": "Alita: Battle Angel",
+        "release_date": "2019-02-14",
+        "director": "Robert Rodriguez",
+        "description": "A cyberneticist discovers a girl with a mysterious past who is being hunted by a sinister organization."
+    },
+    {
+        "id": 37,
+        "title": "Dune",
+        "release_date": "2020-12-18",
+        "director": "Denis Villeneuve",
+        "producer": "",
+        "description": "The planet Arrakis "
+    }
+]
