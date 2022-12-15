@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, View, Text, Image } from 'react-native'
-import Shrekposter from '../images/Shrekiposter.jpg'
-import ProfilePic from '../images/profilePic.png'
-import movieData from '../../backend/demoData/moviesDemoData.json'
+import Shrekposter from '../../images/Shrekiposter.jpg'
+import ProfilePic from '../../images/profilePic.png'
+import movieData from '../../../backend/demoData/moviesDemoData.json'
 
 export default function MainPage({navigation}) {
 

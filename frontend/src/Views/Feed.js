@@ -14,7 +14,10 @@ export default function Feed() {
         if (title="reviewed"){
             return(
                 <View>
-                    
+                    <Text>{name}</Text>
+                    <Text>{date}</Text>
+                    <Text>{movieName}</Text>
+                    <Text>{content}</Text>
                 </View>
             )
         }
