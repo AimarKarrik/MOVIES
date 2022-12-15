@@ -21,6 +21,14 @@ export default function Feed() {
                 </View>
             )
         }
+
+        if(title="liked"){
+            return(
+                <View>
+                    <Text>{name} liked {movieName}</Text>
+                </View>
+            )
+        }
         }
     }
 
