@@ -1,0 +1,5 @@
+.moviePreview{
+    height: 4em;
+    width: 4em;
+    overflow: scroll;
+}
