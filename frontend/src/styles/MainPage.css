@@ -1,5 +1,65 @@
-.moviePreview{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.movie-preview{
     height: 4em;
     width: 4em;
     overflow: scroll;
+}
+
+.details-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: inter, sans-serif;
+}
+
+.details {
+    background: #1B1C30;
+    border-radius: 10px;
+    width: 50%;
+    height: 855px;
+}
+.details-back {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.details-poster {
+    height: 330px;
+    width: 100%;
+    display: flex;
+}
+
+.details-title{
+    font-weight: 700;
+    font-size: 40px;
+    align-self: end;
+    margin: 0;
+}
+
+.details-watch-button {
+    width: 140px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    align-self: end;
+}
+.details-like-button {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    align-self: end;
+}
+
+.details-rating {
+    align-self: end;
 }
