@@ -30,9 +30,9 @@ export default function MainPage() {
                 <div className='details-rating'>1 2 3 4 5</div>
               </div>
               <p className='details-info'> {date} <span>{ageRating}</span> seasons {seasons} <span>{quality}</span> </p>
-              <p> {content} </p>
-              <h1>Episodes</h1>
-              <div className='movie-episode'></div>
+              <p className='details-content'> {content} </p>
+              <h2 className='details-episodes-heading'>Episodes</h2>
+              <div className='details-episode'></div>
             </div>
           </div> : ""}
       </>

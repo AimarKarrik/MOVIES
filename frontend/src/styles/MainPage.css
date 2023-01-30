@@ -22,7 +22,11 @@
     background: #1B1C30;
     border-radius: 10px;
     width: 50%;
+    min-width: 600px;
     height: 855px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .details-back {
     font-weight: 200;
@@ -33,6 +37,8 @@
     height: 330px;
     width: 100%;
     display: flex;
+    border: 2px solid red;
+    border-radius: 10px;
 }
 
 .details-title{
@@ -62,4 +68,34 @@
 
 .details-rating {
     align-self: end;
+}
+
+.details-info {
+    align-self: flex-start;
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+.details-info > span {
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.details-content {
+    text-justify: left;
+    font-size: 16px;
+    width: 90%;
+}
+
+.details-episodes-heading {
+    font-size: 20px;
+    align-self: start;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .details {
+        width: 100%;
+        min-width: 100%;
+    }
 }
