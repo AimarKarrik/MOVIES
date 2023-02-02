@@ -20,19 +20,29 @@ export default function MainPage() {
           <div className='imageUrl'><img source={imageUrl} alt={title} /></div>
         </div>
         {details ?
-          <div className='details-container'>
+          <div className='details-container' onClick={handleDetailsClose}>
             <div className='details'>
               <div className='details-poster' style={{ backgroundImage: imageUrl }}>
-                <h1 className='details-back' onClick={handleDetailsClose}> {"< Back"} </h1>
                 <h1 className='details-title'> {title} </h1>
-                <button className='details-watch-button'>Watch</button>
-                <button className='details-like-button'>{"<3"}</button>
-                <div className='details-rating'>1 2 3 4 5</div>
+                <div className='details-buttons'>
+                  <button className='details-watch-button'>Watch</button>
+                  <button className='details-like-button'>{"<3"}</button>
+                  <div className='details-rating'>1 2 3 4 5</div>
+                </div>
               </div>
               <p className='details-info'> {date} <span>{ageRating}</span> seasons {seasons} <span>{quality}</span> </p>
               <p className='details-content'> {content} </p>
               <h2 className='details-episodes-heading'>Episodes</h2>
-              <div className='details-episode'></div>
+              <div className='details-episodes'>
+                <div className='details-episode'>
+                  <h1> 1 </h1>
+                  <img alt='episode-thumbnail' source={imageUrl}></img>
+                  <div className='episode-info'>
+                    <p>Episode Title</p>
+                    <p>Episode description</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div> : ""}
       </>

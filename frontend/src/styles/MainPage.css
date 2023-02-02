@@ -23,7 +23,7 @@
     border-radius: 10px;
     width: 50%;
     min-width: 600px;
-    height: 855px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,15 +37,30 @@
     height: 330px;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     border: 2px solid red;
     border-radius: 10px;
 }
 
+.details-poster > * {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
 .details-title{
     font-weight: 700;
     font-size: 40px;
-    align-self: end;
-    margin: 0;
+}
+
+.details-buttons {
+    display: flex;
+    align-content: center;
+}
+
+.details-buttons > * {
+    margin-right: 10px;
 }
 
 .details-watch-button {
@@ -55,20 +70,19 @@
     border: none;
     border-radius: 5px;
     color: black;
-    align-self: end;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inter;
 }
+
 .details-like-button {
     height: 30px;
     width: 30px;
     background-color: white;
     border: none;
     border-radius: 50%;
-    align-self: end;
 }
 
-.details-rating {
-    align-self: end;
-}
 
 .details-info {
     align-self: flex-start;
@@ -91,6 +105,37 @@
     font-size: 20px;
     align-self: start;
     margin-left: 5%;
+}
+
+.details-episodes {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.details-episode {
+    background-color: #242540;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.details-episode > h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.episode-thumbnail {
+    width: 141px;
+    height: 91px;
+}
+
+.episode-info {
+    margin: 0px 10px;
 }
 
 @media only screen and (max-width: 600px) {
