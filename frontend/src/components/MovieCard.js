@@ -3,6 +3,7 @@ import '../assets/images/movieposter.png'
 import '../styles/MovieCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 
 export default function MovieCard() {
@@ -27,7 +28,7 @@ export default function MovieCard() {
                             <h1 className='movie-details-title'> Movie Title </h1>
                             <div className='movie-details-buttons'>
                                 <button className='movie-details-watch-button'><FontAwesomeIcon icon={faPlay} /> Watch</button>
-                                <button className='movie-details-like-button'>{"<3"}</button>
+                                <button className='movie-details-like-button'><FontAwesomeIcon icon={faHeart} /></button>
                                 <div className='movie-details-rating'>1 2 3 4 5</div>
                             </div>
                         </div>
