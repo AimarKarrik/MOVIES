@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import moviePoster from '../assets/images/movieposter.png'
+import '../assets/images/movieposter.png'
 import NavBar from '../components/Navbar';
 import '../styles/MainPage.css'
 
@@ -22,7 +22,7 @@ export default function MainPage() {
         {details ?
           <div className='details-container' onClick={handleDetailsClose}>
             <div className='details'>
-              <div className='details-poster' style={{ backgroundImage: imageUrl }}>
+              <div className='details-poster'>
                 <h1 className='details-title'> {title} </h1>
                 <div className='details-buttons'>
                   <button className='details-watch-button'>Watch</button>
@@ -55,29 +55,29 @@ export default function MainPage() {
       <div className='movie-category'>
         <h1>New movies</h1>
         <MoviePreview title={"Demo Movie"} imageUrl={'../assets/images/movieposter.png'} content={"Lorem Ipsum 123542556"} date={2023} ageRating={"18+"} quality={"HD"} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
       </div>
       <div className='movie-category'>
         <h1>Movies</h1>
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
       </div>
       <div className='movie-category'>
         <h1>TV show</h1>
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
-        <MoviePreview title={"Demo Movie"} imageUrl={moviePoster} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
+        <MoviePreview title={"Demo Movie"} />
       </div>
     </>
   )
