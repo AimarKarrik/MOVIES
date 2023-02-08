@@ -4,6 +4,7 @@
   padding: 0;
 }
 
-body {
+body, html {
   margin: 0;
+  background-color: #1B1C30;
 }
