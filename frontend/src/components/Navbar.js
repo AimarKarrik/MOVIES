@@ -10,12 +10,12 @@ import logo from '../assets/graphics/imgs/movie-app logo.png';
 function NavBar() {
   return (
     <Navbar expand="lg">
-      <Container fluid>
+      <Container className='nav-container'>
         <Nav.Link className='logo' to="/">
-        <img
-			src={logo}
-			alt="logo"
-		/>
+          <img
+            src={logo}
+            alt="logo"
+          />
         </Nav.Link>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -23,7 +23,7 @@ function NavBar() {
             <Nav.Link className='navlink' href="#tvshows">TV shows</Nav.Link>
             <Nav.Link className='navlink' href="#mylist">My List</Nav.Link>
             <Nav.Link className='navlink' href="#categories">Categories</Nav.Link>
-            </Nav>
+          </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
