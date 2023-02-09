@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@700&display=swap');
-
 nav{
 	background-color: #1B1C30;
     display: flex;
@@ -18,7 +16,6 @@ nav{
 	text-decoration: none;
 	padding: 1.5rem 1.5rem;
     font-size: 1.1875rem;
-    font-family: inter;
     
 }
 
@@ -36,7 +33,6 @@ nav{
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
-    font-family: inter;
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
@@ -45,45 +41,21 @@ nav{
     border-radius: 0.375rem;
 }
 
-.btn {
-    --bs-btn-padding-x: 0.75rem;
-    --bs-btn-padding-y: 0.375rem;
-    --bs-btn-font-size: 1rem; 
-    --bs-btn-font-weight: 400;
-    --bs-btn-line-height: 1.5;
-    --bs-btn-color: white;
-    --bs-btn-bg: transparent;
-    --bs-btn-border-width: 1px;
-    --bs-btn-border-color: transparent;
-    --bs-btn-border-radius: 0.375rem;
-    --bs-btn-hover-border-color: transparent;
-    --bs-btn-box-shadow: inset 0 1px 0hsla(0,0%,100%,0.15),0 1px 1pxrgba(0,0,0,0.075);
-    --bs-btn-disabled-opacity: 0.65;
-    --bs-btn-focus-box-shadow: 0 0 0 0.25remrgba(var(--bs-btn-focus-shadow-rgb),.5);
-    display: inline-block;
-    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-    font-family: var(--bs-btn-font-family);
-    font-size: var(--bs-btn-font-size);
-    font-weight: var(--bs-btn-font-weight);
-    line-height: var(--bs-btn-line-height);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-    border-radius: var(--bs-btn-border-radius);
-    background-color: var(--bs-btn-bg);
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    font-family: inter;
-
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
-.btn-outline-primary {
-    --bs-btn-color: white;
-    --bs-btn-border-color: #ffffff;
-    --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: #ffffff;
+#responsive-navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.d-flex {
+    margin-left: auto;
 }
