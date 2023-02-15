@@ -5,7 +5,7 @@ import NavBar from '../components/Navbar';
 import '../styles/MainPage.css'
 
 export default function MainPage() {
-    const movieDemo = [
+    const movies = [
         {
             title: 'The Shawshank Redemption',
             year: '1994',
@@ -126,28 +126,25 @@ export default function MainPage() {
             <div className='movie-category'>
                 <h1 className='category-title'>Trending</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
             <div className='movie-category'>
                 <h1 className='category-title'>New</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
             <div className='movie-category'>
                 <h1 className='category-title'>For You</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
         </>
