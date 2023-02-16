@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
 
 nav{
-	background-color: #1B1C30;
+	background-color: #252640;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,6 +17,7 @@ nav{
 	text-decoration: none;
 	padding: 1.5rem 1.5rem;
     font-size: 1.1875rem;
+    font-family: Inter;
     
 }
 

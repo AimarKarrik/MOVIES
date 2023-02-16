@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/images/movieposter.png'
 import MovieCard from '../components/MovieCard';
 import NavBar from '../components/Navbar';
 import '../styles/MainPage.css'
 
-export default function MainPage() {
+
+export default async function MainPage() {
+    const [movies, setMovies] = useState()
+
+    useEffect(() => {
+        fetch("http://localhost:3001/movies?page=1&pageSize=10", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })
+        .then(response => response.json())
+        .then(data => {setMovies(data.movies); console.log(data);})
+    })
+
+    
 
     return (
         <>
