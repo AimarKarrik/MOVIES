@@ -5,6 +5,7 @@ import NavBar from '../components/Navbar';
 import '../styles/MainPage.css'
 
 
+
 export default async function MainPage() {
     const [movies, setMovies] = useState()
 
@@ -19,7 +20,6 @@ export default async function MainPage() {
         .then(data => {setMovies(data.movies); console.log(data);})
     })
 
-    
 
     return (
         <>
@@ -27,28 +27,25 @@ export default async function MainPage() {
             <div className='movie-category'>
                 <h1 className='category-title'>Trending</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
             <div className='movie-category'>
                 <h1 className='category-title'>New</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
             <div className='movie-category'>
                 <h1 className='category-title'>For You</h1>
                 <div className='movie-card-container'>
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
-                    <MovieCard />
+                    {movies.map(movie => (
+                        <MovieCard movieData={movie} />
+                    ))}
                 </div>
             </div>
         </>
