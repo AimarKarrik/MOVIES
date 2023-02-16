@@ -35,7 +35,7 @@ export default function MovieCard({ movieData }) {
                         <p className='movie-details-info'> {movieData.year} <span>{movieData.ageRating}</span> seasons {movieData.seasonCount} <span>{movieData.quality}</span> </p>
                         <p className='movie-details-description'> {movieData.description} </p>
                         <h2 className='movie-episode-list-title'>Episodes</h2>
-                        <div className='movie-details-episodes-list'>
+                        {/* <div className='movie-details-episodes-list'>
                             {movieData.episodes.map((episode) => (
                                 <div className='movie-details-episode'>
                                     <h1 className='movie-details-episode-index'> {episode.id} </h1>
@@ -46,7 +46,7 @@ export default function MovieCard({ movieData }) {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div> : ""
             }

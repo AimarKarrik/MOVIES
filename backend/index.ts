@@ -1,7 +1,9 @@
 import express from 'express';
 import fs from 'fs';
+const cors = require('cors');
 
 const app: express.Application = express();
+app.use(cors());
 const port: number = 3001;
 
 const moviesJsonData: string = fs.readFileSync('./demoData/moviesDemoData.json', 'utf8');

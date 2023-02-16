@@ -6,19 +6,20 @@ import '../styles/MainPage.css'
 
 
 
-export default async function MainPage() {
-    const [movies, setMovies] = useState()
+export default function MainPage() {
+    const [movies, setMovies] = useState([])
 
     useEffect(() => {
+        console.log("useEffect");
         fetch("http://localhost:3001/movies?page=1&pageSize=10", {
             method: "GET",
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/json"
             }
         })
-        .then(response => response.json())
-        .then(data => {setMovies(data.movies); console.log(data);})
-    })
+            .then(response => response.json())
+            .then(data => { console.log(data); setMovies(data); })
+    }, [])
 
 
     return (
@@ -28,7 +29,7 @@ export default async function MainPage() {
                 <h1 className='category-title'>Trending</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
-                        <MovieCard movieData={movie} />
+                        <MovieCard key={movie.id} movieData={movie} />
                     ))}
                 </div>
             </div>
@@ -36,7 +37,7 @@ export default async function MainPage() {
                 <h1 className='category-title'>New</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
-                        <MovieCard movieData={movie} />
+                        <MovieCard key={movie.id} movieData={movie} />
                     ))}
                 </div>
             </div>
@@ -44,7 +45,7 @@ export default async function MainPage() {
                 <h1 className='category-title'>For You</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
-                        <MovieCard movieData={movie} />
+                        <MovieCard key={movie.id} movieData={movie} />
                     ))}
                 </div>
             </div>
