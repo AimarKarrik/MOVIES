@@ -24,7 +24,7 @@
 /* Movie Details */
 .movie-details-container{
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,15 +42,11 @@
 
     width: 50%;
     max-width: 797px;
-    height: 70%;
-    min-height: 500px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    flex: 1;
-    overflow: scroll;
 }
 .details-back {
     font-weight: 200;
@@ -138,6 +134,7 @@
     width: 90%;
     height: auto;
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     margin-bottom: 20px;
 }
@@ -147,7 +144,7 @@
     border-radius: 5px;
     display: flex;
     align-content: center;
-    height: 91px;
+    height: auto;
     width: 100%;
     margin-bottom: 10px;
 }
