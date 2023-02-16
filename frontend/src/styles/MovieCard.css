@@ -144,7 +144,7 @@
     border-radius: 5px;
     display: flex;
     align-content: center;
-    height: 91px;
+    height: auto;
     width: 100%;
     margin-bottom: 10px;
 }

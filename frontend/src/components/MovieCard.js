@@ -33,7 +33,7 @@ export default function MovieCard({ movieData }) {
                             </div>
                         </div>
                         <p className='movie-details-info'> {movieData.year} <span>{movieData.ageRating}</span> seasons {movieData.seasonCount} <span>{movieData.quality}</span> </p>
-                        <p className='movie-details-description'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra sem risus, non tempus massa pretium et. Maecenas tincidunt viverra mi, nec tincidunt diam pellentesque vel. Nam cursus, neque vitae pretium congue, quam purus convallis metus, in ornare arcu purus sed neque. Integer blandit sem nisl, sed placerat metus consequat eget. Suspendisse pulvinar eleifend justo, eu dapibus lorem efficitur et. Nullam pulvinar consectetur velit vel eleifend. Quisque placerat non metus sit amet aliquet. Etiam id vestibulum orci. Suspendisse a augue ligula. Etiam egestas massa at sapien auctor varius. Aliquam quis urna urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae orci vel velit aliquet pulvinar id ut nunc. Quisque rhoncus ligula ac diam maximus, sed consectetur sapien mollis. Cras id arcu ac ipsum ornare ultrices. Sed felis nisl, ultrices ut eleifend et, fermentum id nisi. </p>
+                        <p className='movie-details-description'> {movieData.description} </p>
                         <h2 className='movie-episode-list-title'>Episodes</h2>
                         <div className='movie-details-episodes-list'>
                             {movieData.episodes.map((episode) => (
