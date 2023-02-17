@@ -26,4 +26,4 @@ npm start
 
 | Method | Endpoint | Paramaters                     | Description      |
 | ------ | -------- | ------------------------------ | ---------------- |
-| GET    | /movies  | page: number\ pageSize: number | Get movies paged |
+| GET    | /movies  | page: number   pageSize: number | Get movies paged |
