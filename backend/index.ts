@@ -1,6 +1,6 @@
 import express from 'express';
 const cors = require('cors');
-import moviesController from './controllers/moviesController';
+import moviesController from './controllers/movieController';
 
 const app: express.Application = express();
 app.use(cors());
