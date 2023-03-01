@@ -1,298 +1,2280 @@
-[
-    {
+[{
+    "id": 1,
+    "title": "Russkies",
+    "relase_year": 2015,
+    "description": "Retained (nonmagnetic) (old) foreign body in anterior chamber",
+    "rating": 2,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 12,
+    "director": "Penrod Smeall",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
         "id": 1,
-        "title": "Star Wars: Episode IV - A New Hope",
-        "release_date": "1977-05-25",
-        "director": "George Lucas",
-        "producer": "Gary Kurtz, Rick McCallum",
-        "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader."
-    },
-    {
+        "image": "http://dummyimage.com/x97.png/5fa2dd/ffffff",
+        "name": "Dr. Moreau's House of Pain",
+        "description": "Wheelchair (powered) colliding with stationary object, sequela"
+      },
+      {
         "id": 2,
-        "title": "Star Wars: Episode V - The Empire Strikes Back",
-        "release_date": "1980-05-17",
-        "director": "Irvin Kershner",
-        "producer": "Gary Kurtz, Rick McCallum",
-        "description": "After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader as part of his plan to capture Luke."
-    },
-    {
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Tough Enough (Knallhart)",
+        "description": "Superficial foreign body of lower back and pelvis"
+      }
+    ]
+  }, {
+    "id": 2,
+    "title": "Gappa: The Triphibian Monsters (AKA Monster from a Prehistoric Planet) (Daikyojû Gappa)",
+    "relase_year": 2003,
+    "description": "Pedestrian on skateboard injured in collision with pedal cycle in nontraffic accident, subsequent encounter",
+    "rating": 1,
+    "season": 1,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "2K",
+    "age_rating": 18,
+    "director": "Jan Miquelet",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x93.png/5fa2dd/ffffff",
+        "name": "Danger! 50,000 Zombies",
+        "description": "Atrophy of edentulous alveolar ridge"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Peppermint Candy (Bakha satang)",
+        "description": "Other physeal fracture of lower end of unspecified fibula, subsequent encounter for fracture with malunion"
+      },
+      {
         "id": 3,
-        "title": "Star Wars: Episode VI - Return of the Jedi",
-        "release_date": "1983-05-25",
-        "director": "Richard Marquand",
-        "producer": "Howard G. Kazanjian, George Lucas, Rick McCallum",
-        "description": "After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force."
-    },
-    {
+        "image": "http://dummyimage.com/x100.png/ff4444/ffffff",
+        "name": "Thunderbolt (Pik lik feng)",
+        "description": "Overexertion and strenuous or repetitive movements"
+      }
+    ]
+  }, {
+    "id": 3,
+    "title": "Song of the Exile (Ke tu qiu hen)",
+    "relase_year": 2014,
+    "description": "Acute hemolytic transfusion reaction, unspecified incompatibility",
+    "rating": 1,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Action",
+    "quality": "4K",
+    "age_rating": 18,
+    "director": "Giovanni McBoyle",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Regular Lovers (Amants réguliers, Les)",
+        "description": "Military operations involving destruction of aircraft due to onboard fire, military personnel"
+      }
+    ]
+  }, {
+    "id": 4,
+    "title": "Sister Act 2: Back in the Habit",
+    "relase_year": 2002,
+    "description": "Immunization not carried out for other reason",
+    "rating": 2,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Thriller",
+    "quality": "4K",
+    "age_rating": 13,
+    "director": "Christin Davenhall",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Steel Magnolias",
+        "description": "Nondisplaced fracture of right ulna styloid process, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Generation P",
+        "description": "Nondisplaced fracture of shaft of second metacarpal bone, left hand, initial encounter for open fracture"
+      }
+    ]
+  }, {
+    "id": 5,
+    "title": "Bad Boys",
+    "relase_year": 2001,
+    "description": "Insect bite (nonvenomous) of unspecified external genital organs, male, initial encounter",
+    "rating": 2,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "2K",
+    "age_rating": 18,
+    "director": "Chelsey Ledger",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Quatermass Xperiment, The",
+        "description": "Diffuse follicle center lymphoma"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Hesher",
+        "description": "Obstetric trauma, unspecified"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Trial",
+        "description": "Postprocedural retroperitoneal abscess"
+      },
+      {
         "id": 4,
-        "title": "Star Wars: Episode I - The Phantom Menace",
-        "release_date": "1999-05-19",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "description": "The Planet of Naboo is blocalled by the Trade Federation, in response to Queen Amidala's vote against granting them unlimited power. Jedi Knights Qui-Gon Jinn and Obi-Wan Kenobi are sent to settle the conflict."
-    },
-    {
+        "image": "http://dummyimage.com/x92.png/ff4444/ffffff",
+        "name": "Flow",
+        "description": "Posterior displaced fracture of sternal end of unspecified clavicle, subsequent encounter for fracture with routine healing"
+      }
+    ]
+  }, {
+    "id": 6,
+    "title": "C.S.A.: The Confederate States of America",
+    "relase_year": 2020,
+    "description": "Poisoning by hemostatic drug, undetermined",
+    "rating": 4,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "full HD",
+    "age_rating": 15,
+    "director": "Ardelia Grimster",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x92.png/ff4444/ffffff",
+        "name": "Aziz Ansari: Buried Alive",
+        "description": "Corrosion of first degree of multiple sites of left wrist and hand, initial encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Gabriel",
+        "description": "Unspecified injury of intrinsic muscle and tendon at ankle and foot level, right foot, sequela"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/ff4444/ffffff",
+        "name": "Emerald Cowboy",
+        "description": "External constriction of right index finger"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "The Boy in the Mirror",
+        "description": "Disorder of ligament, right hip"
+      },
+      {
         "id": 5,
-        "title": "Star Wars: Episode II - Attack of the Clones",
-        "release_date": "2002-05-16",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "description": "Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi investigates an assassination attempt on the senator and discovers a secret clone army crafted for the Jedi."
-
-    },
-    {
+        "image": "http://dummyimage.com/x95.png/5fa2dd/ffffff",
+        "name": "Adventures of Huckleberry Finn, The",
+        "description": "Fall into storm drain or manhole, sequela"
+      },
+      {
         "id": 6,
-        "title": "Star Wars: Episode III - Revenge of the Sith",
-        "release_date": "2005-05-19",
-        "director": "George Lucas",
-        "producer": "Rick McCallum",
-        "description": "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy."
-    },
-    {
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Graduation Day",
+        "description": "Varicella keratitis"
+      }
+    ]
+  }, {
+    "id": 7,
+    "title": "Dead Awake",
+    "relase_year": 2016,
+    "description": "Toxic effect of phenol and phenol homologues, accidental (unintentional), subsequent encounter",
+    "rating": 1,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Action",
+    "quality": "HD",
+    "age_rating": 15,
+    "director": "Sissy Ancliffe",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Zulu",
+        "description": "Intraoperative hemorrhage and hematoma of a genitourinary system organ or structure complicating a genitourinary system procedure"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Somewhere in the City",
+        "description": "Other congenital malformations of pulmonary artery"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Cable Guy, The",
+        "description": "Underdosing of unspecified hormones and synthetic substitutes, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 8,
+    "title": "Donner Pass",
+    "relase_year": 2023,
+    "description": "Nondisplaced fracture of posterior wall of right acetabulum, subsequent encounter for fracture with delayed healing",
+    "rating": 4,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Thriller",
+    "quality": "4K",
+    "age_rating": 14,
+    "director": "Ardene Bucknill",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Portrait of Wally",
+        "description": "Displaced spiral fracture of shaft of unspecified fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion"
+      }
+    ]
+  }, {
+    "id": 9,
+    "title": "Steal This Film II",
+    "relase_year": 2001,
+    "description": "Laceration of unspecified renal artery, initial encounter",
+    "rating": 5,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "HD",
+    "age_rating": 18,
+    "director": "Dyan Derbyshire",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Sexual Life",
+        "description": "Toxic effect of hydrogen sulfide, accidental (unintentional), subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Fearless Hyena II (Long teng hu yue)",
+        "description": "Puncture wound without foreign body of left lesser toe(s) with damage to nail, subsequent encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Operation 'Y' & Other Shurik's Adventures",
+        "description": "Mononeuropathies of lower limb"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x100.png/5fa2dd/ffffff",
+        "name": "Crazy in Alabama",
+        "description": "Pedal cycle passenger injured in collision with heavy transport vehicle or bus in nontraffic accident"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x95.png/ff4444/ffffff",
+        "name": "You Can Count on Me",
+        "description": "Superficial frostbite of right wrist, sequela"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "My Forbidden Past",
+        "description": "Displaced fracture of body of hamate [unciform] bone, left wrist, subsequent encounter for fracture with delayed healing"
+      },
+      {
         "id": 7,
-        "title": "Star Wars: Episode VII - The Force Awakens",
-        "release_date": "2015-12-11",
-        "director": "J. J. Abrams",
-        "producer": "Kathleen Kennedy, J. J. Abrams, Bryan Burk",
-        "description": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance."
-    },
-    {
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "My Man Godfrey",
+        "description": "Displaced transverse fracture of left patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with nonunion"
+      },
+      {
         "id": 8,
-        "title": "Star Wars: Episode VIII - The Last Jedi",
-        "release_date": "2017-12-15",
-        "director": "Rian Johnson",
-        "producer": "Kathleen Kennedy, Ram Bergman",
-        "description": "Having taken her first steps into a larger world in Star Wars: The Force Awakens (2015), Rey continues her epic journey with Finn, Poe, and Luke Skywalker in the next chapter of the saga."
-    },
-    {
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Erkan & Stefan 3",
+        "description": "Puncture wound of abdominal wall with foreign body, right lower quadrant without penetration into peritoneal cavity, initial encounter"
+      }
+    ]
+  }, {
+    "id": 10,
+    "title": "Vice",
+    "relase_year": 2014,
+    "description": "Displaced transverse fracture of shaft of left fibula, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing",
+    "rating": 4,
+    "season": 1,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "full HD",
+    "age_rating": 13,
+    "director": "Felix Keoghan",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Rock, Paper, Scissors: The Way of the Tosser",
+        "description": "Drug-induced chronic gout, right wrist"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Darkness Falls",
+        "description": "Iliofemoral ligament sprain of right hip, sequela"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x92.png/dddddd/000000",
+        "name": "Felony",
+        "description": "Child and adolescent antisocial behavior"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Duellists, The",
+        "description": "Toxic effect of unspecified substance, intentional self-harm, initial encounter"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Norm MacDonald: Me Doing Standup",
+        "description": "Nondisplaced comminuted fracture of shaft of unspecified tibia, subsequent encounter for open fracture type I or II with nonunion"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Salmonberries",
+        "description": "Asphyxiation due to hanging, accidental"
+      }
+    ]
+  }, {
+    "id": 11,
+    "title": "Asylum",
+    "relase_year": 2023,
+    "description": "Other sequelae of cerebral infarction",
+    "rating": 5,
+    "season": 2,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "2K",
+    "age_rating": 12,
+    "director": "Guthrie Fowden",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+  
+    ]
+  }, {
+    "id": 12,
+    "title": "What the Day Owes the Night",
+    "relase_year": 2017,
+    "description": "Other sequelae of other cerebrovascular disease",
+    "rating": 3,
+    "season": 5,
+    "type": "Movie",
+    "genre": "Action",
+    "quality": "4K",
+    "age_rating": 13,
+    "director": "Leonanie Castellini",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "How to Steal a Million",
+        "description": "Dislocation of interphalangeal joint of left great toe, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 13,
+    "title": "King Creole",
+    "relase_year": 2016,
+    "description": "War operations involving firearms pellets, military personnel, initial encounter",
+    "rating": 2,
+    "season": 3,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "full HD",
+    "age_rating": 16,
+    "director": "Gussie Mesias",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/cc0000/ffffff",
+        "name": "South, The (Sur, El)",
+        "description": "Unspecified fracture of navicular [scaphoid] bone of right wrist, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x94.png/dddddd/000000",
+        "name": "Home Alone 2: Lost in New York",
+        "description": "Vitamin A deficiency, unspecified"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "1",
+        "description": "Contusion of unspecified hand"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Outlaw, The (Lope)",
+        "description": "Puncture wound without foreign body of vagina and vulva, sequela"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Citizen X",
+        "description": "Type III occipital condyle fracture, right side, subsequent encounter for fracture with routine healing"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x93.png/cc0000/ffffff",
+        "name": "Wedding in Blood (Noces rouges, Les)",
+        "description": "Toxic effect of zinc and its compounds, accidental (unintentional)"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Camera Buff (Amator)",
+        "description": "Laceration without foreign body of abdominal wall, right lower quadrant with penetration into peritoneal cavity, subsequent encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Pretty in Pink",
+        "description": "Subperiosteal abscess of mastoid, unspecified ear"
+      },
+      {
         "id": 9,
-        "title": "Star Wars: Episode IX - The Rise of Skywalker",
-        "release_date": "2019-12-20",
-        "director": "J. J. Abrams",
-        "producer": "Kathleen Kennedy, Michelle Rejwan",
-        "description": "The surviving Resistance faces the First Order once more in the final chapter of the Skywalker saga."
-    },
-    {
+        "image": "http://dummyimage.com/x91.png/cc0000/ffffff",
+        "name": "Flesh Gordon",
+        "description": "Laceration of unspecified blood vessel at hip and thigh level, right leg"
+      },
+      {
         "id": 10,
-        "title": "Rogue One: A Star Wars Story",
-        "release_date": "2016-12-16",
-        "director": "Gareth Edwards",
-        "producer": "Kathleen Kennedy, Allison Shearmur, Simon Emanuel",
-        "description": "The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow."
-    },
-    {
-        "id": 11,
-        "title": "Solo: A Star Wars Story",
-        "release_date": "2018-05-25",
-        "director": "Ron Howard",
-        "producer": "Kathleen Kennedy, Allison Shearmur, Simon Emanuel",
-        "description": "During an adventure into the criminal underworld, Han Solo meets his future copilot Chewbacca and encounters Lando Calrissian years before joining the Rebellion."
-    },
-    {
-        "id": 12,
-        "title": "Star Wars: The Clone Wars",
-        "release_date": "2008-08-15",
-        "director": "Dave Filoni",
-        "producer": "George Lucas, Rick McCallum",
-        "description": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu, and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists."
-    },
-    {
-        "id": 13,
-        "title": "Avatar",
-        "release_date": "2009-12-18",
-        "director": "James Cameron",
-        "producer": "James Cameron",
-        "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
-    },
-    {
-        "id": 14,
-        "title": "Titanic",
-        "release_date": "1997-11-18",
-        "director": "James Cameron",
-        "producer": "Jon Landau, James Cameron",
-        "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
-    },
-    {
-        "id": 15,
-        "title": "The Terminator",
-        "release_date": "1984-10-26",
-        "director": "James Cameron",
-        "producer": "Gale Anne Hurd, James Cameron",
-        "description": "A seemingly indestructible humanoid cyborg is sent from 2029 to 1984 to assassinate a young waitress, whose unborn son will lead humanity in a war against sentient machines, while a human soldier from the same war is sent to protect her at all costs."
-    },
-    {
-        "id": 16,
-        "title": "Terminator 2: Judgment Day",
-        "release_date": "1991-07-03",
-        "director": "James Cameron",
-        "producer": "Gale Anne Hurd, James Cameron",
-        "description": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her teenage son, John Connor, from a more advanced cyborg, made out of liquid metal."
-    },
-    {
-        "id": 17,
-        "title": "Terminator 3: Rise of the Machines",
-        "release_date": "2003-05-21",
-        "director": "Jonathan Mostow",
-        "producer": "Gale Anne Hurd, Jonathan Mostow, James Cameron",
-        "description": "A cybernetic warrior from a post-apocalyptic future travels back in time to protect a 25-year-old drifter and his future wife from an advanced robotic assassin and to ensure they both survive a nuclear attack."
-    },
-    {
-        "id": 18,
-        "title": "Star Trek The motion picture",
-        "release_date": "1979-12-07",
-        "director": "Robert Wise",
-        "producer": "Gene Roddenberry",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 19,
-        "title": "Star Trek II: The Wrath of Khan",
-        "release_date": "1982-06-04",
-        "director": "Nicholas Meyer",
-        "producer": "Gene Roddenberry",
-        "description": "The crew of the Enterprise find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis."
-    },
-    {
-        "id": 20,
-        "title": "Star Trek III: The Search for Spock",
-        "release_date": "1984-06-01",
-        "director": "Leonard Nimoy",
-        "producer": "Gene Roddenberry",
-        "description": "The Enterprise crew explores the furthest reaches of uncharted space, where they encounter a new ruthless enemy who puts them and everything the Federation stands for to the test."
-    },
-    {
-        "id": 21,
-        "title": "Star Trek IV: The Voyage Home",
-        "release_date": "1986-12-06",
-        "director": "Leonard Nimoy",
-        "producer": "Gene Roddenberry",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 22,
-        "title": "Star Trek V: The Final Frontier",
-        "release_date": "1989-06-09",
-        "director": "William Shatner",
-        "producer": "Gene Roddenberry",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 23,
-        "title": "Star Trek VI: The Undiscovered Country",
-        "release_date": "1991-12-06",
-        "director": "Nicholas Meyer",
-        "producer": "Gene Roddenberry",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 24,
-        "title": "Star Trek: Generations",
-        "release_date": "1994-11-18",
-        "director": "David Carson",
-        "producer": "Rick Berman",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 25,
-        "title": "Star Trek: First Contact",
-        "release_date": "1996-11-22",
-        "director": "Jonathan Frakes",
-        "producer": "Rick Berman",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 26,
-        "title": "Star Trek: Insurrection",
-        "release_date": "1998-11-26",
-        "director": "Jonathan Frakes",
-        "producer": "Rick Berman",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 27,
-        "title": "Star Trek: Nemesis",
-        "release_date": "2002-12-13",
-        "director": "Stuart Baird",
-        "producer": "Rick Berman",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 28,
-        "title": "Star Trek",
-        "release_date": "2009-05-07",
-        "director": "J.J. Abrams",
-        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
-        "description": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time."
-    },
-    {
-        "id": 29,
-        "title": "Star Trek Into Darkness",
-        "release_date": "2013-05-16",
-        "director": "J.J. Abrams",
-        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
-        "description": "A Shady part of starfleet has been exposed and Kirk and his crew must stop them from using a device that will destroy the Federation."
-    },
-    {
-        "id": 30,
-        "title": "Star Trek Beyond",
-        "release_date": "2016-07-22",
-        "director": "Justin Lin",
-        "producer": "J.J. Abrams, Bryan Burk, Roberto Orci, Alex Kurtzman",
-        "description": "The Enterprise Arrives At The Yorktown Starbase For A Routine Mission, But When A Mysterious Alien Ship Attacks, Kirk And His Crew Must Defend The Starbase And The Federation Against The Unknown Threat."
-    },
-    {
-        "id": 31,
-        "title": "Stargate",
-        "release_date": "1994-08-09",
-        "director": "Roland Emmerich",
-        "producer": "Harvey Bernhard, Dean Devlin",
-        "description": "A desperate egiptologist and a team of scientists and soldiers travel through a Stargate to a distant planet to save Earth from a deadly plague."
-    },
-    {
-        "id": 32,
-        "title": "Stargate: The Ark of Truth",
-        "release_date": "2008-04-28",
-        "director": "Martin Wood",
-        "producer": "Harvey Bernhard, Dean Devlin",
-        "description": "The Ark of Truth is a 2008 American direct-to-DVD science fiction adventure film and the second sequel to the 1994 film Stargate. It was directed by Martin Wood and written by Brad Wright and Jonathan Glassner. It was released on April 28, 2008."
-    },
-    {
-        "id": 33,
-        "title": "Stargate: Continuum",
-        "release_date": "2008-04-28",
-        "director": "Martin Wood",
-        "producer": "Harvey Bernhard, Dean Devlin",
-        "description": "Sg-1 must travel back in time to prevent the Ori from destroying Earth."
-    },
-    {
-        "id": 34,
-        "title": "Martian",
-        "release_date": "2015-10-02",
-        "director": "Ridley Scott",
-        "producer": "Simon Kinberg, Ridley Scott, Michael Schaefer, Aditya Sood",
-        "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive."
-    },
-    {
-        "id": 35,
-        "title": "Interstellar",
-        "release_date": "2014-11-07",
-        "director": "Christopher Nolan",
-        "producer": "Christopher Nolan, Emma Thomas",
-        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
-    },
-    {
-        "id": 36,
-        "title": "Alita: Battle Angel",
-        "release_date": "2019-02-14",
-        "director": "Robert Rodriguez",
-        "description": "A cyberneticist discovers a girl with a mysterious past who is being hunted by a sinister organization."
-    },
-    {
-        "id": 37,
-        "title": "Dune",
-        "release_date": "2020-12-18",
-        "director": "Denis Villeneuve",
-        "producer": "",
-        "description": "The planet Arrakis "
-    }
-]
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Manito",
+        "description": "Cholinergic urticaria"
+      }
+    ]
+  }, {
+    "id": 14,
+    "title": "Beat Street",
+    "relase_year": 2005,
+    "description": "Encounter for fitting and adjustment of unspecified right artificial leg",
+    "rating": 2,
+    "season": 2,
+    "type": "Movie",
+    "genre": "Horror",
+    "quality": "HD",
+    "age_rating": 17,
+    "director": "Robby Marjoribanks",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Boy with Green Hair, The",
+        "description": "Maternal care for known or suspected placental insufficiency, unspecified trimester, other fetus"
+      }
+    ]
+  }, {
+    "id": 15,
+    "title": "Blood of the Beasts (Sang des bêtes, Le)",
+    "relase_year": 2014,
+    "description": "Unspecified injury of blood vessel of right middle finger, sequela",
+    "rating": 5,
+    "season": 5,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 15,
+    "director": "Shadow Pitkins",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+  
+    ]
+  }, {
+    "id": 16,
+    "title": "Servant, The",
+    "relase_year": 2021,
+    "description": "Acquired stenosis of right external ear canal secondary to inflammation and infection",
+    "rating": 3,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "HD",
+    "age_rating": 18,
+    "director": "Aylmar Eteen",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Skin Too Few: The Days of Nick Drake, A",
+        "description": "Dislocation of unspecified cervical vertebrae, subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x96.png/dddddd/000000",
+        "name": "A Night at the Movies: The Suspenseful World of Thrillers",
+        "description": "Military operations involving destruction of aircraft due to accidental detonation of onboard munitions and explosives, civilian"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Hucksters, The",
+        "description": "Traumatic rupture of palmar ligament of left middle finger at metacarpophalangeal and interphalangeal joint, sequela"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Miracles",
+        "description": "Displaced segmental fracture of shaft of humerus, left arm"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x93.png/5fa2dd/ffffff",
+        "name": "Robinson Crusoe (Daniel Defoe's Robinson Crusoe)",
+        "description": "Other fracture of upper end of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+      }
+    ]
+  }, {
+    "id": 17,
+    "title": "Rhinoceros",
+    "relase_year": 2005,
+    "description": "Drowning and submersion due to (nonpowered) inflatable craft overturning, initial encounter",
+    "rating": 4,
+    "season": 3,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "full HD",
+    "age_rating": 14,
+    "director": "Shannen Dodwell",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/5fa2dd/ffffff",
+        "name": "Tusk",
+        "description": "Nondisplaced fracture of base of neck of unspecified femur, initial encounter for closed fracture"
+      }
+    ]
+  }, {
+    "id": 18,
+    "title": "The great match",
+    "relase_year": 2022,
+    "description": "Minor laceration of vertebral artery",
+    "rating": 4,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Comedy",
+    "quality": "2K",
+    "age_rating": 18,
+    "director": "Nonna Limrick",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Captive (Cautiva) ",
+        "description": "Nonalcoholic steatohepatitis (NASH)"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Life and Debt",
+        "description": "Idiopathic aseptic necrosis of pelvis"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "alaskaLand",
+        "description": "Displaced fracture of base of fourth metacarpal bone, left hand, initial encounter for closed fracture"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Sunny (Sseo-ni)",
+        "description": "Salter-Harris Type III physeal fracture of right calcaneus, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Butterfly Kiss",
+        "description": "Unspecified atherosclerosis of autologous vein bypass graft(s) of the extremities, right leg"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x93.png/cc0000/ffffff",
+        "name": "It's a Great Feeling",
+        "description": "Athetoid cerebral palsy"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Nibelungen: Kriemhild's Revenge, Die (Die Nibelungen: Kriemhilds Rache)",
+        "description": "Displaced fracture of olecranon process with intraarticular extension of right ulna, subsequent encounter for closed fracture with routine healing"
+      }
+    ]
+  }, {
+    "id": 19,
+    "title": "Light of Day",
+    "relase_year": 2010,
+    "description": "Fracture of unspecified metatarsal bone(s), right foot, subsequent encounter for fracture with malunion",
+    "rating": 4,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "4K",
+    "age_rating": 13,
+    "director": "Cordy Drage",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Angus",
+        "description": "Other spotted fevers"
+      }
+    ]
+  }, {
+    "id": 20,
+    "title": "Stuck in Love",
+    "relase_year": 2023,
+    "description": "Person on outside of three-wheeled motor vehicle injured in collision with fixed or stationary object in nontraffic accident, sequela",
+    "rating": 2,
+    "season": 2,
+    "type": "Movie",
+    "genre": "Fantasy",
+    "quality": "HD",
+    "age_rating": 18,
+    "director": "Kristian Pummery",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x92.png/cc0000/ffffff",
+        "name": "Leatherheads",
+        "description": "Syphilitic saddle nose"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x93.png/ff4444/ffffff",
+        "name": "Kevin Nealon: Now Hear Me Out!",
+        "description": "Unspecified occupant of pick-up truck or van injured in collision with pedestrian or animal in traffic accident, initial encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Up in the Wind",
+        "description": "Breakdown (mechanical) of unspecified vascular grafts, sequela"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "What About Dick?",
+        "description": "Maternal care for fetal problem, unspecified, second trimester, fetus 3"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Perestroika",
+        "description": "Synovial hypertrophy, not elsewhere classified, right upper arm"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Condition Red (Beyond the Law)",
+        "description": "Other injury due to other accident on board water-skis, subsequent encounter"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "HealtH",
+        "description": "Unspecified injury of muscle, fascia and tendon of the posterior muscle group at thigh level, left thigh, initial encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Vice Versa",
+        "description": "Other mechanical complication of intraperitoneal dialysis catheter, sequela"
+      }
+    ]
+  }, {
+    "id": 21,
+    "title": "Bullet to the Head",
+    "relase_year": 2014,
+    "description": "Traumatic rupture of volar plate of right middle finger at metacarpophalangeal and interphalangeal joint, sequela",
+    "rating": 4,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Horror",
+    "quality": "2K",
+    "age_rating": 17,
+    "director": "Helenelizabeth Shelvey",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Silvestre",
+        "description": "Major laceration of femoral vein at hip and thigh level, unspecified leg, subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Naked Kiss, The",
+        "description": "Laceration of other muscles, fascia and tendons at forearm level, left arm, initial encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Ping Pong",
+        "description": "Other specified injury of muscle, fascia and tendon of the posterior muscle group at thigh level, unspecified thigh"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Somersault",
+        "description": "Poisoning by unspecified drugs, medicaments and biological substances, accidental (unintentional), sequela"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x100.png/ff4444/ffffff",
+        "name": "Me tulemme taas",
+        "description": "Posterior dislocation of unspecified hip, initial encounter"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x91.png/5fa2dd/ffffff",
+        "name": "Mr. Belvedere Goes to College",
+        "description": "Unspecified fracture of fourth thoracic vertebra, sequela"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Comfort and Joy",
+        "description": "Burn of unspecified degree of head, face, and neck, unspecified site, sequela"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Hour of the Wolf (Vargtimmen)",
+        "description": "Necrotizing enterocolitis of newborn"
+      }
+    ]
+  }, {
+    "id": 22,
+    "title": "Ju-on: The Grudge 2",
+    "relase_year": 2002,
+    "description": "Other mechanical complication of internal fixation device of bones of foot and toes, sequela",
+    "rating": 2,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Action",
+    "quality": "HD",
+    "age_rating": 18,
+    "director": "Belia De Nisco",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Ripley's Game",
+        "description": "Other superficial bite of left index finger, sequela"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Captive, The",
+        "description": "Person boarding or alighting a pick-up truck or van injured in collision with railway train or railway vehicle, subsequent encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Smiley's People",
+        "description": "Adverse effect of unspecified agents primarily affecting the gastrointestinal system"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Major and the Minor, The",
+        "description": "Other specified injury of innominate or subclavian artery"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Weight of the Nation",
+        "description": "Displaced fracture of medial malleolus of right tibia, subsequent encounter for closed fracture with nonunion"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x95.png/5fa2dd/ffffff",
+        "name": "Last of England, The",
+        "description": "Toxic effect of tetrachloroethylene, undetermined, sequela"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Conversation with Gregory Peck, A",
+        "description": "Unspecified fracture of lower end of right tibia, subsequent encounter for open fracture type I or II with nonunion"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Seopyeonje",
+        "description": "Congenital pneumonia due to Chlamydia"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "League of Ordinary Gentlemen, A",
+        "description": "Osteochondritis dissecans of shoulder"
+      }
+    ]
+  }, {
+    "id": 23,
+    "title": "Memento Mori (Yeogo goedam II)",
+    "relase_year": 2015,
+    "description": "Maternal care for disproportion of mixed maternal and fetal origin, fetus 1",
+    "rating": 3,
+    "season": 2,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "4K",
+    "age_rating": 14,
+    "director": "Rey Maliphant",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "European Vacation (aka National Lampoon's European Vacation)",
+        "description": "Displaced fracture of middle third of navicular [scaphoid] bone of left wrist, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x99.png/cc0000/ffffff",
+        "name": "It's Such a Beautiful Day",
+        "description": "Acute embolism and thrombosis of deep veins of right upper extremity"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x92.png/ff4444/ffffff",
+        "name": "Avalanche",
+        "description": "Corrosion of unspecified degree of elbow"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Blood and Concrete (Blood & Concrete: A Love Story)",
+        "description": "Other physeal fracture of upper end of right fibula, initial encounter for closed fracture"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x93.png/cc0000/ffffff",
+        "name": "Young Black Stallion, The",
+        "description": "Arthropathies in other specified diseases classified elsewhere, multiple sites"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "High Test Girls",
+        "description": "Injury of cutaneous sensory nerve at lower leg level, left leg"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x98.png/5fa2dd/ffffff",
+        "name": "Blood of Redemption",
+        "description": "Fall from other pedestrian conveyance, subsequent encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x92.png/ff4444/ffffff",
+        "name": "Smilla's Sense of Snow",
+        "description": "Fibrous dysplasia (monostotic), left upper arm"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x95.png/ff4444/ffffff",
+        "name": "Earth Girls Are Easy",
+        "description": "Abrasion of unspecified finger, sequela"
+      },
+      {
+        "id": 10,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "I Wanna Hold Your Hand",
+        "description": "Open angle with borderline findings, low risk, bilateral"
+      }
+    ]
+  }, {
+    "id": 24,
+    "title": "This American Journey",
+    "relase_year": 2004,
+    "description": "Osteochondritis dissecans, unspecified hip",
+    "rating": 2,
+    "season": 3,
+    "type": "Movie",
+    "genre": "Horror",
+    "quality": "full HD",
+    "age_rating": 12,
+    "director": "Katherine Gollard",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Skhizein",
+        "description": "Fatigue fracture of vertebra, sacral and sacrococcygeal region"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x96.png/dddddd/000000",
+        "name": "Queen of Blood",
+        "description": "Burn of other internal organ"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Stavisky...",
+        "description": "Exposure to other ionizing radiation, initial encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x93.png/ff4444/ffffff",
+        "name": "Unrated II: Scary as Hell",
+        "description": "Fracture of unspecified shoulder girdle, part unspecified, sequela"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Rollerball",
+        "description": "Assault by strike by sport equipment"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x91.png/cc0000/ffffff",
+        "name": "Nick Fury: Agent of S.H.I.E.L.D.",
+        "description": "Fracture of unspecified phalanx of left thumb, subsequent encounter for fracture with routine healing"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Sidewalls (Medianeras)",
+        "description": "Toxic effect of tin and its compounds, intentional self-harm, subsequent encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x98.png/dddddd/000000",
+        "name": "Mutantes",
+        "description": "Displaced bicondylar fracture of right tibia, sequela"
+      }
+    ]
+  }, {
+    "id": 25,
+    "title": "Melvin Goes to Dinner",
+    "relase_year": 2006,
+    "description": "Other infective bursitis, right ankle and foot",
+    "rating": 3,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Action",
+    "quality": "HD",
+    "age_rating": 15,
+    "director": "Irvin Boxe",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Tenderness (Hellyys)",
+        "description": "Fracture of unspecified phalanx of right little finger, subsequent encounter for fracture with delayed healing"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Blind Husbands",
+        "description": "Asphyxiation due to smothering under another person's body (in bed), assault, sequela"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Blood and Bone",
+        "description": "Bus occupant injured in collision with heavy transport vehicle or bus"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x92.png/cc0000/ffffff",
+        "name": "Come Sweet Death (Komm, süsser Tod)",
+        "description": "Unspecified injury of blood vessel of left ring finger, initial encounter"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Stakeout",
+        "description": "Other specified injury of femoral artery, left leg, subsequent encounter"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Numbers Station, The",
+        "description": "Toxic effect of other specified noxious substances eaten as food, intentional self-harm, subsequent encounter"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Johnny Got His Gun",
+        "description": "Burns involving 80-89% of body surface with 80-89% third degree burns"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Madam Satan",
+        "description": "Displaced fracture of base of second metacarpal bone. left hand, subsequent encounter for fracture with malunion"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "Street Mobster (a.k.a. Modern Yakuza: Outlaw Killer) (Gendai yakuza: hito-kiri yota)",
+        "description": "Osteochondropathy, unspecified, unspecified hand"
+      }
+    ]
+  }, {
+    "id": 26,
+    "title": "Leprechaun 2",
+    "relase_year": 2003,
+    "description": "Displaced fracture of lateral condyle of right femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing",
+    "rating": 2,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Action",
+    "quality": "2K",
+    "age_rating": 18,
+    "director": "Candis McFaul",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x91.png/5fa2dd/ffffff",
+        "name": "Tale of Tales (Skazka skazok)",
+        "description": "Salter-Harris Type II physeal fracture of upper end of radius, right arm, initial encounter for closed fracture"
+      }
+    ]
+  }, {
+    "id": 27,
+    "title": "Black Gold",
+    "relase_year": 2016,
+    "description": "Puncture wound with foreign body of right front wall of thorax with penetration into thoracic cavity, sequela",
+    "rating": 1,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "full HD",
+    "age_rating": 17,
+    "director": "Rubetta Hew",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Days of Glory (Indigènes)",
+        "description": "Loose body in unspecified hip"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Stitch! The Movie",
+        "description": "Testicular hypofunction"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/cc0000/ffffff",
+        "name": "Poor Little Rich Girl",
+        "description": "Health care provider office as the place of occurrence of the external cause"
+      }
+    ]
+  }, {
+    "id": 28,
+    "title": "Noah's Ark",
+    "relase_year": 2003,
+    "description": "Other specified crystal arthropathies, left shoulder",
+    "rating": 5,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 16,
+    "director": "Loreen Jozsef",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Anniversary, The",
+        "description": "Other specified injury of muscle and tendon of long extensor muscle of toe at ankle and foot level, unspecified foot, initial encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Little Children",
+        "description": "Rheumatoid heart disease with rheumatoid arthritis of multiple sites"
+      }
+    ]
+  }, {
+    "id": 29,
+    "title": "Some Mother's Son",
+    "relase_year": 2015,
+    "description": "Other disorders of bilirubin metabolism",
+    "rating": 4,
+    "season": 5,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "HD",
+    "age_rating": 18,
+    "director": "Elisha Palek",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Camilla",
+        "description": "Type 2 diabetes mellitus with periodontal disease"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x100.png/ff4444/ffffff",
+        "name": "Things Change",
+        "description": "Displaced fracture of neck of first metacarpal bone, left hand, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Black Legion",
+        "description": "Unspecified injury of intrinsic muscle, fascia and tendon of right thumb at wrist and hand level, initial encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x92.png/dddddd/000000",
+        "name": "Only Two Can Play",
+        "description": "Other articular cartilage disorders, left ankle"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "American Werewolf in Paris, An",
+        "description": "Unspecified fracture of right foot, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Dry Cleaning (Nettoyage à sec)",
+        "description": "Infection and inflammatory reaction due to internal right hip prosthesis"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Night of the Following Day, The",
+        "description": "Dislocation of C7/T1 cervical vertebrae, sequela"
+      }
+    ]
+  }, {
+    "id": 30,
+    "title": "Death of a Nation - The Timor Conspiracy",
+    "relase_year": 2020,
+    "description": "Nondisplaced comminuted fracture of left patella, subsequent encounter for closed fracture with delayed healing",
+    "rating": 2,
+    "season": 5,
+    "type": "Movie",
+    "genre": "Fantasy",
+    "quality": "4K",
+    "age_rating": 14,
+    "director": "Mame Attwood",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/ff4444/ffffff",
+        "name": "Saratoga Trunk",
+        "description": "Bicipital tendinitis, unspecified shoulder"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Human Touch",
+        "description": "Puncture wound without foreign body of right little finger without damage to nail, subsequent encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x100.png/5fa2dd/ffffff",
+        "name": "Precious Find",
+        "description": "Other specified injury of other specified muscles and tendons at ankle and foot level, right foot, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x91.png/5fa2dd/ffffff",
+        "name": "Better This World",
+        "description": "Bullous keratopathy, unspecified eye"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "In-Laws, The",
+        "description": "Meningoencephalitis due to Acanthamoeba (culbertsoni)"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Yesterday",
+        "description": "Methemoglobinemia, unspecified"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Pippi on the Run (På rymmen med Pippi Långstrump)",
+        "description": "Dissection of thoracoabdominal aorta"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "With Six You Get Eggroll",
+        "description": "Laceration with foreign body of right forearm, initial encounter"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x92.png/cc0000/ffffff",
+        "name": "Small Town, The (a.k.a. The Town) (Kasaba)",
+        "description": "Blister (nonthermal) of unspecified shoulder, sequela"
+      }
+    ]
+  }, {
+    "id": 31,
+    "title": "Hellboy II: The Golden Army",
+    "relase_year": 2021,
+    "description": "Toxic effect of contact with venomous toad, assault",
+    "rating": 2,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Thriller",
+    "quality": "full HD",
+    "age_rating": 16,
+    "director": "Duffy Simonato",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Pekka ja Pätkä puistotäteinä",
+        "description": "Nondisplaced fracture of coracoid process, left shoulder, initial encounter for closed fracture"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Toute la mémoire du monde",
+        "description": "Adverse effect of immunoglobulin, subsequent encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Fear City",
+        "description": "Displaced oblique fracture of shaft of right fibula, subsequent encounter for open fracture type I or II with nonunion"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Let the Right One In (Låt den rätte komma in)",
+        "description": "Unspecified acute conjunctivitis, bilateral"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "Dirty Dozen: The Deadly Mission",
+        "description": "Other osteoporosis with current pathological fracture, right shoulder, initial encounter for fracture"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Manny & Lo",
+        "description": "Driver of heavy transport vehicle injured in noncollision transport accident in traffic accident"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Bird on a Wire",
+        "description": "Low risk human papillomavirus (HPV) DNA test positive from female genital organs"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Tuff Turf",
+        "description": "Insect bite (nonvenomous) of right back wall of thorax, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 32,
+    "title": "Star Maker, The (Uomo delle stelle, L')",
+    "relase_year": 2002,
+    "description": "Open bite of unspecified external genital organs, female, sequela",
+    "rating": 2,
+    "season": 5,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 16,
+    "director": "Job Sutton",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Sabotage",
+        "description": "Primary iridocyclitis, bilateral"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Bollywood/Hollywood",
+        "description": "Struck by pig, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 33,
+    "title": "Parking Lot Movie, The",
+    "relase_year": 2012,
+    "description": "Toxic effect of other organic solvents, undetermined, initial encounter",
+    "rating": 4,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Thriller",
+    "quality": "HD",
+    "age_rating": 17,
+    "director": "Bobinette Attarge",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/5fa2dd/ffffff",
+        "name": "Mighty Ducks, The",
+        "description": "Laceration of unspecified renal artery, subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Godzilla vs. SpaceGodzilla (Gojira VS Supesugojira)",
+        "description": "Pathological fracture, right fibula"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Neon Genesis Evangelion: Death & Rebirth (Shin seiki Evangelion Gekijô-ban: Shito shinsei)",
+        "description": "Laceration without foreign body of pharynx and cervical esophagus, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Galaxy Express 999 (Ginga tetsudô Three-Nine)",
+        "description": "Secondary osteoarthritis, left elbow"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Goats",
+        "description": "Other subluxation of left foot, sequela"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Holocaust",
+        "description": "Conjunctival granuloma, left eye"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x93.png/5fa2dd/ffffff",
+        "name": "Two of Us, The (Le vieil homme et l'enfant)",
+        "description": "Fall from babystroller, initial encounter"
+      }
+    ]
+  }, {
+    "id": 34,
+    "title": "Blind Chance (Przypadek)",
+    "relase_year": 2016,
+    "description": "Subluxation and dislocation of T12/L1 thoracic vertebra",
+    "rating": 5,
+    "season": 5,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "4K",
+    "age_rating": 16,
+    "director": "Brenna Siggin",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Wyoming Renegades",
+        "description": "Term delivery with preterm labor, third trimester, fetus 2"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x92.png/ff4444/ffffff",
+        "name": "Tumannost Andromedy",
+        "description": "Dislocation of metacarpophalangeal joint of left little finger, initial encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x93.png/ff4444/ffffff",
+        "name": "Troy",
+        "description": "Unspecified injury of right shoulder and upper arm, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Notting Hill",
+        "description": "Unspecified car occupant injured in collision with railway train or railway vehicle in traffic accident, sequela"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "Trojan War",
+        "description": "Hypermobility syndrome"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Dawn Rider, The",
+        "description": "Underdosing of aspirin, initial encounter"
+      }
+    ]
+  }, {
+    "id": 35,
+    "title": "Girl Walks Into a Bar",
+    "relase_year": 2009,
+    "description": "Abrasion of unspecified upper arm, initial encounter",
+    "rating": 2,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "4K",
+    "age_rating": 14,
+    "director": "Angel Matterdace",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Michael Jordan to the Max",
+        "description": "Other injury of urethra"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x92.png/cc0000/ffffff",
+        "name": "My Fellow Americans",
+        "description": "Other reactive arthropathies, unspecified elbow"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Joan of Arc",
+        "description": "Contusion of left hand, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x97.png/5fa2dd/ffffff",
+        "name": "Sherlock Holmes: Dressed to Kill",
+        "description": "Enteropathic arthropathies, right shoulder"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x93.png/ff4444/ffffff",
+        "name": "Krush Groove",
+        "description": "Other fracture of first lumbar vertebra, subsequent encounter for fracture with routine healing"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x96.png/dddddd/000000",
+        "name": "Homecoming, The",
+        "description": "Burn of first degree of shoulder and upper limb, except wrist and hand"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x96.png/5fa2dd/ffffff",
+        "name": "Alien Nation",
+        "description": "Narcolepsy without cataplexy"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x98.png/dddddd/000000",
+        "name": "Make Way for Tomorrow",
+        "description": "Pathological fracture, unspecified ulna and radius, subsequent encounter for fracture with routine healing"
+      }
+    ]
+  }, {
+    "id": 36,
+    "title": "Animals United",
+    "relase_year": 2003,
+    "description": "Toxic effect of petroleum products, undetermined, subsequent encounter",
+    "rating": 2,
+    "season": 5,
+    "type": "Movie",
+    "genre": "Fantasy",
+    "quality": "2K",
+    "age_rating": 17,
+    "director": "Averill Befroy",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Dead Awake",
+        "description": "Poisoning by other general anesthetics, assault, initial encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x92.png/dddddd/000000",
+        "name": "The Hire: Hostage",
+        "description": "Abnormal chromosomal and genetic finding on antenatal screening of mother"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x95.png/ff4444/ffffff",
+        "name": "Shadows (Senki)",
+        "description": "Subluxation and dislocation of wrist and hand joints"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Easy to Love",
+        "description": "Other specified injury of dorsal vein of left foot"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "The Court-Martial of Jackie Robinson",
+        "description": "Puncture wound with foreign body, left knee"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Charlie Chan in Shanghai",
+        "description": "Other specified injury of left innominate or subclavian vein, sequela"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x91.png/cc0000/ffffff",
+        "name": "Punk in London",
+        "description": "Granulomatous disorders of skin and subcutaneous tissue"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "World Without End",
+        "description": "Fall into swimming pool striking water surface causing drowning and submersion"
+      }
+    ]
+  }, {
+    "id": 37,
+    "title": "Phase IV",
+    "relase_year": 2004,
+    "description": "Nondisplaced fracture of left ulna styloid process, subsequent encounter for open fracture type I or II with malunion",
+    "rating": 4,
+    "season": 2,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 14,
+    "director": "Gretchen Sandeland",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Absurdistan",
+        "description": "Other subluxation of unspecified shoulder joint"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Police",
+        "description": "Nondisplaced fracture of lateral condyle of left femur"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Let It Ride",
+        "description": "Minor laceration of left innominate or subclavian vein, initial encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Luster",
+        "description": "Peripheral tear of lateral meniscus, current injury, left knee"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Funny About Love",
+        "description": "Type 1 diabetes mellitus with hyperglycemia"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Watermelon Man",
+        "description": "Nondisplaced fracture of shaft of third metacarpal bone, left hand, subsequent encounter for fracture with delayed healing"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x93.png/5fa2dd/ffffff",
+        "name": "Three Days (Tres días)",
+        "description": "Poisoning by local anesthetics, accidental (unintentional), subsequent encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Slumber Party Massacre, The",
+        "description": "Nondisplaced comminuted fracture of shaft of unspecified fibula, subsequent encounter for open fracture type I or II with malunion"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "In Which We Serve",
+        "description": "Diverticulitis of small intestine with perforation and abscess without bleeding"
+      },
+      {
+        "id": 10,
+        "image": "http://dummyimage.com/x99.png/ff4444/ffffff",
+        "name": "Hidden, The",
+        "description": "Burn of third degree of single left finger (nail) except thumb, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 38,
+    "title": "Good Dick",
+    "relase_year": 2008,
+    "description": "Blister (nonthermal) of unspecified front wall of thorax, initial encounter",
+    "rating": 2,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "full HD",
+    "age_rating": 14,
+    "director": "Ethe Letteresse",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x96.png/dddddd/000000",
+        "name": "David Copperfield",
+        "description": "Other specified diabetes mellitus with hypoglycemia with coma"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x100.png/ff4444/ffffff",
+        "name": "I Hate Mondays, (Nie lubie poniedzialku)",
+        "description": "Neoplasm of unspecified behavior of breast"
+      }
+    ]
+  }, {
+    "id": 39,
+    "title": "Karan Arjun",
+    "relase_year": 2017,
+    "description": "Salter-Harris Type III physeal fracture of phalanx of right toe, sequela",
+    "rating": 1,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Horror",
+    "quality": "2K",
+    "age_rating": 14,
+    "director": "Cchaddie Cordero",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "State and Main",
+        "description": "Psychotic disorder with hallucinations due to known physiological condition"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Just Ask My Children",
+        "description": "Other specified disorders of binocular movement"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x100.png/ff4444/ffffff",
+        "name": "Wondrous Oblivion",
+        "description": "Obstetric hematoma of pelvis"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x98.png/dddddd/000000",
+        "name": "That Man from Rio",
+        "description": "Injury of unspecified nerve at wrist and hand level of right arm, subsequent encounter"
+      }
+    ]
+  }, {
+    "id": 40,
+    "title": "7th Heaven (Seventh Heaven)",
+    "relase_year": 2020,
+    "description": "Atherosclerosis of other coronary artery bypass graft(s) with other forms of angina pectoris",
+    "rating": 1,
+    "season": 1,
+    "type": "Movie",
+    "genre": "Thriller",
+    "quality": "2K",
+    "age_rating": 13,
+    "director": "Gus Kennion",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Boxing Gym",
+        "description": "Personal history of in utero procedure while a fetus"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x100.png/cc0000/ffffff",
+        "name": "Big Mommas: Like Father, Like Son",
+        "description": "Labor and delivery complicated by vasa previa, fetus 3"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x95.png/dddddd/000000",
+        "name": "Drinking Buddies",
+        "description": "Other injury of other extensor muscle, fascia and tendon at forearm level, right arm, initial encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Ike: Countdown to D-Day",
+        "description": "Nondisplaced transverse fracture of unspecified patella, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Bird",
+        "description": "Traumatic compartment syndrome of right lower extremity"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x98.png/cc0000/ffffff",
+        "name": "Nostalghia",
+        "description": "Unspecified foreign body in bronchus causing asphyxiation, sequela"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Special Forces (Forces spéciales)",
+        "description": "Balloon collision injuring occupant, subsequent encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Footnote (Hearat Shulayim)",
+        "description": "Spontaneous rupture of other tendons, multiple sites"
+      }
+    ]
+  }, {
+    "id": 41,
+    "title": "Hi-Yo Silver",
+    "relase_year": 2001,
+    "description": "Toxic effect of taipan venom, undetermined",
+    "rating": 5,
+    "season": 5,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "2K",
+    "age_rating": 13,
+    "director": "Farand Kovelmann",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x91.png/5fa2dd/ffffff",
+        "name": "New Gladiators (I guerrieri dell'anno 2072)",
+        "description": "Maternal care for excessive fetal growth, unspecified trimester, fetus 5"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x91.png/5fa2dd/ffffff",
+        "name": "Alien Outpost",
+        "description": "Puncture wound with foreign body of right little finger with damage to nail"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Career Opportunities",
+        "description": "Machinery accident on board fishing boat"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Eversmile, New Jersey",
+        "description": "Military operations, unspecified"
+      }
+    ]
+  }, {
+    "id": 42,
+    "title": "Five-Year Engagement, The",
+    "relase_year": 2007,
+    "description": "Injury of cutaneous sensory nerve at hip and thigh level, unspecified leg, sequela",
+    "rating": 3,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Fantasy",
+    "quality": "HD",
+    "age_rating": 17,
+    "director": "Bob Dugan",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/ff4444/ffffff",
+        "name": "Revenge of the Nerds",
+        "description": "Type III traumatic spondylolisthesis of sixth cervical vertebra, initial encounter for open fracture"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Mandabi (The Money Order)",
+        "description": "Staphylococcal arthritis, left knee"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/ff4444/ffffff",
+        "name": "Conjuring, The",
+        "description": "External constriction, right great toe, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x95.png/5fa2dd/ffffff",
+        "name": "Meteor",
+        "description": "Complete traumatic amputation at left shoulder joint"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Madame Satã",
+        "description": "Nondisplaced fracture of neck of right talus, initial encounter for open fracture"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Blind Swordsman: Zatoichi, The (Zatôichi)",
+        "description": "Poisoning by expectorants, intentional self-harm"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Accident",
+        "description": "Exudative retinopathy, unspecified eye"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x94.png/dddddd/000000",
+        "name": "Love Letters",
+        "description": "Occlusion and stenosis of unspecified middle cerebral artery"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Skippy",
+        "description": "Nondisplaced fracture of medial phalanx of right ring finger, sequela"
+      },
+      {
+        "id": 10,
+        "image": "http://dummyimage.com/x94.png/5fa2dd/ffffff",
+        "name": "Young Visiters, The",
+        "description": "Nondisplaced fracture of second metatarsal bone, right foot"
+      }
+    ]
+  }, {
+    "id": 43,
+    "title": "Nature of the Beast, The",
+    "relase_year": 2010,
+    "description": "Displaced oblique fracture of shaft of right ulna, subsequent encounter for closed fracture with malunion",
+    "rating": 3,
+    "season": 3,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "2K",
+    "age_rating": 16,
+    "director": "Gaven Szymanski",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x99.png/dddddd/000000",
+        "name": "C.O.G.",
+        "description": "Acquired clubfoot"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x91.png/cc0000/ffffff",
+        "name": "Loop the Loop (Up and Down) (Horem pádem)",
+        "description": "Contusion of other part of colon, sequela"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "BloodRayne: The Third Reich",
+        "description": "Injury of accessory nerve, left side"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x97.png/ff4444/ffffff",
+        "name": "Chained Heat",
+        "description": "Sedative, hypnotic or anxiolytic use, unspecified with withdrawal, uncomplicated"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Memories of Underdevelopment (Memorias del subdesarrollo)",
+        "description": "Nondisplaced fracture of epiphysis (separation) (upper) of unspecified femur, initial encounter for open fracture type IIIA, IIIB, or IIIC"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x97.png/cc0000/ffffff",
+        "name": "Deceit",
+        "description": "Separation of muscle (nontraumatic), ankle and foot"
+      }
+    ]
+  }, {
+    "id": 44,
+    "title": "Seventh Heaven (Septième ciel, Le)",
+    "relase_year": 2015,
+    "description": "Maternal care for hydrops fetalis, unspecified trimester, fetus 2",
+    "rating": 2,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Comedy",
+    "quality": "HD",
+    "age_rating": 12,
+    "director": "Milly Dugald",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Saints and Soldiers: Airborne Creed",
+        "description": "Person on outside of car injured in collision with two- or three-wheeled motor vehicle in traffic accident, sequela"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Close Encounters of the Third Kind",
+        "description": "Legal intervention involving unspecified gas, law enforcement official injured, sequela"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Jingle All the Way",
+        "description": "Toxic effect of nitroglycerin and other nitric acids and esters, intentional self-harm, sequela"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Gerhard Richter Painting",
+        "description": "Laceration with foreign body of other finger with damage to nail"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Gung Ho",
+        "description": "Open wound of vagina and vulva"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x100.png/dddddd/000000",
+        "name": "Looking for Maria Sanchez",
+        "description": "Poisoning by cardiac-stimulant glycosides and drugs of similar action, accidental (unintentional)"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x93.png/dddddd/000000",
+        "name": "Prison of the Dead",
+        "description": "Fibrosis due to internal orthopedic prosthetic devices, implants and grafts, initial encounter"
+      }
+    ]
+  }, {
+    "id": 45,
+    "title": "Blood and Black Lace (Sei donne per l'assassino)",
+    "relase_year": 2010,
+    "description": "Unspecified fracture of lower end of unspecified ulna, initial encounter for closed fracture",
+    "rating": 2,
+    "season": 1,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "4K",
+    "age_rating": 15,
+    "director": "Carolynn Ammer",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+  
+    ]
+  }, {
+    "id": 46,
+    "title": "Zookeeper",
+    "relase_year": 2003,
+    "description": "Injury of nerves and spinal cord at neck level",
+    "rating": 1,
+    "season": 3,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "full HD",
+    "age_rating": 17,
+    "director": "Ricky Lyal",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+  
+    ]
+  }, {
+    "id": 47,
+    "title": "Legend of Hercules, The",
+    "relase_year": 2015,
+    "description": "Poisoning by pertussis vaccine, including combinations with a pertussis component, assault, initial encounter",
+    "rating": 5,
+    "season": 4,
+    "type": "TV show",
+    "genre": "Drama",
+    "quality": "4K",
+    "age_rating": 18,
+    "director": "Sarita Searson",
+    "placeholder_poster": "http://dummyimage.com/x.png/cc0000/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Back Soon",
+        "description": "Pathological fracture in neoplastic disease, left hand"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x94.png/cc0000/ffffff",
+        "name": "Persuasion",
+        "description": "Displaced comminuted fracture of shaft of unspecified tibia, subsequent encounter for closed fracture with delayed healing"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Unholy",
+        "description": "Breakdown (mechanical) of internal fixation device of right femur, sequela"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x95.png/ff4444/ffffff",
+        "name": "Jerry Seinfeld: 'I'm Telling You for the Last Time'",
+        "description": "Displaced segmental fracture of shaft of ulna, unspecified arm, subsequent encounter for closed fracture with nonunion"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x100.png/5fa2dd/ffffff",
+        "name": "Mysterious Skin",
+        "description": "Nondisplaced fracture of shaft of left clavicle, subsequent encounter for fracture with delayed healing"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x95.png/cc0000/ffffff",
+        "name": "Genesis",
+        "description": "Unspecified superficial injury of right great toe, initial encounter"
+      }
+    ]
+  }, {
+    "id": 48,
+    "title": "Babylon 5: The Gathering",
+    "relase_year": 2014,
+    "description": "Military operations involving other firearms discharge, military personnel, subsequent encounter",
+    "rating": 4,
+    "season": 1,
+    "type": "TV show",
+    "genre": "Comedy",
+    "quality": "HD",
+    "age_rating": 17,
+    "director": "Haskel Flohard",
+    "placeholder_poster": "http://dummyimage.com/x.png/ff4444/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x95.png/5fa2dd/ffffff",
+        "name": "Kamchatka",
+        "description": "Burn of third degree of unspecified knee, subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Go for Sisters",
+        "description": "Laceration without foreign body of left back wall of thorax with penetration into thoracic cavity, initial encounter"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x96.png/ff4444/ffffff",
+        "name": "Cesar & Rosalie (César et Rosalie)",
+        "description": "Poisoning by, adverse effect of and underdosing of dental drugs, topically applied"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x98.png/ff4444/ffffff",
+        "name": "Big Blue, The (Grand bleu, Le)",
+        "description": "Other specified disorders of synovium and tendon, hip"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x91.png/ff4444/ffffff",
+        "name": "Quartet",
+        "description": "Displaced fracture of head of left radius, subsequent encounter for closed fracture with nonunion"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Sidestreet",
+        "description": "Other displaced fracture of base of first metacarpal bone, right hand, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x92.png/dddddd/000000",
+        "name": "Cop",
+        "description": "Burn of third degree of right axilla, sequela"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x92.png/dddddd/000000",
+        "name": "Some Came Running",
+        "description": "Other specified intracranial injury with loss of consciousness of 31 minutes to 59 minutes, initial encounter"
+      }
+    ]
+  }, {
+    "id": 49,
+    "title": "Purple Gang, The",
+    "relase_year": 2007,
+    "description": "Nondisplaced fracture of navicular [scaphoid] of right foot, subsequent encounter for fracture with nonunion",
+    "rating": 3,
+    "season": 4,
+    "type": "Movie",
+    "genre": "Comedy",
+    "quality": "full HD",
+    "age_rating": 13,
+    "director": "Bernice Glazier",
+    "placeholder_poster": "http://dummyimage.com/x.png/5fa2dd/ffffff",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Woman Rebels, A (Portrait of a Rebel)",
+        "description": "Unspecified injury of other muscles, fascia and tendons at forearm level, left arm, subsequent encounter"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Square, The (Al Midan)",
+        "description": "Struck by other psittacines"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x96.png/cc0000/ffffff",
+        "name": "Brightness (Yeelen)",
+        "description": "Traumatic hemorrhage of left cerebrum with loss of consciousness of 6 hours to 24 hours, subsequent encounter"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x99.png/5fa2dd/ffffff",
+        "name": "Hangtime - Kein leichtes Spiel",
+        "description": "Personal history of prostatic dysplasia"
+      }
+    ]
+  }, {
+    "id": 50,
+    "title": "Dracula",
+    "relase_year": 2000,
+    "description": "Poisoning by other parasympatholytics [anticholinergics and antimuscarinics] and spasmolytics, undetermined, sequela",
+    "rating": 5,
+    "season": 5,
+    "type": "Movie",
+    "genre": "Drama",
+    "quality": "HD",
+    "age_rating": 14,
+    "director": "Heida Henricsson",
+    "placeholder_poster": "http://dummyimage.com/x.png/dddddd/000000",
+    "episode": [
+      {
+        "id": 1,
+        "image": "http://dummyimage.com/x94.png/ff4444/ffffff",
+        "name": "Alphabet Killer, The",
+        "description": "Dislocation of proximal interphalangeal joint of right middle finger"
+      },
+      {
+        "id": 2,
+        "image": "http://dummyimage.com/x93.png/ff4444/ffffff",
+        "name": "Day After Trinity, The",
+        "description": "Unspecified subluxation of unspecified hip"
+      },
+      {
+        "id": 3,
+        "image": "http://dummyimage.com/x98.png/5fa2dd/ffffff",
+        "name": "Children of a Lesser God",
+        "description": "Major laceration of greater saphenous vein at hip and thigh level"
+      },
+      {
+        "id": 4,
+        "image": "http://dummyimage.com/x93.png/5fa2dd/ffffff",
+        "name": "Mischief Night",
+        "description": "Nondisplaced subtrochanteric fracture of left femur, subsequent encounter for open fracture type I or II with malunion"
+      },
+      {
+        "id": 5,
+        "image": "http://dummyimage.com/x100.png/5fa2dd/ffffff",
+        "name": "Rampage",
+        "description": "Unspecified fracture of shaft of humerus, left arm, subsequent encounter for fracture with nonunion"
+      },
+      {
+        "id": 6,
+        "image": "http://dummyimage.com/x92.png/5fa2dd/ffffff",
+        "name": "Allegro non troppo",
+        "description": "Burn of second degree of lower back"
+      },
+      {
+        "id": 7,
+        "image": "http://dummyimage.com/x97.png/dddddd/000000",
+        "name": "Overcoat, The (Il cappotto)",
+        "description": "Inferior subluxation of unspecified humerus, initial encounter"
+      },
+      {
+        "id": 8,
+        "image": "http://dummyimage.com/x94.png/dddddd/000000",
+        "name": "After School Special (a.k.a. Barely Legal)",
+        "description": "Burn of second degree of left forearm"
+      },
+      {
+        "id": 9,
+        "image": "http://dummyimage.com/x91.png/dddddd/000000",
+        "name": "Something Like Happiness (Stestí)",
+        "description": "Toxic effect of organophosphate and carbamate insecticides, accidental (unintentional)"
+      },
+      {
+        "id": 10,
+        "image": "http://dummyimage.com/x97.png/5fa2dd/ffffff",
+        "name": "40 Guns to Apache Pass",
+        "description": "Strain of unspecified muscles, fascia and tendons at thigh level, unspecified thigh, initial encounter"
+      }
+    ]
+  }]
+  
