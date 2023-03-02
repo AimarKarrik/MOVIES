@@ -4,13 +4,16 @@ import fs from "fs";
 export class MovieModel {
     public id: number;
     public title: string;
-    public year?: number;
+    public description?: string;
+    public releaseYear?: number;
     public quality?: string;
     public rating?: number;
-    public genres?: Array<string>;
-    public description?: string;
+    public ageRating?: string;
+    public genres?: string;
     public image?: string;
     public type?: string;
+    public seasons?: number;
+    public director?: string;
     public episodes: Array<object>;
 
     constructor(id: number, title: string) {
