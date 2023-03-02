@@ -21,12 +21,11 @@ export default function MainPage() {
             .then(data => { console.log(data); setMovies(data); })
     }, [])
 
-
     return (
         <>
             <NavBar />
             <div className='movie-category'>
-                <h1 className='category-title'>Trending</h1>
+                <h1 className='category-title'>Trending Movies</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
                         <MovieCard key={movie.id} movieData={movie} />
@@ -34,7 +33,7 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='movie-category'>
-                <h1 className='category-title'>New</h1>
+                <h1 className='category-title'>New Movies</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
                         <MovieCard key={movie.id} movieData={movie} />
@@ -42,7 +41,7 @@ export default function MainPage() {
                 </div>
             </div>
             <div className='movie-category'>
-                <h1 className='category-title'>For You</h1>
+                <h1 className='category-title'>Movies For You</h1>
                 <div className='movie-card-container'>
                     {movies.map(movie => (
                         <MovieCard key={movie.id} movieData={movie} />
