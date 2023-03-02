@@ -1,10 +1,11 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/graphics/imgs/movie-app logo.png';
-import '../styles/Navbar.css'
+import '../styles/Navbar.css';
+import { FaSearch } from 'react-icons/fa';
+import profile from '../assets/images/profile1.jpg';
+import { NavLink } from 'react-router-dom';
 
 
 function NavBar() {
@@ -19,20 +20,21 @@ function NavBar() {
         </Nav.Link>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='navlink' href="#movies">Movies</Nav.Link>
-            <Nav.Link className='navlink' href="#tvshows">TV shows</Nav.Link>
-            <Nav.Link className='navlink' href="#mylist">My List</Nav.Link>
-            <Nav.Link className='navlink' href="#categories">Categories</Nav.Link>
+            <NavLink className='navlink' to="/">Movies</NavLink>
+            <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
+            <NavLink className='navlink' to="/mylist">My List</NavLink>
+            <NavLink className='navlink' to="/categories">Categories</NavLink>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-primary">Search</Button>{' '}
-          </Form>
+          <div class="search-box">
+          <button class="btn-search"><FaSearch></FaSearch></button>
+          <input type="text" class="input-search" placeholder="Type to Search..."></input>
+          </div>
+          <NavLink className='profile' to="/profile">
+          <img
+            src={profile}
+            alt="profile"
+          />
+        </NavLink>
         </Navbar.Collapse>
       </Container>
     </Navbar>
