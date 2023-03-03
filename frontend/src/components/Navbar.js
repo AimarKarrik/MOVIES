@@ -20,10 +20,9 @@ function NavBar() {
         </Nav.Link>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavLink className='navlink' to="/">Movies</NavLink>
+            <NavLink className='navlink' to="/movies">Movies</NavLink>
             <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
-            <NavLink className='navlink' to="/mylist">My List</NavLink>
-            <NavLink className='navlink' to="/categories">Categories</NavLink>
+            <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
           <div class="search-box">
           <button class="btn-search"><FaSearch></FaSearch></button>
