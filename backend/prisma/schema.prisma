@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Screenplays {
+  id          Int        @id @default(autoincrement())
+  title       String
+  description String
+  director    String
+  releaseDate DateTime
+  genres      Json
+  ageRating   String
+  image       Bytes
+  rating      Float
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  Episodes    Episodes[]
+  Reviews     Reviews[]
+}
+
+model Episodes {
+  id           Int         @id @default(autoincrement())
+  title        String
+  description  String
+  season       Int
+  number       Int
+  releaseDate  DateTime
+  image        Bytes
+  rating       Float
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  screenplay   Screenplays @relation(fields: [screenplayId], references: [id])
+  screenplayId Int
+}
+
+model Genres {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Reviews {
+  id           Int         @id @default(autoincrement())
+  title        String
+  content      String
+  rating       Int
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  screenplay   Screenplays @relation(fields: [screenplayId], references: [id])
+  screenplayId Int
+  user         Users       @relation(fields: [userId], references: [id])
+  userId       Int
+}
+
+model Users {
+  id          Int       @id @default(autoincrement())
+  name        String
+  email       String    @unique
+  password    String
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  Reviews     Reviews[]
+  userFriends Friends[] @relation("user")
+  Friends     Friends[] @relation("friend")
+}
+
+model Friends {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      Users    @relation(fields: [userId], references: [id], name: "user")
+  userId    Int
+  friend    Users    @relation(fields: [friendId], references: [id], name: "friend")
+  friendId  Int
+}
