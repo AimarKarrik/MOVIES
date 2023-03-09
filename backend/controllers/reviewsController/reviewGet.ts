@@ -18,6 +18,7 @@ router.get('/', (req, res) => {
             "userID": 1,
         }
     ]
+    res.send(reviews);
 });
 
 export default router;
