@@ -16,7 +16,7 @@ model Screenplays {
   description String
   director    String
   releaseDate DateTime
-  genres      Json
+  genres      String @default("") // csv of genre names
   ageRating   String
   image       Bytes
   rating      Float
