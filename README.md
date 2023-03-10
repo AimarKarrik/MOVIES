@@ -37,7 +37,7 @@ before running the backend you need to create a .env file in the root of the bac
     DATABASE_URL="mysql://username:password@localhost:3306/movie"
 ```
 
-substitute the username annd password with your own.
+substitute the username and password with your own.
 
 to compose the mysql database docker container, run the following commands:
 
