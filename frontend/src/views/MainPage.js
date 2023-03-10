@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import '../assets/images/movieposter.png'
 import MovieCard from '../components/MovieCard';
 import NavBar from '../components/Navbar';
+import EpisodeDetails from '../components/EpisodeDetails';
+import MovieDetailView from '../components/MovieDetailView';
+import MovieList from '../components/MovieLists';
 import '../styles/MainPage.css'
 
 
