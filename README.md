@@ -44,6 +44,11 @@ to compose the mysql database docker container, run the following commands:
 ```bash
     docker-compose up
 ```
+To migrate database
+
+```bash
+    npx prisma migrate dev --name init
+```
 
 to run the back-end, run the following commands:
 
