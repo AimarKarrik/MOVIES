@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react'
 import '../assets/images/movieposter.png'
 import '../styles/MovieCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
-
-export default function MovieCard({ movieData }) {
-    const [details, setDetails] = useState(false);
-    const handleDetailsOpen = () => {
-        setDetails(true);
-    }
-    const handleDetailsClose = () => {
-        setDetails(false);
-    }
-    console.log(movieData);
-    return (
+export default function MovieCard ({ movieData }) {
+  const [details, setDetails] = useState(false)
+  const handleDetailsOpen = () => {
+    setDetails(true)
+  }
+  const handleDetailsClose = () => {
+    setDetails(false)
+  }
+  console.log(movieData)
+  return (
         <>
             <div className="movie-card" onClick={handleDetailsOpen}>
                 <div className='movie-card-image'></div>
                 <p className='movie-card-title'>{movieData.title}</p>
             </div>
-            {details ?
-                <div className='movie-details-container' onClick={handleDetailsClose}>
+            {details
+              ? <div className='movie-details-container' onClick={handleDetailsClose}>
                     <div className='movie-details'>
                         <div className='movie-details-header'>
                             <h1 className='movie-details-title'> {movieData.title} </h1>
@@ -37,7 +37,7 @@ export default function MovieCard({ movieData }) {
                         <h2 className='movie-episode-list-title'>Episodes</h2>
                         <div className='movie-details-episodes-list'>
                             {movieData.episodes.map((episode) => (
-                                <div className='movie-details-episode'>
+                                <div className='movie-details-episode' key={episode.id}>
                                     <h1 className='movie-details-episode-index'> {episode.id} </h1>
                                     <div className='movie-details-episode-thumbnail'></div>
                                     <div className='movie-details-episode-info'>
@@ -48,8 +48,9 @@ export default function MovieCard({ movieData }) {
                             ))}
                         </div>
                     </div>
-                </div> : ""
+                </div>
+              : ''
             }
         </>
-    )
+  )
 }

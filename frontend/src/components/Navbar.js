@@ -1,14 +1,14 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/graphics/imgs/movie-app logo.png';
-import '../styles/Navbar.css';
-import { FaSearch } from 'react-icons/fa';
-import profile from '../assets/images/profile1.jpg';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import logo from '../assets/graphics/imgs/movie-app logo.png'
+import '../styles/Navbar.css'
+import { FaSearch } from 'react-icons/fa'
+import profile from '../assets/images/profile1.jpg'
+import { NavLink } from 'react-router-dom'
 
-
-function NavBar() {
+function NavBar () {
   return (
     <Navbar expand="lg">
       <Container className='nav-container'>
@@ -24,20 +24,20 @@ function NavBar() {
             <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
             <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
-          <div class="search-box">
-          <button class="btn-search"><FaSearch></FaSearch></button>
-          <input type="text" class="input-search" placeholder="Type to Search..."></input>
+          <div className="search-box">
+            <button className="btn-search"><FaSearch></FaSearch></button>
+            <input type="text" className="input-search" placeholder="Type to Search..."></input>
           </div>
           <NavLink className='profile' to="/profile">
-          <img
-            src={profile}
-            alt="profile"
-          />
-        </NavLink>
+            <img
+              src={profile}
+              alt="profile"
+            />
+          </NavLink>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar
