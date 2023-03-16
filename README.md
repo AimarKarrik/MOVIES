@@ -2,36 +2,35 @@
 
 This repository contains the code for the Movie App Mobile App, web, and backend.
 
-## Front-end
+# Front-end
 
 The front-end is a React app.
 
-to run the front-end, run the following commands:
+Install npm packages.
+
+```bash
+    cd frontend
+    npm install
+```
+
+Run the app.
 
 ```bash
     cd frontend
     npm start
 ```
 
-install npm packages if needed:
+
+# Backend API running step by step guide
+
+## 1. Create a database
+Install docker desktop and run the following command to create a mysql database
 
 ```bash
-    cd frontend
-    npm install
+    docker-compose up
 ```
 
-## Back-end
-
-The back-end is a typescript express app.
-
-to install the packages, run the following commands:
-
-```bash
-    cd backend
-    npm install
-```
-
-before running the backend you need to create a .env file in the root of the backend folder with the following content:
+## 2. Create a .env file in the root of the backend folder with the following content:
 
 ```bash
     DATABASE_URL="mysql://username:password@localhost:3306/movie"
@@ -39,20 +38,23 @@ before running the backend you need to create a .env file in the root of the bac
 
 substitute the username and password with your own.
 
-to compose the mysql database docker container, run the following commands:
+## 3. Install npm packages
 
 ```bash
-    docker-compose up
+    cd backend
+    npm install
 ```
-To migrate database
+
+## 4. Migrate database
 
 ```bash
     npx prisma migrate dev --name init
 ```
 
-to run the back-end, run the following commands:
+## 5. Run the backend
 
 ```bash
     cd backend
     npm start
 ```
+
