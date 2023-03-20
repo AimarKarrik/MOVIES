@@ -2,7 +2,6 @@ import express from "express";
 import { getUserByEmail, createUser, deleteUser, updateUser } from "../services/userService";
 import User from "../models/userModel";
 import bcrypt from "bcrypt";
-import user from './../models/userModel';
 
 const router = express.Router();
 
