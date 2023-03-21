@@ -1,4 +1,4 @@
-export interface Screenplay {
+export default interface Screenplay {
     id: number;
     title: string;
     description: string;
