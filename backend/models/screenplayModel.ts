@@ -7,7 +7,7 @@ export default interface Screenplay {
     rating: number;
     director: string;
     ageRating: string;
-    image: BinaryData;
+    image: ArrayBuffer;
     createdAt: Date;
     updatedAt: Date;
 }
