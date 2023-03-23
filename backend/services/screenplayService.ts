@@ -21,9 +21,8 @@ export async function deleteScreenplayById(id: number) {
   return await prisma.screenplays.delete({ where: { id } })
 }
 
-export async function createScreenplay({id, title, description, director, image ,releaseDate, ageRating, rating}: {id: number, title: string, description: string, director:string, image:ArrayBuffer ,releaseDate: Date, ageRating: string, rating: number }) {
+export async function createScreenplay({ title, description, director, image ,releaseDate, ageRating, rating}: { title: string, description: string, director:string, image:ArrayBuffer ,releaseDate: Date, ageRating: string, rating: number }) {
   return await prisma.screenplays.create({
-    where : { id },
     data: {
       title: title,
       description: description,
