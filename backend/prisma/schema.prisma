@@ -18,7 +18,7 @@ model Screenplays {
   releaseDate DateTime
   genres      String @default("") // csv of genre names
   ageRating   String
-  image       Bytes
+  image       Bytes?
   rating      Float
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
