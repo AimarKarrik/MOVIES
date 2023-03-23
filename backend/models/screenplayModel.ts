@@ -2,7 +2,7 @@ export default interface Screenplay {
     id: number;
     title: string;
     description: string;
-    genres: string[];
+    genres: string;
     releaseDate: Date;
     rating: number;
     director: string;
