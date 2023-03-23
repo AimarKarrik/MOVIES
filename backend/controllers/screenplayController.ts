@@ -1,6 +1,6 @@
-import express from "express"; // impordib webframework'i et teha API endpointid
-import { deleteScreenplayById, getScreenplayById, getScreenplays } from "../services/screenplaysService"; // impordib data query funktsioonid teisest failist
-import { Screenplay } from "../models/screenplayModel"; // impordib screenplay tüübi
+import express from "express";
+import { getScreenplays, getScreenplayById, deleteScreenplayById } from "../services/screenplayService";
+import Screenplay from "../models/screenplayModel";
 
 const router = express.Router(); //võtab tööriistakastist välja routingu tööriistad
 
