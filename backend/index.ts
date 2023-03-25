@@ -11,9 +11,11 @@ const port: number = 3001;
 app.use(routes);
 
 // Populate DB with demo data if it is empty
-if( !getScreenplays({ page: 1, pageSize: 1 })){
-    populateScreenplays();
-}
+getScreenplays({page: 1, pageSize: 10}).then((screenplays) => {
+    if (screenplays.length === 0) {
+        populateScreenplays();
+    }
+});
  
 app.listen(port, () => {
     console.log(`Movies backend server is running on http://localhost:${port}/`);
