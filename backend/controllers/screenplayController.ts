@@ -8,11 +8,7 @@ router.get('/', async (req, res) => {
     const page: number = parseInt(req.query.page as string); 
     const pageSize: number = parseInt(req.query.pageSize as string); 
     
-    const screenplays: Array<Screenplay> | null = await getScreenplays({page, pageSize}); 
-    if (!screenplays) { 
-        res.status(404).send({message:"Not found"}); 
-        return; 
-    }
+    const screenplays: Array<Screenplay> = await getScreenplays({page, pageSize}); 
     res.send(screenplays); 
 });
 

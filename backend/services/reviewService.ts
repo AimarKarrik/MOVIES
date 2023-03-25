@@ -1,6 +1,5 @@
 import prisma from "./prisma";
 import Review from '../models/reviewModel';
-import ReviewCreate from './../models/reviewCreateModel';
 
 export async function getReviewsByScreenplay({ page, pageSize, screenplayId }: { page: number, pageSize: number, screenplayId: number }) {
     const reviews: Review[] | null = await prisma.reviews.findMany({ skip: (page - 1) * pageSize, take: pageSize, where: { screenplayId } });
@@ -20,16 +19,14 @@ export async function getReviewById(id: number) {
     return review
 }
 
-export async function createReview(review: ReviewCreate) {
-    let { title, content, rating, screenplayId, userId } = review;
-    const result: Review = await prisma.reviews.create({ data: { title, content, rating, screenplayId, userId } });
+export async function createReview({ title, content, rating, screenplayId, userId }: { title: string, content: string, rating: number, screenplayId: number, userId: number }) {
+    const review: Review = await prisma.reviews.create({ data: { title, content, rating, screenplayId, userId } });
 
-    return result
+    return review
 }
 
-export async function updateReview(review: Review) {
-    let { id, title, content, rating } = review;
-    const result: Review | null = await prisma.reviews.update({
+export async function updateReview({ id, title, content, rating }: { id: number, title: string, content: string, rating: number }) {
+    const review: Review = await prisma.reviews.update({
         where: { id },
         data: {
             title: title,
@@ -38,7 +35,7 @@ export async function updateReview(review: Review) {
         }
     });
 
-    return result
+    return review
 }
 
 export async function deleteReview(id: number) {
