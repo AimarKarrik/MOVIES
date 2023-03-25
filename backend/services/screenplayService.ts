@@ -17,9 +17,8 @@ export async function deleteScreenplayById(id: number) {
   return await prisma.screenplays.delete({ where: { id } })
 }
 
-export async function createScreenplay(screenplay: Screenplay) {
-  let { title, description, director, image, releaseDate, genres, ageRating, rating } = screenplay;
-  const result: Screenplay = await prisma.screenplays.create({
+export async function createScreenplay({ title, description, director, image ,releaseDate, genres ,ageRating, rating}: { title: string, description: string, director:string, image:ArrayBuffer ,releaseDate: Date, genres: string , ageRating: string, rating: number }) {
+  const screenplay: Screenplay = await prisma.screenplays.create({
     data: {
       title: title,
       description: description,
@@ -31,12 +30,11 @@ export async function createScreenplay(screenplay: Screenplay) {
       rating: rating,
     }
   })
-  return result;
+  return screenplay;
 }
 
-export async function updateScreenplay(screenplay: Screenplay) {
-  let { id, title, description, director, image, releaseDate, genres, ageRating, rating } = screenplay;
-  const result: Screenplay = await prisma.screenplays.update({
+export async function updateScreenplay({id, title, description, director, releaseDate, genres , ageRating, rating}: {id: number,title: string, description: string, director:string, releaseDate: Date, genres:string ,ageRating: string, rating: number}) {
+  const screenplay: Screenplay = await prisma.screenplays.update({
     where : { id },
     data: {
       title: title,
@@ -48,6 +46,6 @@ export async function updateScreenplay(screenplay: Screenplay) {
       rating: rating,
     }
   })
-  return result;
+  return screenplay;
 }
 

@@ -1,5 +1,5 @@
 export default interface Screenplay {
-    id?: number;
+    id: number;
     title: string;
     description: string;
     genres: string;
@@ -8,6 +8,6 @@ export default interface Screenplay {
     director: string;
     ageRating: string;
     image: ArrayBuffer;
-    createdAt?: Date;
-    updatedAt?: Date;
+    createdAt: Date;
+    updatedAt: Date;
 }
