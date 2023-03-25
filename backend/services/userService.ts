@@ -7,8 +7,9 @@ export async function getUserByEmail(email: string) {
     return user;
 }
 
-export async function createUser({ email, password, name }: { email: string, password: string, name: string }) {
-    const user: User = await prisma.users.create({
+export async function createUser(user: User) {
+    let { email, password, name } = user;
+    const result: User = await prisma.users.create({
         data: {
             email: email,
             password: password,
@@ -16,7 +17,7 @@ export async function createUser({ email, password, name }: { email: string, pas
         }
     });
 
-    return user;
+    return result;
 }
 
 export async function deleteUser(email: string) {
@@ -25,8 +26,9 @@ export async function deleteUser(email: string) {
     return user;
 }
 
-export async function updateUser({ email, password, name }: { email: string, password: string, name: string }) {
-    const user: User = await prisma.users.update({
+export async function updateUser(user: User) {
+    let { email, password, name } = user;
+    const result: User = await prisma.users.update({
         where: { email: email },
         data: {
             email: email,
@@ -35,5 +37,5 @@ export async function updateUser({ email, password, name }: { email: string, pas
         }
     });
 
-    return user;
+    return result;
 }
