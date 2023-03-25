@@ -4,7 +4,7 @@ import Screenplay from '../models/screenplayModel';
 
 
 export async function populateScreenplays() {
-    const screenplayData = JSON.parse(fs.readFileSync("./demoData/moviesDemoData.json", 'utf8'));
+    const screenplayData = JSON.parse(fs.readFileSync("./demoData/moviesData.json", 'utf8'));
     for (const screenplay of screenplayData) {
         const screenplayNacissaryData: Screenplay = {
             title: screenplay.title,
@@ -20,3 +20,4 @@ export async function populateScreenplays() {
         console.log(screenplayNacissaryData);
     }
 };
+
