@@ -19,12 +19,13 @@ export async function deleteScreenplayById(id: number) {
 
 export async function createScreenplay(screenplay: Screenplay) {
   let { title, description, director, image, releaseDate, genres, ageRating, rating } = screenplay;
+  
   const result: Screenplay = await prisma.screenplays.create({
     data: {
       title: title,
       description: description,
       director: director,
-      image: Buffer.from(image),
+      image: null,
       releaseDate: releaseDate,
       genres: genres,
       ageRating: ageRating,
