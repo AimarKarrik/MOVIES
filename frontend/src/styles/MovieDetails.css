@@ -1,0 +1,62 @@
+
+
+.movie-details {
+    background: #1B1C30;
+    border-radius: 10px;
+    margin-top: 6%;
+
+    width: 50%;
+    max-width: 797px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-back {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.movie-details-header {
+    height: 330px;
+    width: 100%;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-image: url('../assets/images/movieposter.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.movie-details-header > * {
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+
+.movie-details-title{
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Montserrat;
+}
+
+.movie-details-info {
+    align-self: flex-start;
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+.movie-details-info > span {
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.movie-details-description {
+    text-align: left;
+    font-size: 16px;
+    width: 90%;
+}

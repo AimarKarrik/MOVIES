@@ -1,24 +1,25 @@
 import React from 'react';
-import '../assets/images/movieposter.png'
-import '../styles/MovieCard.css'
+import '../styles/EpisodeDetails.css';
 
-function EpisodeDetails() {
-    return
-    (
-        <>
-                        <h2 className='movie-episode-list-title'>Episodes</h2>
-                        <div className='movie-details-episodes-list'>
-                            {movieData.episodes.map((episode) => (
-                                <div className='movie-details-episode'>
-                                    <h1 className='movie-details-episode-index'> {episode.id} </h1>
-                                    <div className='movie-details-episode-thumbnail'></div>
-                                    <div className='movie-details-episode-info'>
-                                        <p className='movie-details-episode-title'>{episode.title}</p>
-                                        <p className='movie-details-episode-description'>{episode.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-        </>
-    )
-}
+function EpisodeDetails({ movieData }) {
+    if (!movieData) {return null;}
+    return (
+        <div className="episode-list">
+          <h2 className="title">Episodes</h2>
+          <div className="details">
+            {movieData.episodes.map((episodeDetails) => (
+              <div className="episode" key={episodeDetails.id}>
+                <h1 className="index">{episodeDetails.id}</h1>
+                <div className="thumbnail"></div>
+                <div className="info">
+                  <p className="episode-title">{episodeDetails.title}</p>
+                  <p className="description">{episodeDetails.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+export default EpisodeDetails;

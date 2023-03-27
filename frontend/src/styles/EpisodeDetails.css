@@ -1,0 +1,61 @@
+.title {
+    font-size: 20px;
+    align-self: start;
+    margin-left: 5%;
+}
+
+.details {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.episode {
+    background-color: #242540;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.index {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.thumbnail {
+    width: 148px;
+    min-width: 148px;
+    height: 100%;
+    background-image: url('../assets/images/movieposter.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    margin: 0px 10px;
+}
+
+.description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.episode-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}
