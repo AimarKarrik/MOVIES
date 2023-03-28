@@ -1,0 +1,40 @@
+.otherProfile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+
+  padding: 25px;
+
+  background-color: #242540;
+}
+
+.otherProfile-picture {
+  height: 200px;
+  aspect-ratio: 1;
+
+  border-radius: 100%;
+
+  background-image: url(../assets/images/profile1.jpg);
+  background-size: cover;
+}
+
+.otherProfile-name {
+  margin-top: 15px;
+
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.otherProfile-join-time {
+  margin-top: 5px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
