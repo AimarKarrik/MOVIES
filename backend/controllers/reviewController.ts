@@ -14,7 +14,7 @@ router.get('/ByUser', async (req, res) => {
     const user: user | null = await getUserByEmail(req.query.email as string);
     if (!user) return res.status(404).send("User not found");
 
-    const userId: number = user.id as number;
+    const userId: number = user.id;
 
     const reviews: Review[] = await getReviewsByUser({ page, pageSize, userId });
 
