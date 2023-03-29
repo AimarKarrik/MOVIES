@@ -1,4 +1,4 @@
-import MovieCategory from '../components/MovieCategory';
+import MovieCard from '../components/MovieCard';
 import NavBar from '../components/Navbar';
 import useMovies from '../hooks/useMovies';
 import '../styles/OtherProfile.css';
@@ -17,8 +17,22 @@ export default function OtherProfile() {
         <div className='otherProfile-join-time'>Joined in March 2023</div>
       </div>
 
-      <MovieCategory title='Liked List' movies={movies} />
-      <MovieCategory title='Reviews' movies={movies} />
+      <div className='movie-category'>
+        <h1 className='category-title'>Liked List</h1>
+        <div className='movie-card-container'>
+          {movies.map((movie) => (
+            <MovieCard key={movie.id} movieData={movie} />
+          ))}
+        </div>
+      </div>
+      <div className='movie-category'>
+        <h1 className='category-title'>Reviews</h1>
+        <div className='movie-card-container'>
+          {movies.map((movie) => (
+            <MovieCard key={movie.id} movieData={movie} />
+          ))}
+        </div>
+      </div>
     </>
   );
 }
