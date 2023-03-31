@@ -7,7 +7,6 @@ import { FaSearch } from 'react-icons/fa';
 import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
 
-
 function NavBar() {
   return (
     <Navbar expand="lg">
@@ -24,9 +23,9 @@ function NavBar() {
             <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
             <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
-          <div class="search-box">
-          <button class="btn-search"><FaSearch></FaSearch></button>
-          <input type="text" class="input-search" placeholder="Type to Search..."></input>
+          <div className="search-box">
+          <button className="btn-search"><FaSearch></FaSearch></button>
+          <input type="text" className="input-search" placeholder="Type to Search..."></input>
           </div>
           <NavLink className='profile' to="/profile">
           <img
