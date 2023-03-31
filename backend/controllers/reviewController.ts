@@ -42,11 +42,11 @@ router.get('/ById', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const reviewData: { userId: number, screenplayId: number, rating: number, content: string, title: string } = {
-        userId: parseInt(req.query.userId as string),
-        screenplayId: parseInt(req.query.screenplayId as string),
-        rating: parseInt(req.query.rating as string),
-        content: req.query.content as string,
-        title: req.query.title as string
+        userId: req.body.userId,
+        screenplayId: req.body.screenplayId,
+        rating: req.body.rating,
+        content: req.body.content,
+        title: req.body.title
     };
 
     if (reviewData.userId === 0 || reviewData.screenplayId === 0 || reviewData.rating === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
@@ -89,10 +89,10 @@ router.delete('/', async (req, res) => {
 
 router.put('/', async (req, res) => {
     const reviewData: { id: number, title: string, content: string, rating: number } = {
-        id: parseInt(req.query.id as string),
-        title: req.query.title as string,
-        content: req.query.content as string,
-        rating: parseInt(req.query.rating as string)
+        id: req.body.id,
+        title: req.body.title,
+        content: req.body.content,
+        rating: req.body.rating
     };
 
     if (reviewData.id === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
