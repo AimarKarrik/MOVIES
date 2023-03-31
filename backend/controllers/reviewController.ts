@@ -1,9 +1,11 @@
 import express from "express";
 import Review from "../models/reviewModel";
 import user from './../models/userModel';
-import { getReviewsByUser, getReviewsByScreenplay, getReviewById, createReview, deleteReview, updateReview } from "../services/reviewService";
+import { getReviewsByUser, getReviewsByScreenplayPaged, getReviewById, createReview, deleteReview, updateReview, getReviewsByScreenplay } from "../services/reviewService";
+import { getScreenplayById, updateScreenplay } from "../services/screenplayService";
 import { getUserByEmail } from "../services/userService";
-import { title } from "process";
+import Screenplay from "../models/screenplayModel";
+import { Reviews } from "@prisma/client";
 
 const router = express.Router();
 
@@ -26,7 +28,7 @@ router.get('/ByScreenplay', async (req, res) => {
     const pageSize: number = parseInt(req.query.pageSize as string);
     const screenplayId: number = parseInt(req.query.screenplayId as string);
 
-    const reviews: Review[] = await getReviewsByScreenplay({ page, pageSize, screenplayId });
+    const reviews: Review[] = await getReviewsByScreenplayPaged({ page, pageSize, screenplayId });
 });
 
 router.get('/ById', async (req, res) => {
@@ -40,11 +42,11 @@ router.get('/ById', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const reviewData: { userId: number, screenplayId: number, rating: number, content: string, title: string } = {
-        userId: parseInt(req.query.userId as string),
-        screenplayId: parseInt(req.query.screenplayId as string),
-        rating: parseInt(req.query.rating as string),
-        content: req.query.content as string,
-        title: req.query.title as string
+        userId: req.body.userId,
+        screenplayId: req.body.screenplayId,
+        rating: req.body.rating,
+        content: req.body.content,
+        title: req.body.title
     };
 
     if (reviewData.userId === 0 || reviewData.screenplayId === 0 || reviewData.rating === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
@@ -55,6 +57,22 @@ router.post('/', async (req, res) => {
     }
 
     const review: Review = await createReview(reviewData);
+
+    const screenplay: Screenplay | null = await getScreenplayById(reviewData.screenplayId);
+    
+    if (!screenplay) {
+        res.status(500).send("Internal Server Error");
+        return
+    }
+
+    const reviews: Review[] | null = await getReviewsByScreenplay(reviewData.screenplayId);
+    
+    const averageRating = reviews.reduce((total, review) => {
+        return total + review.rating;
+    },  0) / reviews.length;
+
+    screenplay.rating = averageRating;
+    await updateScreenplay(screenplay);
 
     return res.send(review);
 });
@@ -71,10 +89,10 @@ router.delete('/', async (req, res) => {
 
 router.put('/', async (req, res) => {
     const reviewData: { id: number, title: string, content: string, rating: number } = {
-        id: parseInt(req.query.id as string),
-        title: req.query.title as string,
-        content: req.query.content as string,
-        rating: parseInt(req.query.rating as string)
+        id: req.body.id,
+        title: req.body.title,
+        content: req.body.content,
+        rating: req.body.rating
     };
 
     if (reviewData.id === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
