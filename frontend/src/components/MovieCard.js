@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../assets/images/movieposter.png';
 import '../styles/MovieCard.css';
+import Popup from './Popup';
 
 function MovieCard({ movieData }) {
-  const [details, setDetails] = useState(false);
-  const handleDetailsOpen = () => {
-    setDetails(true);
-  };
+
   console.log(movieData);
   return (
-      <div className="movie-card" onClick={handleDetailsOpen}>
+      <div className="movie-card">
         <div className="movie-card-image" alt='movieposter.png'></div>
-        <p className="movie-card-title">{movieData.title}</p>
+        <p className="movie-card-title"></p>
+        <Popup />
       </div>
   );
 }

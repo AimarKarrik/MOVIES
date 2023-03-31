@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
-import MovieDetails from './MovieDetails';
-import EpisodeDetails from './EpisodeDetails';
 import '../styles/Popup.css';
 import '../assets/images/movieposter.png';
+import MovieCard from './MovieCard';
 
-function Popup ({ movieData}) {
+export default function Popup({movieData}) {
     const [details, setDetails] = useState(false);
+
+    const handleDetailsOpen = () => {
+        setDetails(true);
+    };
 
     const handleDetailsClose = () => {
         setDetails(false);
-    };
-
-    return (
-        <>
-            <div className="popup-container">
+    }
+    console.log(movieData);
+    return(
+        <div>
+        <MovieCard className="movie-card" onClick={handleDetailsOpen}/>
                 <div className="popup-image" alt='movieposter.png'></div>
+                <div className='popup-container' onClick={handleDetailsClose}></div>
                 </div>
-                {details && (
-                    <div className="popup-container" onClick={handleDetailsClose}>
-                        <MovieDetails movieDetails={movieData}/>
-                        <EpisodeDetails EpisodeDetails={movieData.EpisodeDetails}/>
-                    </div>
-                )}
-        </>
-    );
-};
-export default Popup;
+                
+    )
+
+}

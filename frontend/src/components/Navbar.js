@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/graphics/imgs/movie-app logo.png';
 import '../styles/Navbar.css';
-import { FaSearch } from 'react-icons/fa';
 import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
+import Search from './Search';
 
 
 function NavBar() {
@@ -24,10 +24,7 @@ function NavBar() {
             <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
             <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
-          <div class="search-box">
-          <button class="btn-search"><FaSearch></FaSearch></button>
-          <input type="text" class="input-search" placeholder="Type to Search..."></input>
-          </div>
+          <Search />
           <NavLink className='profile' to="/profile">
           <img
             src={profile}

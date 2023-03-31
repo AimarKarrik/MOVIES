@@ -49,20 +49,21 @@ export default function MainPage( ) {
     return (
         <div className="main-page">
             <div>
-        <MovieList title={'New movies'} />
+        <MovieList title={'New TV shows'} />
         <div className='movie-card-container'>
         {movies.map(movie => (
           <MovieCard 
-            key={movie.id} movieData={movie}
-            episodeData={episodes.find(episode => episode.id === movie.episodeId)}
+            key={movie.id}
+            movieData={movie} 
+            episodeData={episodes.find(episode => episode.id === movie.episodeId)} 
             onClick={() => handleDetailsOpen(movie)}
           />
-        ))}    
+        ))}
         </div>
         </div>
 
 <div>
-        <MovieList title={'Trending movies'} />
+        <MovieList title={'Trending TV shows'} />
         <div className='movie-card-container'>
         {movies.map(movie => (
           <MovieCard 
