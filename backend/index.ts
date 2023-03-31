@@ -13,7 +13,7 @@ const port: number = 3001;
 export const sessions: Array<{ token: string, userId: number, createdAt: Date }> = [];
 
 app.use(routes);
-app.use(verifyToken(req: Request, res: Response, next: NextFunction));
+app.use(verifyToken);
 
 
 // Populate DB with demo data if it is empty
