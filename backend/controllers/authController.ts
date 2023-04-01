@@ -4,6 +4,7 @@ import { getUserByEmail } from '../services/userService';
 import { sessions } from '../index';
 import bcrypt from 'bcrypt';
 import crypto from 'crypto';
+import Session from './../models/sessionModel';
 
 const router = express.Router();
 
@@ -14,7 +15,7 @@ router.get('/login', async (req, res) => {
     const user: User | null = await getUserByEmail(email);
 
     if (!user) {
-        res.status(404).send({ message: "Not found" })
+        res.status(401).send({ message: "Unauthorized" })
         return;
     }
 
@@ -23,11 +24,13 @@ router.get('/login', async (req, res) => {
         return;
     }
 
+
     // generate token using bcrypt
     const token: string = crypto.randomBytes(64).toString('hex');
-    sessions.push({ token: token, userId: user.id, createdAt: new Date() });
+    const newSession: Session = { token: token, userId: user.id, createdAt: new Date() };
+    sessions.push(newSession);
     
-    res.send({ token: token, status: 200, message: "OK" });
+    res.status(200).send({ token: token, status: 200, message: "OK" });
 });
 
 export default router;

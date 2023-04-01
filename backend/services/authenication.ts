@@ -1,5 +1,6 @@
 import { sessions } from '../index';
 import { Request, Response, NextFunction } from 'express';
+import Session from '../models/sessionModel';
 
 export function verifyToken(req: Request, res: Response, next: NextFunction) {
     var excludedPaths = ['/auth/login'];
@@ -10,8 +11,8 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     }
 
 
-    const token:string = req.headers.token as string;
-    const session = sessions.find(session => session.token === token);
+    const token: string = req.headers.token as string;
+    const session: Session | undefined = sessions.find(session => session.token === token);
     if (!session) {
         res.status(401).send({ message: "Unauthorized" });
         return;
@@ -25,7 +26,6 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
         return;
     }
 
-    // save the session in the request so that we can use it in the controller
-
+    req.userSession = session;
     next();
 }    
