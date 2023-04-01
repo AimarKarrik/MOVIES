@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     const page: number = parseInt(req.query.page as string); 
     const pageSize: number = parseInt(req.query.pageSize as string); 
     
-    const screenplays: Array<Screenplay> = await getScreenplays({page, pageSize}); 
+    const screenplays: Array<Screenplay> | null = await getScreenplays({page, pageSize}); 
     res.send(screenplays); 
 });
 
@@ -39,11 +39,11 @@ router.post('/', async (req, res) => {
     title: req.body.title,
     description: req.body.description,
     director: req.body.director,
-    image: new ArrayBuffer(parseInt(req.body.image)),
+    image: new ArrayBuffer (req.body.image),
     releaseDate: new Date(req.body.releaseDate),
     genres: req.body.director,
     ageRating:req.body.ageRating,
-    rating: parseInt(req.body.rating),
+    rating: req.body.rating
     };
 
     if (screenplayData.rating === 0 || screenplayData.title.length === 0) {
@@ -61,15 +61,15 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
     const screenplayData: { id: number, title:string, description:string, director:string, image:ArrayBuffer ,releaseDate:Date, genres: string ,ageRating: string, rating:number} = {
-        id: parseInt(req.body.id),
+        id: req.body.id,
         title: req.body.title,
         description: req.body.description,
         director: req.body.director,
-        image: new ArrayBuffer(parseInt(req.body.image)),
+        image: new ArrayBuffer(req.body.image),
         releaseDate: new Date(req.body.releaseDate),
         genres: req.body.director,
         ageRating:req.body.ageRating,
-        rating: parseInt(req.body.rating),
+        rating: req.body.rating
         };
 
         if (screenplayData.id === 0 || screenplayData.title.length === 0) {

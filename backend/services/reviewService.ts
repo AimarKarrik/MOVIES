@@ -1,8 +1,14 @@
 import prisma from "./prisma";
 import Review from '../models/reviewModel';
 
-export async function getReviewsByScreenplay({ page, pageSize, screenplayId }: { page: number, pageSize: number, screenplayId: number }) {
+export async function getReviewsByScreenplayPaged({ page, pageSize, screenplayId }: { page: number, pageSize: number, screenplayId: number }) {
     const reviews: Review[] | null = await prisma.reviews.findMany({ skip: (page - 1) * pageSize, take: pageSize, where: { screenplayId } });
+
+    return reviews
+}
+
+export async function getReviewsByScreenplay(screenplayId : number) { 
+    const reviews: Review[] | null = await prisma.reviews.findMany({ where: { screenplayId } });
 
     return reviews
 }

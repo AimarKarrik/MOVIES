@@ -19,9 +19,9 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
-        email: req.query.email as string,
-        password: req.query.password as string,
-        name: req.query.name as string
+        email: req.body.email,
+        password: req.body.password,
+        name: req.body.name
     };
 
     if (userData.email.length === 0 || userData.password.length === 0 || userData.name.length === 0) {
@@ -63,9 +63,9 @@ router.delete('/', async (req, res) => {
 //untested
 router.put('/', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
-        email: req.query.email as string,
-        password: req.query.password as string,
-        name: req.query.name as string
+        email: req.body.email,
+        password: req.body.password,
+        name: req.body.name
     };
 
     if (userData.email.length === 0 || userData.password.length === 0 || userData.name.length === 0) {
