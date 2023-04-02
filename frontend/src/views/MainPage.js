@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/images/movieposter.png'
-import MovieCard from '../components/ScreenplayCard';
+import ScreenplayList from '../components/ScreenplayList';
 import NavBar from '../components/Navbar';
 import '../styles/MainPage.css'
 
@@ -21,17 +21,12 @@ export default function MainPage() {
             .then(data => { console.log(data); setScreenplay(data); })
     }, [])
 
+    console.log(screenplay);
     return (
         <>
             <NavBar />
-            <div className='movie-category'>
-                <h1 className='category-title'>Trending screenplay</h1>
-                <div className='movie-card-container'>
-                    {screenplay.map(screenplay => (
-                        <MovieCard key={screenplay.id} screenplay={screenplay} />
-                    ))}
-                </div>
-            </div>
+            <ScreenplayList screenplays={screenplay} listTitle={"New Movies"} />
+            <ScreenplayList screenplays={screenplay} listTitle={"Recomended Movies"} />
         </>
     )
 }

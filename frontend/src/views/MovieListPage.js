@@ -3,12 +3,11 @@ import { useState, useEffect } from 'react'
 import NavBar from '../components/Navbar'
 import MovieCard from '../components/ScreenplayCard'
 import '../styles/MovieListPage.css'
-import '../App.css'
 
 
 
 export default function MovieListPage() {
-    const [movies, setMovies] = useState([])
+    const [screenplays, setScreenplays] = useState([])
 
     useEffect(() => {
         console.log("useEffect");
@@ -19,17 +18,17 @@ export default function MovieListPage() {
             }
         })
             .then(response => response.json())
-            .then(data => { console.log(data); setMovies(data); })
+            .then(data => { console.log(data); setScreenplays(data); })
     }, [])
 
 
     return (
         <>
             <NavBar />
-            <h1>Movies</h1>
-            <div className='movie-list-container'>
-                {movies.map(movie => (
-                    <MovieCard key={movie.id} movieData={movie} />
+            <h1 className='page-title'>Movies</h1>
+            <div className='movie-container'>
+                {screenplays.map(screenplay => (
+                    <MovieCard key={screenplay.id} screenplay={screenplay} />
                 ))}
             </div>
         </>

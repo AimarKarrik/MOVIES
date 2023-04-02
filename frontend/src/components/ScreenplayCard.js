@@ -11,9 +11,9 @@ export default function ScreenplayCard({ screenplay }) {
     }
     return (
         <>
-            <div className="movie-card" onClick={handleDetails}>
-                <div className='movie-card-image'></div>
-                <p className='movie-card-title'>{screenplay.title}</p>
+            <div className="card" onClick={handleDetails}>
+                <div className='card-image'></div>
+                <p>{screenplay.title}</p>
             </div>
             {details ? <ScreenplayDetailPopup screenplay={screenplay} onClick={handleDetails} /> : ""}
         </>

@@ -7,8 +7,8 @@ import ScreenplayDetails from './ScreenplayDetails';
 
 export default function ScreenplayDetailPopup({ screenplay }) {
     return (
-        <div className='movie-details-container'>
-            <div className='movie-details'>
+        <div className='details-container'>
+            <div className='details'>
                 <ScreenplayDetailsHeader screenplay={screenplay} />
                 <ScreenplayDetails screenplay={screenplay} />
             </div>

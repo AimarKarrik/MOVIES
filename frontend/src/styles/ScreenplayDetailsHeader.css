@@ -1,52 +1,61 @@
-.movie-details-header {
-    height: 330px;
+
+.details-header {
+    background-image: url("../assets/images/movieposter.png");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
     width: 100%;
-    min-height: 330px;
+    align-self: flex-start;
+    border-radius: 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-radius: 10px;
-    background-image: url('../assets/images/movieposter.png');
-    background-size: cover;
-    background-position: center center;
+
+    padding-left: 2%;
 }
 
-.movie-details-header > * {
-    margin-bottom: 10px;
-    margin-left: 5%;
+.details-header h1 {
+    font-size: 32px;
+    margin: 0;
 }
 
-.movie-details-title{
-    font-weight: 700;
-    font-size: 40px;
-    font-family: Montserrat;
-}
-
-.movie-details-buttons {
+.details-buttons {
     display: flex;
     align-content: center;
+    align-items: baseline;   
 }
 
-.movie-details-buttons > * {
-    margin-right: 10px;
-}
-
-.movie-details-watch-button {
-    width: 140px;
-    height: 30px;
-    background-color: white;
+.like-button {
+    background-color: #fff;
     border: none;
-    border-radius: 5px;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: Montserrat;
-}
-
-.movie-details-like-button {
+    border-radius: 100%;
+    display: inline;
     height: 30px;
     width: 30px;
-    background-color: white;
+}
+
+.watch-button {
+    background-color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius: 10px;
+    display: inline;
+    height: 30px;
+    width: 100px;
+}
+
+.close-button {
+    background-color: crimson;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.details-buttons > * {
+    margin-right: 2%;
 }
