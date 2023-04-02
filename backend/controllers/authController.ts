@@ -25,7 +25,6 @@ router.get('/login', async (req, res) => {
     }
 
 
-    // generate token using bcrypt
     const token: string = crypto.randomBytes(64).toString('hex');
     const newSession: Session = { token: token, userId: user.id, createdAt: new Date() };
     sessions.push(newSession);

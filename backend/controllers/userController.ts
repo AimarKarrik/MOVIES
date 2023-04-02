@@ -2,6 +2,7 @@ import express from "express";
 import { getUserByEmail, createUser, deleteUser, updateUser } from "../services/userService";
 import User from "../models/userModel";
 import bcrypt from "bcrypt";
+import { verifyAdmin } from "../services/authenication";
 
 const router = express.Router();
 
@@ -17,7 +18,7 @@ router.get('/', async (req, res) => {
 });
 
 
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
         email: req.body.email,
         password: req.body.password,
@@ -46,7 +47,7 @@ router.post('/', async (req, res) => {
     const user: User = await createUser(userData);
 
     const cleanUser = { ...user, password: undefined, id: undefined };
-    return res.send(cleanUser);
+    return res.status(200).send(cleanUser);
 });
 
 
@@ -60,7 +61,7 @@ router.delete('/', async (req, res) => {
     return res.send(cleanUser);
 });
 
-//untested
+
 router.put('/', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
         email: req.body.email,

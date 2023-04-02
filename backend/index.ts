@@ -5,12 +5,14 @@ import { getScreenplays } from './services/screenplayService';
 import { populateScreenplays } from './demoData/populateDB';
 import Screenplay from './models/screenplayModel';
 import { verifyToken } from './services/authenication';
+import Session from './models/sessionModel';
 
 const app: express.Application = express();
 app.use(cors());
+app.use(express.json());
 const port: number = 3001;
 
-export const sessions: Array<{ token: string, userId: number, createdAt: Date }> = [];
+export const sessions: Session[] = [];
 
 app.use(routes);
 app.use(verifyToken);

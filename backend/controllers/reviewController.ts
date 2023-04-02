@@ -78,8 +78,10 @@ router.post('/', async (req, res) => {
 });
 
 
-router.delete('/', async (req, res) => {
-    const reviewId: number = parseInt(req.query.reviewId as string);
+router.delete('/:id', async (req, res) => {
+    const reviewId: number = parseInt(req.params.id);
+
+    
 
     const review: Review | null = await deleteReview(reviewId);
     if (!review) return res.status(404).send("Review not found");
