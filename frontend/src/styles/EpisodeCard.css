@@ -1,0 +1,46 @@
+.movie-details-episode {
+    background-color: #242540;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.movie-details-episode-index {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.movie-details-episode-thumbnail {
+    width: 148px;
+    min-width: 148px;
+    height: 100%;
+    background-image: url('../assets/images/movieposter.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.movie-details-episode-info {
+    margin: 0px 10px;
+}
+
+.movie-details-episode-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.movie-details-episode-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+}

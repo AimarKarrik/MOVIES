@@ -1,0 +1,16 @@
+.movie-details-info {
+    align-self: flex-start;
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+.movie-details-info > span {
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.movie-details-description {
+    text-align: left;
+    font-size: 16px;
+    width: 90%;
+}

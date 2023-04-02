@@ -1,0 +1,14 @@
+.movie-episode-list-title {
+    font-size: 20px;
+    align-self: start;
+    margin-left: 5%;
+}
+
+.movie-details-episodes-list {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
