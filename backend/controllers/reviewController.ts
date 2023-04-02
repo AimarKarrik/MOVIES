@@ -5,7 +5,6 @@ import { getReviewsByUser, getReviewsByScreenplayPaged, getReviewById, createRev
 import { getScreenplayById, updateScreenplay } from "../services/screenplayService";
 import { getUserByEmail } from "../services/userService";
 import Screenplay from "../models/screenplayModel";
-import { Reviews } from "@prisma/client";
 
 const router = express.Router();
 
@@ -29,6 +28,8 @@ router.get('/ByScreenplay', async (req, res) => {
     const screenplayId: number = parseInt(req.query.screenplayId as string);
 
     const reviews: Review[] = await getReviewsByScreenplayPaged({ page, pageSize, screenplayId });
+
+    res.send(reviews);
 });
 
 router.get('/ById', async (req, res) => {
@@ -42,16 +43,13 @@ router.get('/ById', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const reviewData: { userId: number, screenplayId: number, rating: number, content: string, title: string } = {
-        userId: req.body.userId,
+        userId: req.currentSession!.userId,
         screenplayId: req.body.screenplayId,
         rating: req.body.rating,
         content: req.body.content,
         title: req.body.title
     };
 
-    if (reviewData.userId === 0 || reviewData.screenplayId === 0 || reviewData.rating === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
-    }
     if (!reviewData.userId || !reviewData.screenplayId || !reviewData.rating || !reviewData.content || !reviewData.title) {
         return res.status(400).send("Missing required fields");
     }
@@ -59,17 +57,17 @@ router.post('/', async (req, res) => {
     const review: Review = await createReview(reviewData);
 
     const screenplay: Screenplay | null = await getScreenplayById(reviewData.screenplayId);
-    
+
     if (!screenplay) {
         res.status(500).send("Internal Server Error");
         return
     }
 
     const reviews: Review[] | null = await getReviewsByScreenplay(reviewData.screenplayId);
-    
+
     const averageRating = reviews.reduce((total, review) => {
         return total + review.rating;
-    },  0) / reviews.length;
+    }, 0) / reviews.length;
 
     screenplay.rating = averageRating;
     await updateScreenplay(screenplay);
@@ -78,15 +76,21 @@ router.post('/', async (req, res) => {
 });
 
 
-router.delete('/:id', async (req, res) => {
-    const reviewId: number = parseInt(req.params.id);
+router.delete('/', async (req, res) => {
+    const reviewId: number = parseInt(req.query.id as string);
 
-    
+    const review: Review | null = await getReviewById(reviewId);
+    if (!review){
+        return res.status(404).send("Review not found");
+    }
+    if (review.userId !== req.currentSession!.userId){
+        return res.status(401).send("Unauthorized");
+    } 
 
-    const review: Review | null = await deleteReview(reviewId);
-    if (!review) return res.status(404).send("Review not found");
 
-    return res.send(review);
+    const deletedReview: Review | null = await deleteReview(reviewId);
+
+    return res.send(deletedReview);
 });
 
 router.put('/', async (req, res) => {
@@ -96,18 +100,22 @@ router.put('/', async (req, res) => {
         content: req.body.content,
         rating: req.body.rating
     };
-
-    if (reviewData.id === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
-    }
+    
     if (!reviewData.id || !reviewData.content || !reviewData.title || !reviewData.rating) {
         return res.status(400).send("Missing required fields");
     }
 
-    const review: Review | null = await updateReview(reviewData);
-    if (!review) return res.status(404).send("Review not found");
+    const review: Review | null = await getReviewById(reviewData.id);
+    if (!review){
+        return res.status(404).send("Review not found");
+    }
+    if (review.userId !== req.currentSession!.userId){
+        return res.status(401).send("Unauthorized");
+    } 
+    
+    const updatedReview: Review | null = await updateReview(reviewData);
 
-    return res.send(review);
+    return res.send(updatedReview);
 });
 
 export default router;

@@ -5,9 +5,20 @@ import User from '../models/userModel';
 import { getUserById } from '../services/userService';
 
 export function verifyToken(req: Request, res: Response, next: NextFunction) {
-    var excludedPaths = ['/auth/login', '/users/register'];
-
-    if (excludedPaths.indexOf(req.path) > -1) {
+    var excludedPaths: { path: string, method: string }[] = [
+        { path: "/auth/login", method: "GET" },
+        { path: "/users/register", method: "POST" },
+        { path: "/screenplays", method: "GET" },
+        { path: '/screenplays/ById', method: "GET" },
+        { path: "/reviews/ByUser", method: "GET" },
+        { path: "/reviews/ByScreenplay", method: "GET" },
+        { path: "/reviews/ById", method: "GET" }
+    ];
+    console.log(excludedPaths);
+    const excludedPath: { path: string, method: string } | undefined = excludedPaths.find(path => path.path === req.path && path.method === req.method);
+    console.log(excludedPath);
+    console.log(req.path);
+    if (excludedPath) {
         next();
         return;
     }
@@ -15,33 +26,27 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const token: string = req.headers.token as string;
     const session: Session | undefined = sessions.find(session => session.token === token);
     if (!session) {
-        res.status(401).send({ status: 401, message: "Unauthorized" });
-        return;
+        return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
-    const now = new Date();
+    const now: Date = new Date();
     const diff = now.getTime() - session.createdAt.getTime();
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
-        res.status(401).send({ status: 401, message: "Unauthorized" });
-        return;
+
+        return res.status(401).send({ status: 401, message: "Unauthorized1" });
     }
 
     req.currentSession = session;
     next();
 }
 
-export async function verifyAdmin(req: Request, res: Response, next: NextFunction) {
-    const user: User | null = await getUserById(req.currentSession!.userId);
+export async function verifyAdmin(currentSession: Session | undefined) {
+    const user: User | null = await getUserById(currentSession!.userId);
 
     if (!user) {
-        res.status(401).send({ status: 401, message: "Unauthorized" });
-        return;
-    }
-    if (!user.isAdmin) {
-        res.status(401).send({ status: 401, message: "Unauthorized" });
-        return;
+        return false;
     }
 
-    next();
+    return user.isAdmin;
 }

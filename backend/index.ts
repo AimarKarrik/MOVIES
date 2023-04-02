@@ -14,8 +14,8 @@ const port: number = 3001;
 
 export const sessions: Session[] = [];
 
+// app.use(verifyToken);
 app.use(routes);
-app.use(verifyToken);
 
 
 // Populate DB with demo data if it is empty

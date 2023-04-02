@@ -6,7 +6,7 @@ import authController from '../controllers/authController';
 
 const router = Router();
 
-router.use('/movies', screenplayController);
+router.use('/screenplays', screenplayController);
 router.use('/reviews', reviewsController);
 router.use('/users', userController);
 router.use('/auth', authController);

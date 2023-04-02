@@ -1,20 +1,18 @@
 import express from "express";
-import { getUserByEmail, createUser, deleteUser, updateUser } from "../services/userService";
+import { getUserByEmail, createUser, deleteUser, updateUser, getUserById } from "../services/userService";
 import User from "../models/userModel";
 import bcrypt from "bcrypt";
-import { verifyAdmin } from "../services/authenication";
 
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const email: string = req.query.email as string;
 
-    const user: User | null = await getUserByEmail(email);
+    const user: User | null = await getUserById(req.currentSession!.userId);
     if (!user) return res.status(404).send("User not found");
 
     const cleanUser = { ...user, password: undefined, id: undefined };
 
-    res.send(cleanUser);
+    res.send({ status: 200, message: "User found", user: cleanUser, session: req.currentSession });
 });
 
 
@@ -47,14 +45,13 @@ router.post('/register', async (req, res) => {
     const user: User = await createUser(userData);
 
     const cleanUser = { ...user, password: undefined, id: undefined };
-    return res.status(200).send(cleanUser);
+    return res.status(200).send({ status: 200, message: "User created", user: cleanUser });
 });
 
 
 router.delete('/', async (req, res) => {
-    const email: string = req.query.email as string;
 
-    const user: User | null = await deleteUser(email);
+    const user: User | null = await deleteUser(req.currentSession!.userId);
     if (!user) return res.status(404).send("User not found");
 
     const cleanUser = { ...user, password: undefined, id: undefined };
@@ -63,7 +60,8 @@ router.delete('/', async (req, res) => {
 
 
 router.put('/', async (req, res) => {
-    const userData: { email: string, password: string, name: string } = {
+    const userData: {id: number, email: string, password: string, name: string } = {
+        id: req.currentSession!.userId,
         email: req.body.email,
         password: req.body.password,
         name: req.body.name

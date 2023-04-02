@@ -25,15 +25,15 @@ export async function createUser({ email, password, name }: { email: string, pas
     return user;
 }
 
-export async function deleteUser(email: string) {
-    const user: User | null = await prisma.users.delete({ where: { email: email } });
+export async function deleteUser(id: number) {
+    const user: User | null = await prisma.users.delete({ where: { id: id } });
 
     return user;
 }
 
-export async function updateUser({ email, password, name }: { email: string, password: string, name: string }) {
+export async function updateUser({ id, email, password, name }: { id: number, email: string, password: string, name: string }) {
     const user: User = await prisma.users.update({
-        where: { email: email },
+        where: { id: id },
         data: {
             email: email,
             password: password,
