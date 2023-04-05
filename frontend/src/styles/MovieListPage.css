@@ -1,4 +1,5 @@
 
+
 .movie-container {
     display: grid;
     gap: 1%;
@@ -8,9 +9,35 @@
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 1%;
+    padding-bottom: 2%;
 }
 
 .page-title {
     margin-left: 15%;
     margin-top: 2%;
+}
+
+.page-selector-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    height: 5vh;
+}
+
+.page-selector {
+    border: none;
+    border-radius: 5px;
+    background-color: #494d83;
+    color: #fff;
+    margin: 0 0.5%;
+    height: 3vh;
+    width: 3vh;
+    font-size: 2vh;
+}
+
+.page-selector:hover {
+    background-color: #e7e7e7;
+    color: #494d83;
+    cursor: pointer;
+    transition: 0.2s;
 }
