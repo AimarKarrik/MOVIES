@@ -18,7 +18,7 @@ export default function MainPage() {
             }
         })
             .then(response => response.json())
-            .then(data => { console.log(data); setScreenplay(data); })
+            .then(data => { setScreenplay(data); })
     }, [])
 
     console.log(screenplay);
