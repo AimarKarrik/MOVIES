@@ -14,7 +14,9 @@ export async function getScreenplayById(id: number) {
 }
 
 export async function deleteScreenplayById(id: number) {
-  return await prisma.screenplays.delete({ where: { id } })
+  const screenplay: Screenplay | null = await prisma.screenplays.findUnique({ where: { id } })
+
+  return screenplay;
 }
 
 export async function createScreenplay(screenplay: Screenplay) {
@@ -54,6 +56,6 @@ export async function updateScreenplay(screenplay: Screenplay) {
 
 export async function getScreenplayPages(pageSize: number) {
   const screenplays: Screenplay[] | null = await prisma.screenplays.findMany();
-  const pages = Math.ceil(screenplays.length / pageSize);
+  const pages: number = Math.ceil(screenplays.length / pageSize);
   return pages;
 }
