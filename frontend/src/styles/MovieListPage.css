@@ -1,0 +1,16 @@
+
+.movie-container {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
+
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+}
+
+.page-title {
+    margin-left: 15%;
+    margin-top: 2%;
+}

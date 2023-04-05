@@ -22,7 +22,7 @@ export default function ScreenplayDetails() {
             }
         })
             .then(response => response.json())
-            .then(data => { console.log(data); setScreenplay(data); })
+            .then(data => { console.log(data); setScreenplay(data.data); })
     }, [id])
 
 

@@ -1,5 +1,5 @@
 import express, { query } from "express";
-import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay } from "../services/screenplayService";
+import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, getScreenplayPages } from "../services/screenplayService";
 import Screenplay from "../models/screenplayModel";
 import { verifyAdmin } from "../services/authenication";
 
@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     const pageSize: number = parseInt(req.query.pageSize as string);
 
     const screenplays: Screenplay[] | null = await getScreenplays({ page, pageSize });
-    res.send(screenplays);
+    res.status(200).send({ status: 200, message: "Success", data: screenplays, pageCount: await getScreenplayPages(pageSize) });
 });
 
 

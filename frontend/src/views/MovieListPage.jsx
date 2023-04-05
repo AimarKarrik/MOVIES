@@ -8,6 +8,7 @@ import '../styles/MovieListPage.css'
 
 export default function MovieListPage() {
     const [screenplays, setScreenplays] = useState([])
+    const [page, setPage] = useState(1)
 
     useEffect(() => {
         console.log("useEffect");
@@ -18,7 +19,7 @@ export default function MovieListPage() {
             }
         })
             .then(response => response.json())
-            .then(data => { console.log(data); setScreenplays(data); })
+            .then(data => { console.log(data); setScreenplays(data.data); })
     }, [])
 
 
