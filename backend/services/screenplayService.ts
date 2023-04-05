@@ -52,3 +52,19 @@ export async function updateScreenplay(screenplay: Screenplay) {
   return result;
 }
 
+export async function searchScreenplays({ query, page, pageSize }: { query: string, page: number, pageSize: number }) {
+  const screenplays: Screenplay[] | null = await prisma.screenplays.findMany({
+    skip: (page - 1) * pageSize,
+    take: pageSize,
+    where: {
+      OR: [
+        { title: { contains: query } },
+        { description: { contains: query } },
+        { director: { contains: query } },
+        { genres: { contains: query } },
+        { ageRating: { contains: query } },
+      ]
+    }
+  });
+  return screenplays;
+}

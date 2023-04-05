@@ -1,5 +1,5 @@
-import express, { query } from "express";
-import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay } from "../services/screenplayService";
+import express from "express";
+import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, searchScreenplays } from "../services/screenplayService";
 import Screenplay from "../models/screenplayModel";
 import { verifyAdmin } from "../services/authenication";
 
@@ -13,6 +13,12 @@ router.get('/', async (req, res) => {
     res.send(screenplays);
 });
 
+router.get('/search', async (req, res) => {
+    const {query, page, pageSize } = req.query;
+
+    const results = await searchScreenplays({ query: query as string, page: parseInt(page as string), pageSize: parseInt(pageSize as string) });
+    res.send(results);
+});
 
 router.get('/ById', async (req, res) => {
     const id: number = parseInt(req.query.id as string);

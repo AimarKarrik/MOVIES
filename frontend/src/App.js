@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import MainPage from './views/MainPage';
 import MyProfile from './views/MyProfile';
