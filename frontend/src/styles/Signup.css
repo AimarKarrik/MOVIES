@@ -60,14 +60,12 @@
   .link-btn {
     background: none;
     color: #B0B4FF;
-    text-decoration: underline;
     font-family: Montserrat;
   }
 
   .link-btn-two {
     background: none;
     color: #B0B4FF;
-    text-decoration: underline;
     font-family: Montserrat;
     margin-top: -15px
   }
@@ -86,4 +84,11 @@
 
   ::placeholder{
     color: #1B1C30;
+  }
+
+  .link {
+    background: none;
+    color: #B0B4FF;
+    font-family: Montserrat;
+    align-self: center;
   }
