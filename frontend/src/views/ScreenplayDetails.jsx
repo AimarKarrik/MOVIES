@@ -41,7 +41,7 @@ export default function ScreenplayDetails() {
             <h1>{screenplay.title}</h1>
             <FontAwesomeIcon
               icon={faShareNodes}
-              style={{ color: "#ffffff", fontSize: "24px" }}
+              className="share-icon"
               onClick={() => {
                 navigator.clipboard.writeText(
                   "http://localhost:3000" + location.pathname

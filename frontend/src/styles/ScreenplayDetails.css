@@ -70,3 +70,15 @@
     font-size: 10px;
     color: #fff;
 }
+
+.share-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.share-icon:hover {
+    cursor: pointer;
+    color: #d4d4d4;
+    transition: 0.2s;
+}
+
