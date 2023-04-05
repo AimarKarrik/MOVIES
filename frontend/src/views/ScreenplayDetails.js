@@ -24,7 +24,7 @@ export default function ScreenplayDetails() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setScreenplay(data);
+        setScreenplay(data.data);
       });
   }, [id]);
 

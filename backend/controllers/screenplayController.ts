@@ -20,23 +20,23 @@ router.get('/ById', async (req, res) => {
     const screenplay: Screenplay | null = await getScreenplayById(id);
 
     if (!screenplay) {
-        res.status(404).send({ message: "Not found" })
+        res.status(404).send({ status: 404, message: "Not found", data: null })
         return;
     }
 
-    res.send(screenplay);
+    res.status(200).send({ status: 200, message: "Success", data: screenplay });
 });
 
 router.delete('/', async (req, res) => {
     const id: number = parseInt(req.query.id as string);
 
-    if (await verifyAdmin(req.currentSession) === false) {
-        return res.status(401).send("Unauthorized");
+    if (!await verifyAdmin(req.currentSession)) {
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     };
 
-    await deleteScreenplayById(id)
+    const deletedScreenplay: Screenplay | null = await deleteScreenplayById(id)
 
-    res.status(200).send({ status: 200, message: "Deleted" });
+    res.status(200).send({ status: 200, message: "Deleted", data: deletedScreenplay });
 });
 
 router.post('/', async (req, res) => {
@@ -52,19 +52,19 @@ router.post('/', async (req, res) => {
     };
 
     if (await verifyAdmin(req.currentSession) === false) {
-        return res.status(401).send("Unauthorized");
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     };
 
     if (screenplayData.rating === 0 || screenplayData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
     if (!screenplayData.rating || !screenplayData.title) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     const screenplay: Screenplay = await createScreenplay(screenplayData);
 
-    return res.send(screenplay);
+    return res.status(201).send({ status: 201, message: "Created", data: screenplay });
 
 });
 
@@ -82,20 +82,20 @@ router.put('/:id', async (req, res) => {
     };
 
     if (await verifyAdmin(req.currentSession) === false) {
-        return res.status(401).send("Unauthorized");
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     };
 
     if (screenplayData.id === 0 || screenplayData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
     if (!screenplayData.id || !screenplayData.title || !screenplayData.rating) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     const screenplay: Screenplay | null = await updateScreenplay(screenplayData);
-    if (!screenplay) return res.status(404).send("Not found");
+    if (!screenplay) return res.status(404).send({ status: 404, message: "Not found", data: null });
 
-    return res.send(screenplay);
+    return res.send({ status: 200, message: "OK", data: screenplay });
 })
 
 export default router;

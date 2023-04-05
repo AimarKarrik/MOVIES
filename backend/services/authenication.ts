@@ -34,7 +34,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
 
-        return res.status(401).send({ status: 401, message: "Unauthorized1" });
+        return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
     req.currentSession = session;

@@ -15,12 +15,12 @@ router.get('/login', async (req, res) => {
     const user: User | null = await getUserByEmail(email);
 
     if (!user) {
-        res.status(401).send({ message: "Unauthorized" })
+        res.status(401).send({ status: 401, message: "Unauthorized" })
         return;
     }
 
     if (!bcrypt.compare(password, user.password)) {
-        res.status(401).send({ message: "Unauthorized" })
+        res.status(401).send({ status: 401, message: "Unauthorized" })
         return;
     }
 
@@ -28,8 +28,8 @@ router.get('/login', async (req, res) => {
     const token: string = crypto.randomBytes(64).toString('hex');
     const newSession: Session = { token: token, userId: user.id, createdAt: new Date() };
     sessions.push(newSession);
-    
-    res.status(200).send({ token: token, status: 200, message: "OK" });
+
+    return res.status(200).send({ status: 200, message: "OK", token: token });
 });
 
 export default router;
