@@ -1,4 +1,4 @@
-import MovieCard from '../components/MovieCard';
+import MovieCard from '../components/ScreenplayCard';
 import NavBar from '../components/Navbar';
 import useMovies from '../hooks/useMovies';
 import '../styles/OtherProfile.css';

@@ -52,3 +52,8 @@ export async function updateScreenplay(screenplay: Screenplay) {
   return result;
 }
 
+export async function getScreenplayPages(pageSize: number) {
+  const screenplays: Screenplay[] | null = await prisma.screenplays.findMany();
+  const pages = Math.ceil(screenplays.length / pageSize);
+  return pages;
+}
