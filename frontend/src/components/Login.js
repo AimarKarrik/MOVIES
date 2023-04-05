@@ -7,11 +7,11 @@ export default function Login(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
-    }
+        console.log('Submitted!');
+      };
 
     return (
-        <div className="auth-form-container">
+        <div className="Login-form-container">
             <h1>Log in</h1>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email"></label>
