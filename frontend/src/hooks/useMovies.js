@@ -10,7 +10,7 @@ export default function useMovies(options = { page: 1, pageSize: 20 }) {
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => response.json())
-      .then((data) => setMovies(data));
+      .then((data) => setMovies(data.data));
   }, [page, pageSize]);
 
   return movies;
