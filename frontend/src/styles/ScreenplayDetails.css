@@ -1,0 +1,8 @@
+
+.poster-image{
+    background-image: url("../assets/images/movieposter.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}

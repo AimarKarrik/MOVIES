@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import '../assets/images/movieposter.png'
 import '../styles/ScreenplayCard.css'
-import ScreenplayDetailPopup from './ScreenplayDetailPopup';
 
 
 export default function ScreenplayCard({ screenplay }) {
-    const [details, setDetails] = useState(false);
-    const handleDetails = () => {
-        setDetails(!details);
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/screenplay/${screenplay.id}`)
     }
     return (
         <>
-            <div className="card" onClick={handleDetails}>
+            <div className="card" onClick={handleClick}>
                 <div className='card-image'></div>
                 <p>{screenplay.title}</p>
             </div>
-            {details ? <ScreenplayDetailPopup screenplay={screenplay} onClick={handleDetails} /> : ""}
         </>
     )
 }
