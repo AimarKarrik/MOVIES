@@ -3,6 +3,8 @@ import './App.css';
 import MainPage from './views/MainPage';
 import MyProfile from './views/MyProfile';
 import OtherProfile from './views/OtherProfile';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
 
         <Route path='/profile' element={<MyProfile />} />
         <Route path='/profile/:id' element={<OtherProfile />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Signup' element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
