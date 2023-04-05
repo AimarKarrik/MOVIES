@@ -24,7 +24,7 @@ export default function Signup(props) {
                 <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="Your email" id="email" name="email" />
                 <label htmlFor="password"></label>
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
-                <button type="submit">Next</button>
+                <button type="submit">Sign up</button>
             </form>
             <p>Do you have a account?</p>
             <button className="link-btn-two" onClick={() => props.onFormSwitch('register')}>Log in</button>
