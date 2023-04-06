@@ -1,5 +1,5 @@
 export default interface Episode {
-  id: number;
+  id?: number;
   title: string;
   description: string;
   season: number;

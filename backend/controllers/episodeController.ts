@@ -36,6 +36,8 @@ router.post('/', async (req, res) => {
         screenplayId: req.body.screenplayId
     };
 
+
+    console.log(req.currentSession)
     if (!await verifyAdmin(req.currentSession)) {
         return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     };
