@@ -12,12 +12,12 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
         { path: '/screenplays/ById', method: "GET" },
         { path: "/reviews/ByUser", method: "GET" },
         { path: "/reviews/ByScreenplay", method: "GET" },
-        { path: "/reviews/ById", method: "GET" }
+        { path: "/reviews/ById", method: "GET" },
+        { path: "/episodes/", method: "GET" },
+        { path: "/episodes/ById", method: "GET" },
     ];
-    console.log(excludedPaths);
+
     const excludedPath: { path: string, method: string } | undefined = excludedPaths.find(path => path.path === req.path && path.method === req.method);
-    console.log(excludedPath);
-    console.log(req.path);
     if (excludedPath) {
         next();
         return;
@@ -33,7 +33,6 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const diff = now.getTime() - session.createdAt.getTime();
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
-
         return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
@@ -42,7 +41,11 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
 }
 
 export async function verifyAdmin(currentSession: Session | undefined) {
-    const user: User | null = await getUserById(currentSession!.userId);
+    if (!currentSession) {
+        return false;
+    }
+
+    const user: User | null = await getUserById(currentSession.userId);
 
     if (!user) {
         return false;

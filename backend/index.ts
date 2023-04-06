@@ -14,7 +14,7 @@ const port: number = 3001;
 
 export const sessions: Session[] = [];
 
-// app.use(verifyToken);
+app.use(verifyToken);
 app.use(routes);
 
 
