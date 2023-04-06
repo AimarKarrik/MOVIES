@@ -28,10 +28,7 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
-            <SearchBar setSearchScreenplays={setSearchScreenplays}/>
-
-            {searchScreenplays && (<SearchResults searchScreenplays={searchScreenplays} />
-            )}
+            <SearchResults />
 
             <div className='movie-category'>
                 <h1 className='category-title'>Trending Movies</h1>

@@ -14,11 +14,20 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/search', async (req, res) => {
-    const {query, page, pageSize } = req.query;
-
-    const results = await searchScreenplays({ query: query as string, page: parseInt(page as string), pageSize: parseInt(pageSize as string) });
+    try { 
+    const query = req.query.q?.toString() || '';
+    const page = parseInt(req.query.page?.toString() || '1');
+    const pageSize = parseInt(req.query.pageSize?.toString() || '10');
+  
+    const results = await searchScreenplays(query, page, pageSize);
     res.send(results);
-});
+} catch (error) {
+        console.log(error);
+    res.status(500).send("Not found");
+    }
+}
+  );
+  
 
 router.get('/ById', async (req, res) => {
     const id: number = parseInt(req.query.id as string);

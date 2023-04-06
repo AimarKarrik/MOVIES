@@ -25,6 +25,7 @@ model Screenplays {
   Episodes    Episodes[]
   Reviews     Reviews[]
   LikedScreenplays LikedScreenplays[]
+  previewFeatures  ["fullTextSearch", "fullTextIndex"]
 }
 
 model Episodes {

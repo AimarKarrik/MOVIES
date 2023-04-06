@@ -1,26 +1,34 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import MovieCard from './MovieCard';
+import SearchBar from './SearchBar';
 
-const SearchResults = (search) => {
-    const [searchScreenplays, setSearchScreenplays] = useState([]);
-    const searchQuery = new URLSearchParams(search).get('query');
-    
-    useEffect(()=> {
-        async function fetchSearchScreenplays() {
-        const response = await fetch(`http://localhost:3001/screenplays/search?q=${searchQuery}`);
+function SearchResults () {
+    const [query, setQuery] = useState([]);
+    const [results, setResults] = useState([]);
+
+    async function handleSearch() {
+        try{ 
+        const response = await fetch(`http://localhost:3001/screenplays/search?q=${query}`);
         const data = await response.json();
-        setSearchScreenplays(data);
+        setResults(data);
+        } catch (error) {
+            console.log(error);
         }
-        fetchSearchScreenplays();
-    }, [searchQuery]);
+    }
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        handleSearch();
+    }
 
     return (
         <div>
-            <h2>Search Results "{searchQuery}"</h2>
-            {searchScreenplays.map((movie) => (
+            <SearchBar onSearch={handleSubmit} />
+            <div>
+            {results.map((movie) => (
                 <MovieCard key={movie.id} movieData={movie} />
             ))}
+        </div>
         </div>
     )
 }

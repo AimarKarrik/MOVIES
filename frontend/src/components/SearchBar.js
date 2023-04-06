@@ -3,20 +3,20 @@ import { FaSearch } from 'react-icons/fa';
 import '../styles/SearchBar.css';
 
 function SearchBar() {
-    const [searchQuery, setSearchQuery] = useState('');
-  
-    const handleSearch = (event) => {
-      event.preventDefault();
-      setSearchQuery('');
-    }
+    const [query, setQuery] = useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        handleSubmit();
+      }
 
     return (
         <div className="search-box">
-            <form onSubmit={handleSearch}>
+            <form onSubmit={handleSubmit}>
             <button className="btn-search"><FaSearch /></button>
             <input type="text" 
-            value={searchQuery} 
-            onChange={(e) => setSearchQuery(e.target.value)}
+            value={query} 
+            onChange={(e) => setQuery(e.target.value)}
             className="input-search" 
             placeholder="Type to Search..." 
             />
