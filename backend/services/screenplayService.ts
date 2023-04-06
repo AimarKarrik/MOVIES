@@ -59,3 +59,16 @@ export async function getScreenplayPages(pageSize: number) {
   const pages: number = Math.ceil(screenplays.length / pageSize);
   return pages;
 }
+
+export async function searchScreenplays(query: string, page: number, pageSize: number) {
+  const result = await prisma.screenplays.findMany({
+    skip: (page - 1) * pageSize,
+    take: pageSize,
+    where: {
+      title: {
+        contains: query,
+      }
+    }
+  })
+  return result;
+}

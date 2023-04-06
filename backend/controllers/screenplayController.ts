@@ -1,5 +1,5 @@
-import express, { query } from "express";
-import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, getScreenplayPages } from "../services/screenplayService";
+import express from "express";
+import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, getScreenplayPages, searchScreenplays } from "../services/screenplayService";
 import Screenplay from "../models/screenplayModel";
 import { verifyAdmin } from "../services/authenication";
 
@@ -11,7 +11,23 @@ router.get('/', async (req, res) => {
 
     const screenplays: Screenplay[] | null = await getScreenplays({ page, pageSize });
     res.status(200).send({ status: 200, message: "Success", data: screenplays, pageCount: await getScreenplayPages(pageSize) });
+    res.send(screenplays);
 });
+
+router.get('/search', async (req, res) => {
+    try { 
+    const query = req.query.q?.toString() || '';
+    const page = parseInt(req.query.page?.toString() || '1');
+    const pageSize = parseInt(req.query.pageSize?.toString() || '10');
+  
+    const results = await searchScreenplays(query, page, pageSize);
+    res.send(results);
+} catch (error) {
+        console.log(error);
+    res.status(500).send("Not found");
+    }
+}
+  );
 
 
 router.get('/ById', async (req, res) => {
