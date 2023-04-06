@@ -13,13 +13,15 @@ router.get('/ByUser', async (req, res) => {
     const pageSize: number = parseInt(req.query.pageSize as string);
 
     const user: user | null = await getUserByEmail(req.query.email as string);
-    if (!user) return res.status(404).send("User not found");
+    if (!user) {
+        return res.status(404).send({ status: 404, message: "User not found", data: null });
+    }
 
     const userId: number = user.id;
 
     const reviews: Review[] = await getReviewsByUser({ page, pageSize, userId });
 
-    res.send(reviews);
+    return res.status(200).send({ status: 200, message: "OK", data: reviews });
 });
 
 router.get('/ByScreenplay', async (req, res) => {
@@ -29,16 +31,16 @@ router.get('/ByScreenplay', async (req, res) => {
 
     const reviews: Review[] = await getReviewsByScreenplayPaged({ page, pageSize, screenplayId });
 
-    res.send(reviews);
+    return res.status(200).send({ status: 200, message: "OK", data: reviews });
 });
 
 router.get('/ById', async (req, res) => {
     const reviewId: number = parseInt(req.query.reviewId as string);
 
     const review: Review | null = await getReviewById(reviewId);
-    if (!review) return res.status(404).send("Review not found");
+    if (!review) return res.status(404).send({ status: 404, message: "Review not found", data: null });
 
-    res.send(review);
+    return res.status(200).send({ status: 200, message: "OK", data: review });
 });
 
 router.post('/', async (req, res) => {
@@ -51,7 +53,7 @@ router.post('/', async (req, res) => {
     };
 
     if (!reviewData.userId || !reviewData.screenplayId || !reviewData.rating || !reviewData.content || !reviewData.title) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     const review: Review = await createReview(reviewData);
@@ -59,7 +61,7 @@ router.post('/', async (req, res) => {
     const screenplay: Screenplay | null = await getScreenplayById(reviewData.screenplayId);
 
     if (!screenplay) {
-        res.status(500).send("Internal Server Error");
+        res.status(500).send({ status: 500, message: "Internal server error", data: null });
         return
     }
 
@@ -72,7 +74,7 @@ router.post('/', async (req, res) => {
     screenplay.rating = averageRating;
     await updateScreenplay(screenplay);
 
-    return res.send(review);
+    return res.status(201).send({ status: 201, message: "Created", data: review });
 });
 
 
@@ -80,17 +82,17 @@ router.delete('/', async (req, res) => {
     const reviewId: number = parseInt(req.query.id as string);
 
     const review: Review | null = await getReviewById(reviewId);
-    if (!review){
-        return res.status(404).send("Review not found");
+    if (!review) {
+        return res.status(404).send({ status: 404, message: "Review not found", data: null });
     }
-    if (review.userId !== req.currentSession!.userId){
-        return res.status(401).send("Unauthorized");
-    } 
+    if (review.userId !== req.currentSession!.userId) {
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+    }
 
 
     const deletedReview: Review | null = await deleteReview(reviewId);
 
-    return res.send(deletedReview);
+    return res.status(200).send({ status: 200, message: "OK", data: deletedReview });
 });
 
 router.put('/', async (req, res) => {
@@ -100,22 +102,22 @@ router.put('/', async (req, res) => {
         content: req.body.content,
         rating: req.body.rating
     };
-    
+
     if (!reviewData.id || !reviewData.content || !reviewData.title || !reviewData.rating) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     const review: Review | null = await getReviewById(reviewData.id);
-    if (!review){
-        return res.status(404).send("Review not found");
+    if (!review) {
+        return res.status(404).send({ status: 404, message: "Review not found", data: null });
     }
-    if (review.userId !== req.currentSession!.userId){
-        return res.status(401).send("Unauthorized");
-    } 
-    
+    if (review.userId !== req.currentSession!.userId) {
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+    }
+
     const updatedReview: Review | null = await updateReview(reviewData);
 
-    return res.send(updatedReview);
+    return res.status(200).send({ status: 200, message: "OK", data: updatedReview });
 });
 
 export default router;
