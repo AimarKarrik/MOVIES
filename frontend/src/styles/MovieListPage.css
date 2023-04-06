@@ -3,13 +3,18 @@
 .movie-container {
     display: grid;
     gap: 1%;
-    grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 1%;
     padding-bottom: 2%;
+}
+
+.movie-container .card {
+    min-height: 0;
+    min-width: 0;
 }
 
 .page-title {
@@ -31,7 +36,7 @@
     color: #fff;
     margin: 0 0.5%;
     height: 3vh;
-    width: 3vh;
+    width: fit-content;
     font-size: 2vh;
 }
 
