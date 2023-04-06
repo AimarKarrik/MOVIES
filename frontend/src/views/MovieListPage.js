@@ -10,7 +10,7 @@ export default function MovieListPage() {
   const [pageCount, setPageCount] = useState(1);
 
   async function fetchScreenplays(pageNumber) {
-    fetch(`http://localhost:3001/screenplays/?page=${pageNumber}&pageSize=32`, {
+    fetch(`http://localhost:3001/screenplays/?page=${pageNumber}&pageSize=30`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
