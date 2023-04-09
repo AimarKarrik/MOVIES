@@ -1,24 +1,33 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 export default function Login(props) {
     const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Submitted!');
-      };
+        const storedEmail = localStorage.getItem('email');
+        const storedPassword = localStorage.getItem('password');
 
+        if (email === storedEmail && password === storedPassword) {
+            console.log('Logged in successfully!');
+            navigate('/');
+        } else {
+            console.log('Invalid email or password');
+        }
+    };
     return (
+    <div className="Login">
         <div className="Login-form-container">
             <h1>Log in</h1>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email"></label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="Your email" id="email" name="email" />
                 <label htmlFor="password"></label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
                 <button type="submit">Log In</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Forgot password?</button>
@@ -27,5 +36,6 @@ export default function Login(props) {
             <button className="link-btn-two" onClick={() => props.onFormSwitch('register')}>Create account</button>
             </Link>
         </div>
+    </div>
     )
 }
