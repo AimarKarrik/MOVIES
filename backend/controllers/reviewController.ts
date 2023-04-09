@@ -1,9 +1,10 @@
 import express from "express";
 import Review from "../models/reviewModel";
 import user from './../models/userModel';
-import { getReviewsByUser, getReviewsByScreenplay, getReviewById, createReview, deleteReview, updateReview } from "../services/reviewService";
+import { getReviewsByUser, getReviewsByScreenplayPaged, getReviewById, createReview, deleteReview, updateReview, getReviewsByScreenplay } from "../services/reviewService";
+import { getScreenplayById, updateScreenplay } from "../services/screenplayService";
 import { getUserByEmail } from "../services/userService";
-import { title } from "process";
+import Screenplay from "../models/screenplayModel";
 
 const router = express.Router();
 
@@ -12,13 +13,15 @@ router.get('/ByUser', async (req, res) => {
     const pageSize: number = parseInt(req.query.pageSize as string);
 
     const user: user | null = await getUserByEmail(req.query.email as string);
-    if (!user) return res.status(404).send("User not found");
+    if (!user) {
+        return res.status(404).send({ status: 404, message: "User not found", data: null });
+    }
 
     const userId: number = user.id;
 
     const reviews: Review[] = await getReviewsByUser({ page, pageSize, userId });
 
-    res.send(reviews);
+    return res.status(200).send({ status: 200, message: "OK", data: reviews });
 });
 
 router.get('/ByScreenplay', async (req, res) => {
@@ -26,68 +29,95 @@ router.get('/ByScreenplay', async (req, res) => {
     const pageSize: number = parseInt(req.query.pageSize as string);
     const screenplayId: number = parseInt(req.query.screenplayId as string);
 
-    const reviews: Review[] = await getReviewsByScreenplay({ page, pageSize, screenplayId });
+    const reviews: Review[] = await getReviewsByScreenplayPaged({ page, pageSize, screenplayId });
+
+    return res.status(200).send({ status: 200, message: "OK", data: reviews });
 });
 
 router.get('/ById', async (req, res) => {
     const reviewId: number = parseInt(req.query.reviewId as string);
 
     const review: Review | null = await getReviewById(reviewId);
-    if (!review) return res.status(404).send("Review not found");
+    if (!review) return res.status(404).send({ status: 404, message: "Review not found", data: null });
 
-    res.send(review);
+    return res.status(200).send({ status: 200, message: "OK", data: review });
 });
 
 router.post('/', async (req, res) => {
     const reviewData: { userId: number, screenplayId: number, rating: number, content: string, title: string } = {
-        userId: parseInt(req.query.userId as string),
-        screenplayId: parseInt(req.query.screenplayId as string),
-        rating: parseInt(req.query.rating as string),
-        content: req.query.content as string,
-        title: req.query.title as string
+        userId: req.currentSession!.userId,
+        screenplayId: req.body.screenplayId,
+        rating: req.body.rating,
+        content: req.body.content,
+        title: req.body.title
     };
 
-    if (reviewData.userId === 0 || reviewData.screenplayId === 0 || reviewData.rating === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
-    }
     if (!reviewData.userId || !reviewData.screenplayId || !reviewData.rating || !reviewData.content || !reviewData.title) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     const review: Review = await createReview(reviewData);
 
-    return res.send(review);
+    const screenplay: Screenplay | null = await getScreenplayById(reviewData.screenplayId);
+
+    if (!screenplay) {
+        res.status(500).send({ status: 500, message: "Internal server error", data: null });
+        return
+    }
+
+    const reviews: Review[] | null = await getReviewsByScreenplay(reviewData.screenplayId);
+
+    const averageRating = reviews.reduce((total, review) => {
+        return total + review.rating;
+    }, 0) / reviews.length;
+
+    screenplay.rating = averageRating;
+    await updateScreenplay(screenplay);
+
+    return res.status(201).send({ status: 201, message: "Created", data: review });
 });
 
 
 router.delete('/', async (req, res) => {
-    const reviewId: number = parseInt(req.query.reviewId as string);
+    const reviewId: number = parseInt(req.query.id as string);
 
-    const review: Review | null = await deleteReview(reviewId);
-    if (!review) return res.status(404).send("Review not found");
+    const review: Review | null = await getReviewById(reviewId);
+    if (!review) {
+        return res.status(404).send({ status: 404, message: "Review not found", data: null });
+    }
+    if (review.userId !== req.currentSession!.userId) {
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+    }
 
-    return res.send(review);
+
+    const deletedReview: Review | null = await deleteReview(reviewId);
+
+    return res.status(200).send({ status: 200, message: "OK", data: deletedReview });
 });
 
 router.put('/', async (req, res) => {
     const reviewData: { id: number, title: string, content: string, rating: number } = {
-        id: parseInt(req.query.id as string),
-        title: req.query.title as string,
-        content: req.query.content as string,
-        rating: parseInt(req.query.rating as string)
+        id: req.body.id,
+        title: req.body.title,
+        content: req.body.content,
+        rating: req.body.rating
     };
 
-    if (reviewData.id === 0 || reviewData.content.length === 0, reviewData.title.length === 0) {
-        return res.status(400).send("Missing required fields");
-    }
     if (!reviewData.id || !reviewData.content || !reviewData.title || !reviewData.rating) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
-    const review: Review | null = await updateReview(reviewData);
-    if (!review) return res.status(404).send("Review not found");
+    const review: Review | null = await getReviewById(reviewData.id);
+    if (!review) {
+        return res.status(404).send({ status: 404, message: "Review not found", data: null });
+    }
+    if (review.userId !== req.currentSession!.userId) {
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+    }
 
-    return res.send(review);
+    const updatedReview: Review | null = await updateReview(reviewData);
+
+    return res.status(200).send({ status: 200, message: "OK", data: updatedReview });
 });
 
 export default router;

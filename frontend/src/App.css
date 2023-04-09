@@ -12,19 +12,24 @@ body, html {
 h1 {
   font-family: 'Montserrat';
   font-size: 24px;
+  color: #fff;
+  margin: 0;
 }
 
 h2 {
   font-family: 'Montserrat';
   font-size: 20px;
+  color: #fff;
 }
 
 h3 {
   font-family: 'Montserrat';
   font-size: 16px;
+  color: #fff;
 }
 
 p {
   font-family: 'Montserrat';
   font-size: 19px;
+  color: #fff;
 }

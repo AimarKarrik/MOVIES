@@ -1,0 +1,85 @@
+.myProfile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: calc(200px + 2 * 50px); /* Profile picture + paddings */
+
+  padding: 50px;
+
+  background-color: #242540;
+}
+
+.myProfile-picture {
+  height: 200px;
+  aspect-ratio: 1;
+
+  border-radius: 100%;
+
+  background-image: url(../assets/images/profile1.jpg);
+  background-size: cover;
+
+  margin-right: 50px;
+}
+
+.myProfile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  padding: 20px 0;
+}
+
+.myProfile-top {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+.myProfile-name {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #fff;
+}
+
+.myProfile-bio {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.myProfile-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.myProfile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Inter;
+  font-weight: 500;
+
+  background-color: #b0b4ff;
+  color: #1b1c30;
+
+  padding: 10px 35px;
+
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+}
