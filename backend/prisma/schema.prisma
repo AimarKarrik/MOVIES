@@ -13,12 +13,12 @@ datasource db {
 model Screenplays {
   id               Int                @id @default(autoincrement())
   title            String
-  description      String
+  description      String             @db.Text
   director         String
   releaseDate      DateTime
   genres           String             @default("") // csv of genre names
   ageRating        String
-  image            Bytes?
+  image            String?            @db.LongText
   rating           Float
   createdAt        DateTime           @default(now())
   updatedAt        DateTime           @updatedAt
