@@ -25,7 +25,7 @@ router.get('/ById', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    const episodeData: { title: string, description: string, season: number, number: number, releaseDate: Date, rating: number, image?: ArrayBuffer | null, screenplayId: number } = {
+    const episodeData: { title: string, description: string, season: number, number: number, releaseDate: Date, rating: number, image?: string | null, screenplayId: number } = {
         title: req.body.title,
         description: req.body.description,
         season: req.body.season,
@@ -67,7 +67,7 @@ router.delete('/', async (req, res) => {
 });
 
 router.put('/', async (req, res) => {
-    const episodeData: { id: number, title: string, description: string, season: number, number: number, releaseDate: Date, rating: number, image?: ArrayBuffer | null, screenplayId: number } = {
+    const episodeData: { id: number, title: string, description: string, season: number, number: number, releaseDate: Date, rating: number, image?: string | null, screenplayId: number } = {
         id: req.body.id,
         title: req.body.title,
         description: req.body.description,

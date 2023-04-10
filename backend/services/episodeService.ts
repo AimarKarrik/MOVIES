@@ -30,7 +30,7 @@ export async function createEpisode(episode: Episode) {
             number: number,
             releaseDate: releaseDate,
             rating: rating,
-            image: null,
+            image: image,
             screenplayId: screenplayId,
         }
     })

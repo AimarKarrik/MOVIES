@@ -6,7 +6,7 @@ export default interface Episode {
   number: number;
   releaseDate: Date;
   rating: number;
-  image?: ArrayBuffer | null;
+  image?: string | null;
   createdAt?: Date;
   updatedAt?: Date;
   screenplayId: number;
