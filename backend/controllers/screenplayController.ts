@@ -40,11 +40,12 @@ router.delete('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    const screenplayData: { title: string, description: string, director: string, image: ArrayBuffer, releaseDate: Date, genres: string, ageRating: string, rating: number } = {
+
+    const screenplayData: { title: string, description: string, director: string, image: string, releaseDate: Date, genres: string, ageRating: string, rating: number } = {
         title: req.body.title,
         description: req.body.description,
         director: req.body.director,
-        image: new ArrayBuffer(req.body.image),
+        image: req.body.image,
         releaseDate: new Date(req.body.releaseDate),
         genres: req.body.director,
         ageRating: req.body.ageRating,
@@ -69,12 +70,12 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-    const screenplayData: { id: number, title: string, description: string, director: string, image: ArrayBuffer, releaseDate: Date, genres: string, ageRating: string, rating: number } = {
+    const screenplayData: { id: number, title: string, description: string, director: string, image: string, releaseDate: Date, genres: string, ageRating: string, rating: number } = {
         id: req.body.id,
         title: req.body.title,
         description: req.body.description,
         director: req.body.director,
-        image: new ArrayBuffer(req.body.image),
+        image: req.body.image,
         releaseDate: new Date(req.body.releaseDate),
         genres: req.body.director,
         ageRating: req.body.ageRating,

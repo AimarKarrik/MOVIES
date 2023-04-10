@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { Img, Image } from 'react-image';
 import '../assets/images/movieposter.png'
 import '../styles/ScreenplayCard.css'
 
 
 export default function ScreenplayCard({ screenplay }) {
-
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -14,7 +14,8 @@ export default function ScreenplayCard({ screenplay }) {
     return (
         <>
             <div className="card" onClick={handleClick}>
-                <div className='card-image'></div>
+                {/* render a jpeg image string */}
+                <img src={screenplay.image} alt='screenplayimage' className='card-image' />
                 <p>{screenplay.title}</p>
             </div>
         </>

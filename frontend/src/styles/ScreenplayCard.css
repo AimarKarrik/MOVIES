@@ -10,8 +10,6 @@
 }
 
 .card-image {
-    background-image: url(../assets/images/movieposter.png);
-    background-size: cover;
     width: 217px;
     height: 317px;
     border-radius: 5px;
