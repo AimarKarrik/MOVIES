@@ -1,14 +1,23 @@
-import { createScreenplay } from '../services/screenplayService';
-import fs from 'fs';
-import Screenplay from '../models/screenplayModel';
+import { PrismaClient } from "@prisma/client";
+import fs from "fs";
+import path from "path";
 
+const prisma = new PrismaClient();
 
-export async function populateScreenplays() {
-    const screenplayData: Screenplay[] = JSON.parse(fs.readFileSync("./demoData/moviesData.json", 'utf8'));
-    for (const screenplay of screenplayData) {
-        
-        await createScreenplay(screenplay);
-        console.log(screenplay);
+async function main() {
+    const screenplays = JSON.parse(fs.readFileSync(path.join(__dirname, "screenplays.json"), "utf-8"));
+    for (const screenplay of screenplays) {
+        await prisma.screenplays.create({
+            data: {
+                title: screenplay.title,
+                description: screenplay.description,
+                director: screenplay.director,
+                image: null,
+                releaseDate: screenplay.releaseDate,
+                genres: screenplay.genres,
+                ageRating: screenplay.ageRating,
+                rating: screenplay.rating,
+            }
+        })
     }
-};
-
+}

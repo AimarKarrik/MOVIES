@@ -6,6 +6,9 @@
   "scripts": {
     "start": "nodemon index.ts"
   },
+  "prisma": {
+    "seed": "ts-node ../demoData/populateDB.ts"
+  },
   "author": "Movies Team",
   "license": "ISC",
   "devDependencies": {
