@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/Navbar";
+import ReviewCard from "../components/ReviewCard";
 import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/ScreenplayDetails.css";
@@ -12,9 +13,10 @@ export default function ScreenplayDetails() {
   const location = useLocation();
 
   const [screenplay, setScreenplay] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect");
+
     fetch(`http://localhost:3001/screenplays/ById?id=${id}`, {
       method: "GET",
       headers: {
@@ -27,6 +29,21 @@ export default function ScreenplayDetails() {
         setScreenplay(data.data);
       });
   }, [id]);
+
+  useEffect(() => {
+    fetch(`http://localhost:3001/reviews/ByScreenplay?screenplayId=${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setReviews(data.data);
+      });
+  }, [id]);
+
 
   return (
     <>
@@ -60,6 +77,12 @@ export default function ScreenplayDetails() {
             })}
           </p>
           <p className="screenplay-description">{screenplay.description}</p>
+        </div>
+        <div className="reviews-container">
+          <h2>Reviews</h2>
+          {reviews.map((review) => (
+            <ReviewCard review={review} />
+          ))}
         </div>
       </div>
     </>
