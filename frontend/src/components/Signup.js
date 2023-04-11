@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
+import { FaAngleLeft } from 'react-icons/fa';
 import '../styles/Signup.css';
 
 export default function Signup(props) {
@@ -29,6 +30,9 @@ export default function Signup(props) {
     return (
         <div className="Signup">
             <div className="Signup-form-container">
+                <Link to='/'>
+                    <button className="btn"><FaAngleLeft className="icon"></FaAngleLeft></button>
+                </Link>
                 <h1>Sign up</h1>
                 <form className="Signup-form" onSubmit={handleSubmit}>
                     <label htmlFor="first-name"></label>

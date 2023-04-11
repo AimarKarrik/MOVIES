@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
+import { FaAngleLeft } from 'react-icons/fa';
 import '../styles/Login.css';
 
 export default function Login(props) {
@@ -28,6 +29,9 @@ export default function Login(props) {
     return (
     <div className="Login">
         <div className="Login-form-container">
+            <Link to='/'>
+                <button className="btn"><FaAngleLeft className="icon"></FaAngleLeft></button>
+            </Link>
             <h1>Log in</h1>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email"></label>
@@ -42,7 +46,7 @@ export default function Login(props) {
             <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Forgot password?</button>
             <p>Don't have an account?</p>
             <Link className="link" to="/Signup">
-            <button className="link-btn-two" onClick={() => props.onFormSwitch('register')}>Create account</button>
+                <button className="link-btn-two" onClick={() => props.onFormSwitch('register')}>Create account</button>
             </Link>
         </div>
     </div>

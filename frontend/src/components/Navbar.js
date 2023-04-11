@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,15 +9,21 @@ import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
+  const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+
+  const handleSignOut = () => {
+    localStorage.setItem('loggedIn', 'false');
+  };
+
   return (
     <Navbar expand="lg">
       <Container className='nav-container'>
-        <Nav.Link className='logo' to="/">
+        <NavLink className='logo' to="/">
           <img
             src={logo}
             alt="logo"
           />
-        </Nav.Link>
+        </NavLink>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavLink className='navlink' to="/movies">Movies</NavLink>
@@ -24,15 +31,22 @@ function NavBar() {
             <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
           <div className="search-box">
-          <button className="btn-search"><FaSearch></FaSearch></button>
-          <input type="text" className="input-search" placeholder="Type to Search..."></input>
+            <button className="btn-search"><FaSearch></FaSearch></button>
+            <input type="text" className="input-search" placeholder="Type to Search..."></input>
           </div>
-          <NavLink className='profile' to="/profile">
-          <img
-            src={profile}
-            alt="profile"
-          />
-        </NavLink>
+          {isLoggedIn ? (
+            <NavLink className='profile' to="/profile">
+              <img
+                src={profile}
+                alt="profile"
+              />
+            </NavLink>
+          ) : (
+            <div className="auth-container">
+              <NavLink className='navlink' to="/signup" onClick={() => localStorage.setItem('loggedIn', 'true')}>Sign Up</NavLink>
+              <NavLink className='navlink' to="/login" onClick={() => localStorage.setItem('loggedIn', 'true')}>Log In</NavLink>
+            </div>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

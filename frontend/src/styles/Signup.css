@@ -98,3 +98,7 @@ p {
   background: linear-gradient(120deg,#b0b4ffa8, #1B1C30);
   font-family: Montserrat;
 }
+
+.icon {
+  height: 20px;
+}

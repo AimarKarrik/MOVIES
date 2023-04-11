@@ -47,6 +47,15 @@ button {
   font-family: Montserrat;
   margin-top: 10px;
 }
+
+.btn {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  left: 30px;
+  top: 20px;
+  position: absolute;
+}
   
 .link-btn {
   background: none;
@@ -90,4 +99,8 @@ p {
   color: white;
   background: linear-gradient(120deg,#b0b4ffa8, #1B1C30);
   font-family: Montserrat;
+}
+
+.icon {
+  height: 20px;
 }
