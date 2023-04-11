@@ -3,14 +3,11 @@ import '../assets/images/movieposter.png'
 import MovieCard from '../components/MovieCard';
 import NavBar from '../components/Navbar';
 import '../styles/MainPage.css';
-import SearchBar from '../components/SearchBar';
-import SearchResults from '../components/SearchResults';
 
 
 
 export default function MainPage() {
     const [screenplays, setScreenplays] = useState([]);
-    const [searchScreenplays, setSearchScreenplays] = useState(null);
 
     useEffect(() => {
         console.log("useEffect");
@@ -28,7 +25,6 @@ export default function MainPage() {
     return (
         <>
             <NavBar />
-            <SearchResults />
 
             <div className='movie-category'>
                 <h1 className='category-title'>Trending Movies</h1>

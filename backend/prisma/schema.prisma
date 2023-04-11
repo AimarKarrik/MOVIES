@@ -3,6 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
+    previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 datasource db {
@@ -25,7 +26,8 @@ model Screenplays {
   Episodes    Episodes[]
   Reviews     Reviews[]
   LikedScreenplays LikedScreenplays[]
-  previewFeatures  ["fullTextSearch", "fullTextIndex"]
+
+  @@fulltext([title])
 }
 
 model Episodes {

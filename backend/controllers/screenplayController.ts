@@ -15,19 +15,19 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/search', verifyToken, async (req, res) => {
-    try { 
-    const query = req.query.q?.toString() || '';
-    const page = parseInt(req.query.page?.toString() || '1');
-    const pageSize = parseInt(req.query.pageSize?.toString() || '10');
+    try {
+      const query = req.query.q?.toString() || '';
+      const page = parseInt(req.query.page?.toString() || '1');
+      const pageSize = parseInt(req.query.pageSize?.toString() || '10');
   
-    const results = await searchScreenplays(query, page, pageSize);
-    res.send(results);
-} catch (error) {
-        console.log(error);
-    res.status(500).send("Not found");
+      const results = await searchScreenplays(query);
+      res.send(results);
+    } catch (error) {
+      console.log(error);
+      res.status(500).send("Error searching screenplays");
     }
-}
-  );
+  });
+  
   
 
 router.get('/ById', async (req, res) => {
