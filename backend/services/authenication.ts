@@ -12,7 +12,8 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
         { path: '/screenplays/ById', method: "GET" },
         { path: "/reviews/ByUser", method: "GET" },
         { path: "/reviews/ByScreenplay", method: "GET" },
-        { path: "/reviews/ById", method: "GET" }
+        { path: "/reviews/ById", method: "GET" },
+        { path: "/screenplays/search", method: "GET" }
     ];
     console.log(excludedPaths);
     const excludedPath: { path: string, method: string } | undefined = excludedPaths.find(path => path.path === req.path && path.method === req.method);

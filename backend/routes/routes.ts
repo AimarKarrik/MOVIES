@@ -10,5 +10,6 @@ router.use('/screenplays', screenplayController);
 router.use('/reviews', reviewsController);
 router.use('/users', userController);
 router.use('/auth', authController);
+router.use('/search', screenplayController);
 
 export default router;
