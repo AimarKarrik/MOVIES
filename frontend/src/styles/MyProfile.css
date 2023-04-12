@@ -6,7 +6,8 @@
   width: 100%;
   height: calc(200px + 2 * 50px); /* Profile picture + paddings */
 
-  padding: 50px;
+  padding: 1% 5% 1% 5%;
+  margin-bottom: 5%;
 
   background-color: #242540;
 }

@@ -11,28 +11,33 @@ export default function Signup(props) {
     const navigate = useNavigate();
     const [formError, setFormError] = useState(null);
 
-    const handleSubmit = async(e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
 
         if (!firstName || !lastName || !email || !password) {
             setFormError("Please fill out all fields.");
-            return; 
+            return;
         }
 
+        const newUser = {
+            name: firstName + " " + lastName,
+            email: email,
+            password: password,
+        };
+
         try {
-            const response = await fetch('http://loaclhost:3001/users/register', {
+            fetch('http://localhost:3001/users/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    firstName,
-                    lastName,
-                    email,
-                    password
-                })
-            }).then((response)=> response.json()).then((data)=>{console.log(data.user)})
+                body: JSON.stringify(newUser),
+            })
+                .then((response) => response.json())
+                .then((data) => { console.log(data.user) })
 
+            navigate('/Login');
         } catch (error) {
             console.error('Error occurred during registration:', error);
         }
@@ -45,7 +50,7 @@ export default function Signup(props) {
                     <button className="btn"><FaAngleLeft className="icon"></FaAngleLeft></button>
                 </Link>
                 <h1>Sign up</h1>
-                <form className="Signup-form" onSubmit={handleSubmit}>
+                <form className="Signup-form">
                     <label htmlFor="first-name"></label>
                     <input value={firstName} onChange={(e) => setFirstName(e.target.value)} type="text" placeholder="First name" id="first-name" name="first-name" />
                     {!firstName}
@@ -59,7 +64,7 @@ export default function Signup(props) {
                     <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
                     {!password}
                     {formError && <p className="form-error">{formError}</p>}
-                    <button type="submit">Sign up</button>
+                    <button type="text" onClick={(e) => handleSubmit(e)}>Sign up</button>
                 </form>
                 <p>Do you have an account?</p>
                 <Link className="link" to="/Login">
