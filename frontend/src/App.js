@@ -6,9 +6,7 @@ import MainPage from './views/MainPage';
 import MovieListPage from './views/MovieListPage';
 import MyProfile from './views/MyProfile';
 import OtherProfile from './views/OtherProfile';
-import ScreenplayDetails from './views/ScreenplayDetails';
 import SearchResults from './views/SearchResults';
-import MovieListPage from './views/MovieListPage';
 import ScreenplayDetails from './views/ScreenplayDetails';
 
 function App() {
