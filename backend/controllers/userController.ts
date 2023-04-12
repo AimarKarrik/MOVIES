@@ -15,6 +15,14 @@ router.get('/', async (req, res) => {
     res.send({ status: 200, message: "OK", user: cleanUser});
 });
 
+router.get('/ById', async (req, res) => {
+    const id: number = parseInt(req.query.id as string);
+    const user: User | null = await getUserById(id);
+    if (!user) return res.status(404).send("User not found");
+
+    const cleanUser = { ...user, password: undefined, id: undefined };
+    res.send({ status: 200, message: "OK", user: cleanUser});
+});
 
 router.post('/register', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
