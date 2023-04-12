@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Img, Image } from 'react-image';
 import '../assets/images/movieposter.png'
 import '../styles/ScreenplayCard.css'
 
