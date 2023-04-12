@@ -54,10 +54,10 @@ export async function updateScreenplay(screenplay: Screenplay) {
 }
 
 export async function searchScreenplays(query: string) {
-  const result = await prisma.screenplays.findMany({
+  const result: Screenplay[] = await prisma.screenplays.findMany({
     where: {
       title: {
-        search: query
+        contains: query
       }
     }
   });

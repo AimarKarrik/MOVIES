@@ -1,4 +1,4 @@
-import express from "express";
+import express from "express"; 
 import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, searchScreenplays } from "../services/screenplayService";
 import Screenplay from "../models/screenplayModel";
 import { verifyAdmin } from "../services/authenication";
@@ -15,17 +15,17 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/search', async (req, res) => {
-    try {
-      const query = req.query.q?.toString() || '';
-  
-      const results = await searchScreenplays(query);
-      res.send(results);
-    } catch (error) {
-      console.log(error);
-      res.status(500).send("Error searching screenplays");
+    const query: string = req.query.q?.toString() || '';
+
+    const result: Screenplay[] = await searchScreenplays(query);
+
+    if (result.length === 0) {
+        return res.status(404).send({ message: "No movies found matching your search" });
     }
-  });
-  
+
+    res.status(200).send({ status: 200, message: "Found", data: result });
+});
+
 
 router.get('/ById', async (req, res) => {
     const id: number = parseInt(req.query.id as string);
