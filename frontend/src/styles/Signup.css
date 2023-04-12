@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Signup-form-container, .Signup-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .Signup-form-container {
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-color: #B0B4FF;
+    background-color: #1B1C30;
+  }
+}
+  
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+  color: white;
+  font-family: Montserrat;
+}
+  
+input {
+  margin: 0.5rem 0;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  color: #1B1C30;
+  font-family: Montserrat;
+  background-color: white;
+}
+  
+button {
+  border: none;
+  background-color: #6A5BE2;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: Montserrat;
+  margin-top: 10px;
+}
+  
+.link-btn {
+  background: none;
+  color: #B0B4FF;
+  font-family: Montserrat;
+}
+
+.link-btn-two {
+  background: none;
+  color: #B0B4FF;
+  font-family: Montserrat;
+  margin-top: -15px
+}
+
+h1 {
+  color: white;
+  font-family: Montserrat;
+  align-self:  center;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  align-self: center;
+  margin-top: 40px;
+}
+
+::placeholder{
+  color: #1B1C30;
+}
+
+.link {
+  background: none;
+  color: #B0B4FF;
+  font-family: Montserrat;
+  align-self: center;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.Signup {
+  min-height: 100vh;
+  color: white;
+  background: linear-gradient(120deg,#b0b4ffa8, #1B1C30);
+  font-family: Montserrat;
+}
+
+.icon {
+  height: 20px;
+}
