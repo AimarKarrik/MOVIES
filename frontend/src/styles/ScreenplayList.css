@@ -1,0 +1,14 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: scroll;
+    overflow-y: hidden;
+    margin-left: 2%;
+
+    height: auto;
+}
+
+.list-container h1 {
+    margin-left: 2%;
+}

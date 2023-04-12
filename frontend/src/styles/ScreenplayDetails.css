@@ -1,0 +1,84 @@
+
+.poster-image > img {
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    position: relative;
+    backdrop-filter: none;
+}
+
+
+.poster-image {
+    background-image: url("../assets/images/movieposter.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.poster-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    backdrop-filter: blur(5px);
+}
+
+.screenplay-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+
+    padding-left: 30%;
+    padding-right: 30%;
+
+    background-color: #0F0F1A;
+}
+
+.screenplay-info {
+    background-color: #1B1C30;
+    height: 100%;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.screenplay-info > h1 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screenplay-description {
+    font-size: 12px;
+    color: #fff;
+}
+
+.screenplay-details {
+    font-size: 10px;
+    color: #fff;
+}
+
+.share-icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.share-icon:hover {
+    cursor: pointer;
+    color: #d4d4d4;
+    transition: 0.2s;
+}
+

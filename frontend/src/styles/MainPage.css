@@ -6,32 +6,4 @@
 
 ::-webkit-scrollbar {
     width: 0px;
-  }
-
-.movie-card-container {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    overflow-x: scroll;
-    margin-bottom: 20px;
-    padding-left: 1%;
-}
-
-.movie-card-container .movie-card {
-    margin-right: 2%;
-    flex-shrink: 0;
-    width: 300px;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
-.category-title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    padding-left: 1%;
-
-    color: #FFFFFF;
 }

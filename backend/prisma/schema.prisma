@@ -11,29 +11,30 @@ datasource db {
 }
 
 model Screenplays {
-  id          Int        @id @default(autoincrement())
-  title       String
-  description String
-  director    String
-  releaseDate DateTime
-  genres      String @default("") // csv of genre names
-  ageRating   String
-  image       Bytes?
-  rating      Float
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
-  Episodes    Episodes[]
-  Reviews     Reviews[]
+  id               Int                @id @default(autoincrement())
+  title            String
+  description      String             @db.Text
+  director         String
+  releaseDate      DateTime
+  genres           String             @default("") // csv of genre names
+  ageRating        String
+  image            String?            @db.LongText
+  rating           Float
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  Episodes         Episodes[]
+  Reviews          Reviews[]
+  LikedScreenplays LikedScreenplays[]
 }
 
 model Episodes {
   id           Int         @id @default(autoincrement())
   title        String
-  description  String
+  description  String      @db.Text
   season       Int
   number       Int
   releaseDate  DateTime
-  image        Bytes
+  image        String?    @db.LongText
   rating       Float
   createdAt    DateTime    @default(now())
   updatedAt    DateTime    @updatedAt
@@ -62,15 +63,18 @@ model Reviews {
 }
 
 model Users {
-  id          Int       @id @default(autoincrement())
-  name        String
-  email       String    @unique
-  password    String
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  Reviews     Reviews[]
-  userFriends Friends[] @relation("user")
-  Friends     Friends[] @relation("friend")
+  id               Int                @id @default(autoincrement())
+  name             String
+  email            String             @unique
+  password         String
+  bio              String?
+  isAdmin          Boolean            @default(false)
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  Reviews          Reviews[]
+  userFriends      Friends[]          @relation("user")
+  Friends          Friends[]          @relation("friend")
+  LikedScreenplays LikedScreenplays[]
 }
 
 model Friends {
@@ -81,4 +85,12 @@ model Friends {
   userId    Int
   friend    Users    @relation(fields: [friendId], references: [id], name: "friend")
   friendId  Int
+}
+
+model LikedScreenplays {
+  id           Int         @id @default(autoincrement())
+  screenplay   Screenplays @relation(fields: [screenplayId], references: [id])
+  screenplayId Int
+  user         Users       @relation(fields: [userId], references: [id])
+  userId       Int
 }
