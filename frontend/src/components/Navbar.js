@@ -5,7 +5,7 @@ import logo from '../assets/graphics/imgs/movie-app logo.png';
 import '../styles/Navbar.css';
 import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
-import SearchPage from './SearchPage';
+import SearchScreenplays from './SearchScreenplays';
 
 function NavBar() {
   return (
@@ -23,7 +23,7 @@ function NavBar() {
             <NavLink className='navlink' to="/tvshows">TV Shows</NavLink>
             <NavLink className='navlink' to="/reviews">Reviews</NavLink>
           </Nav>
-          <SearchPage />
+          <SearchScreenplays />
           <NavLink className='profile' to="/profile">
           <img
             src={profile}
