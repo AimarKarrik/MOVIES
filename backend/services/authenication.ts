@@ -6,18 +6,18 @@ import { getUserById } from '../services/userService';
 
 export function verifyToken(req: Request, res: Response, next: NextFunction) {
     var excludedPaths: { path: string, method: string }[] = [
-        { path: "/auth/login", method: "POST" },
+        { path: "/auth/login", method: "GET" },
         { path: "/users/register", method: "POST" },
         { path: "/screenplays", method: "GET" },
         { path: '/screenplays/ById', method: "GET" },
         { path: "/reviews/ByUser", method: "GET" },
         { path: "/reviews/ByScreenplay", method: "GET" },
-        { path: "/reviews/ById", method: "GET" },
-        { path: "/episodes/", method: "GET" },
-        { path: "/episodes/ById", method: "GET" },
+        { path: "/reviews/ById", method: "GET" }
     ];
-
+    console.log(excludedPaths);
     const excludedPath: { path: string, method: string } | undefined = excludedPaths.find(path => path.path === req.path && path.method === req.method);
+    console.log(excludedPath);
+    console.log(req.path);
     if (excludedPath) {
         next();
         return;
@@ -26,14 +26,15 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const token: string = req.headers.token as string;
     const session: Session | undefined = sessions.find(session => session.token === token);
     if (!session) {
-        return res.status(401).send({ status: 401, message: "Unauthorized1" });
+        return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
     const now: Date = new Date();
     const diff = now.getTime() - session.createdAt.getTime();
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
-        return res.status(401).send({ status: 401, message: "Unauthorized2" });
+
+        return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
     req.currentSession = session;
@@ -41,11 +42,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
 }
 
 export async function verifyAdmin(currentSession: Session | undefined) {
-    if (!currentSession) {
-        return false;
-    }
-
-    const user: User | null = await getUserById(currentSession.userId);
+    const user: User | null = await getUserById(currentSession!.userId);
 
     if (!user) {
         return false;

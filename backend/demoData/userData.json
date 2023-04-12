@@ -1,90 +1,73 @@
 [
     {
         "id": 1,
-        "username": "jon.d",
+        "username": "admin",
         "name": "John Doe",
         "email": "john.doe@gmail.com",
-        "password": "Abc123C",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png",
     },
     {
         "id": 2,
         "username": "user23",
         "name": "Jane Doe",
         "email": "janedoe@gmail.com",
-        "password": "Hello123",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png",
+
     },
     {
         "id": 3,
         "username": "helloworld",
         "name": "William Baker",
         "email": "williambaker@gmail.com",
-        "password": "Qwerty8",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 4, 
         "username": "jack007",
         "name" : "Jack Smith",
         "email": "jack.s@gmail.com",
-        "password": "Nopass90",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 5,
         "username": "billy.bob",
         "name": "Billy Bob",
         "email": "billy7@gmail.com",
-        "password": "Billybob7",
-        "isAdmin": false
+        "image" :"https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 6,
         "username": "joe.cool",
         "name": "Joe Cool",
         "email": "cooljoe@gmail.com",
-        "password": "7Yhto8",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 7,
         "username": "jonathan90",
         "name": "Jonathan Smith",
         "email": "jonsmith@gmail.com",
-        "password": "Jonsmith90",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 8,
         "username": "myname123",
         "name": "Maya Smith",
         "email": "maya123@gmail.com",
-        "password": "Maya123",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 9,
         "username": "jamesbond",
         "name": "James Bond",
         "email": "james007@gmail.com",
-        "password": "James007",
-        "isAdmin": false
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     },
     {
         "id": 10,
         "username": "bob967",
         "name": "Bob Smith",
         "email": "smith.bob@gmail.com",
-        "password": "Bob967",
-        "isAdmin": false
-    }, 
-    {
-        "id": 11,
-        "username": "admin",
-        "name": "Admin",
-        "email": "admin@gmail.com",
-        "password": "root",
-        "isAdmin": true
+        "image": "https://www.w3schools.com/howto/img_avatar.png"
     }
 ]

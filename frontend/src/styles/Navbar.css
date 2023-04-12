@@ -7,7 +7,7 @@ nav{
     align-items: center;
     /* justify-content: space-between; */
     padding: 1rem;
-    margin-bottom: 80px;
+
 }
 
 .navlink{
@@ -78,9 +78,8 @@ nav{
 .search-box{
   width: fit-content;
   height: fit-content;
-  display: inline-flex;
-  margin-left: auto;
-  margin-right: 30px;
+  position: relative;
+  right: 90px;
 }
 
 .input-search{
@@ -115,9 +114,10 @@ nav{
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
+  right: 0px;
   color:#ffffff ;
   background-color:transparent;
-  pointer-events: painted; 
+  pointer-events: painted;  
 }
 
 .btn-search:focus ~ .input-search{
@@ -137,6 +137,7 @@ nav{
 }
 
 .profile{
+  position: absolute;
   right: 30px;
   height: 50px;
   width: 50px;
@@ -144,5 +145,5 @@ nav{
   overflow: hidden;
   cursor: pointer;
   display: inline-flex;
-  margin-right: 20px;
 }
+

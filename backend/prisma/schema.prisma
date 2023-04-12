@@ -34,7 +34,7 @@ model Episodes {
   season       Int
   number       Int
   releaseDate  DateTime
-  image        String?    @db.LongText
+  image        Bytes
   rating       Float
   createdAt    DateTime    @default(now())
   updatedAt    DateTime    @updatedAt

@@ -8,9 +8,9 @@ import Session from './../models/sessionModel';
 
 const router = express.Router();
 
-router.post('/login', async (req, res) => {
-    const email: string = req.body.email as string;
-    const password: string = req.body.password as string;
+router.get('/login', async (req, res) => {
+    const email: string = req.query.email as string;
+    const password: string = req.query.password as string;
 
     const user: User | null = await getUserByEmail(email);
 
