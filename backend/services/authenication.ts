@@ -8,6 +8,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     var excludedPaths: { path: string, method: string }[] = [
         { path: "/auth/login", method: "POST" },
         { path: "/users/register", method: "POST" },
+        { path: "/users/ById", method: "GET" },
         { path: "/screenplays", method: "GET" },
         { path: '/screenplays/ById', method: "GET" },
         { path: "/reviews/ByUser", method: "GET" },

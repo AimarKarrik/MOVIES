@@ -25,11 +25,9 @@ router.get('/ByUser', async (req, res) => {
 });
 
 router.get('/ByScreenplay', async (req, res) => {
-    const page: number = parseInt(req.query.page as string);
-    const pageSize: number = parseInt(req.query.pageSize as string);
     const screenplayId: number = parseInt(req.query.screenplayId as string);
 
-    const reviews: Review[] = await getReviewsByScreenplayPaged({ page, pageSize, screenplayId });
+    const reviews: Review[] = await getReviewsByScreenplay(screenplayId);
 
     return res.status(200).send({ status: 200, message: "OK", data: reviews });
 });
@@ -86,7 +84,7 @@ router.delete('/', async (req, res) => {
         return res.status(404).send({ status: 404, message: "Review not found", data: null });
     }
     if (review.userId !== req.currentSession!.userId) {
-        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     }
 
 
@@ -112,7 +110,7 @@ router.put('/', async (req, res) => {
         return res.status(404).send({ status: 404, message: "Review not found", data: null });
     }
     if (review.userId !== req.currentSession!.userId) {
-        return res.status(401).send({ status: 401, message: "Unauthorized", data: null});
+        return res.status(401).send({ status: 401, message: "Unauthorized", data: null });
     }
 
     const updatedReview: Review | null = await updateReview(reviewData);
