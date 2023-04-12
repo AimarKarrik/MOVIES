@@ -7,6 +7,7 @@ import "../styles/ScreenplayDetails.css";
 import poster from "../assets/images/movieposter.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import ReviewContainer from "../components/ReviewContainer";
 
 export default function ScreenplayDetails() {
   const id = useParams().id;
@@ -75,15 +76,11 @@ export default function ScreenplayDetails() {
               month: "long",
               day: "numeric",
             })}
+            rating: {screenplay.rating}
           </p>
           <p className="screenplay-description">{screenplay.description}</p>
         </div>
-        <div className="reviews-container">
-          <h2>Reviews</h2>
-          {reviews.map((review) => (
-            <ReviewCard review={review} />
-          ))}
-        </div>
+        <ReviewContainer reviews={reviews} />
       </div>
     </>
   );

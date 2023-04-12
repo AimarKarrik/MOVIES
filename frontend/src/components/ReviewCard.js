@@ -1,5 +1,5 @@
-
 import { useEffect, useState } from 'react';
+import "../styles/ReviewCard.css"
 
 export default function ReviewCard({ review }) {
   const [user, setUser] = useState({});
@@ -20,10 +20,12 @@ export default function ReviewCard({ review }) {
 
   return (
     <div className="review-card">
-        <h2>{review.title}</h2>
+      <div className='review-header'>
+        <h2 className='review-title'>{review.title}</h2>
         <p className="user">{user.name}</p>
         <div className="rating">Rating: {review.rating}</div>
-        <p>{review.content}</p>
+      </div>
+      <p>{review.content}</p>
     </div>
   );
 }
