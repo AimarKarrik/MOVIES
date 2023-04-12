@@ -1,15 +1,12 @@
 import { PrismaClient } from "@prisma/client";
 import fs from "fs";
-import bcrypt from "bcrypt";
 import Screenplay from "./models/screenplayModel";
 
-import User from "./models/userModel";
-import Review from "./models/reviewModel";
-
 const prisma: PrismaClient = new PrismaClient();
+const encoder = new TextEncoder();
 
 async function main() {
-    const screenplays: Screenplay[] = JSON.parse(fs.readFileSync("./demoData/movieData.json", "utf-8"));
+    const screenplays: Screenplay[] = JSON.parse(fs.readFileSync("./demoData/moviesData.json", "utf-8"));
     for (const screenplay of screenplays) {
 
         await prisma.screenplays.create({
@@ -22,35 +19,6 @@ async function main() {
                 genres: screenplay.genres,
                 ageRating: screenplay.ageRating,
                 rating: screenplay.rating,
-            }
-        })
-    }
-
-    const users: User[] = JSON.parse(fs.readFileSync("./demoData/userData.json", "utf-8"));
-    for (const user of users) {
-
-        const salt: string = await bcrypt.genSaltSync(10);
-        user.password = await bcrypt.hash(user.password, salt);
-
-        await prisma.users.create({
-            data: {
-                name: user.name,
-                email: user.email,
-                password: user.password,
-                isAdmin: user.isAdmin,
-            }
-        })
-    }
-
-    const reviews: Review[] = JSON.parse(fs.readFileSync("./demoData/reviewData.json", "utf-8"));
-    for (const review of reviews) {
-        await prisma.reviews.create({
-            data: {
-                title: review.title,
-                content: review.content,
-                rating: review.rating,
-                userId: review.userId,
-                screenplayId: review.screenplayId,
             }
         })
     }

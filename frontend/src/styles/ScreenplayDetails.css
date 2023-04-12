@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
+    height: 50vh;
 
     padding-left: 30%;
     padding-right: 30%;
@@ -81,6 +81,4 @@
     color: #d4d4d4;
     transition: 0.2s;
 }
-
-
 

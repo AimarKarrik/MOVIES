@@ -6,17 +6,15 @@ import "../styles/ScreenplayDetails.css";
 import poster from "../assets/images/movieposter.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
-import ReviewContainer from "../components/ReviewContainer";
 
 export default function ScreenplayDetails() {
   const id = useParams().id;
   const location = useLocation();
 
   const [screenplay, setScreenplay] = useState([]);
-  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-
+    console.log("useEffect");
     fetch(`http://localhost:3001/screenplays/ById?id=${id}`, {
       method: "GET",
       headers: {
@@ -29,21 +27,6 @@ export default function ScreenplayDetails() {
         setScreenplay(data.data);
       });
   }, [id]);
-
-  useEffect(() => {
-    fetch(`http://localhost:3001/reviews/ByScreenplay?screenplayId=${id}`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setReviews(data.data);
-      });
-  }, [id]);
-
 
   return (
     <>
@@ -75,11 +58,9 @@ export default function ScreenplayDetails() {
               month: "long",
               day: "numeric",
             })}
-            rating: {screenplay.rating}
           </p>
           <p className="screenplay-description">{screenplay.description}</p>
         </div>
-        <ReviewContainer reviews={reviews} screenplayId={id} />
       </div>
     </>
   );
