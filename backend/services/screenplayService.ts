@@ -57,7 +57,7 @@ export async function searchScreenplays(query: string) {
   const result = await prisma.screenplays.findMany({
     where: {
       title: {
-        contains: query
+        search: query
       }
     }
   });

@@ -1,7 +1,7 @@
 import express from "express";
 import { getScreenplays, getScreenplayById, deleteScreenplayById, createScreenplay, updateScreenplay, searchScreenplays } from "../services/screenplayService";
 import Screenplay from "../models/screenplayModel";
-import { verifyAdmin, verifyToken } from "../services/authenication";
+import { verifyAdmin } from "../services/authenication";
 
 
 const router = express.Router();
@@ -14,11 +14,9 @@ router.get('/', async (req, res) => {
     res.send(screenplays);
 });
 
-router.get('/search', verifyToken, async (req, res) => {
+router.get('/search', async (req, res) => {
     try {
       const query = req.query.q?.toString() || '';
-      const page = parseInt(req.query.page?.toString() || '1');
-      const pageSize = parseInt(req.query.pageSize?.toString() || '10');
   
       const results = await searchScreenplays(query);
       res.send(results);
@@ -27,7 +25,6 @@ router.get('/search', verifyToken, async (req, res) => {
       res.status(500).send("Error searching screenplays");
     }
   });
-  
   
 
 router.get('/ById', async (req, res) => {
