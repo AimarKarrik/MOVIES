@@ -11,11 +11,13 @@ function Dropdown() {
   };
 
   const handleDropdownMouseLeave = () => {
-    setIsOpen(false);
+    setTimeout(function() {
+      setIsOpen(false)
+    }, 1000);
   };
 
   const handleSignOut = () => {
-    localStorage.setItem('loggedIn', 'false');
+    localStorage.clear();
   };
 
   const loggedIn = localStorage.getItem('loggedIn') === 'true';

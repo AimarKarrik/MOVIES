@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/graphics/imgs/movie-app logo.png';
 import '../styles/Navbar.css';
 import { FaSearch } from 'react-icons/fa';
-import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
 import Dropdown from './Dropdown';
 
@@ -31,14 +30,16 @@ function NavBar() {
             <button className="btn-search"><FaSearch></FaSearch></button>
             <input type="text" className="input-search" placeholder="Type to Search..."></input>
           </div>
+        <div>
           {isLoggedIn ? (
             <Dropdown />
           ) : (
             <div className="auth-container">
               <NavLink className='navlink' to="/signup" onClick={() => localStorage.setItem('loggedIn', 'true')}>Sign Up</NavLink>
               <NavLink className='navlink' to="/login" onClick={() => localStorage.setItem('loggedIn', 'true')}>Log In</NavLink>
-            </div>
+        </div>
           )}
+        </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

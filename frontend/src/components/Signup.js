@@ -11,21 +11,32 @@ export default function Signup(props) {
     const navigate = useNavigate();
     const [formError, setFormError] = useState(null);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
 
         if (!firstName || !lastName || !email || !password) {
-            setFormError("Please fill out all fields."); 
+            setFormError("Please fill out all fields.");
             return; 
         }
 
-        localStorage.setItem('firstName', firstName);
-        localStorage.setItem('lastName', lastName);
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-        console.log('Registered data saved to local storage!');
-        navigate('/Login');
-    };
+        try {
+            const response = await fetch('http://loaclhost:3001/users/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    email,
+                    password
+                })
+            }).then((response)=> response.json()).then((data)=>{console.log(data.user)})
+
+        } catch (error) {
+            console.error('Error occurred during registration:', error);
+        }
+    };;
 
     return (
         <div className="Signup">
