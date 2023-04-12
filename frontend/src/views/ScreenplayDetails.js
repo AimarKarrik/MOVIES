@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/Navbar";
-import ReviewCard from "../components/ReviewCard";
 import { useLocation, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/ScreenplayDetails.css";
@@ -80,7 +79,7 @@ export default function ScreenplayDetails() {
           </p>
           <p className="screenplay-description">{screenplay.description}</p>
         </div>
-        <ReviewContainer reviews={reviews} />
+        <ReviewContainer reviews={reviews} screenplayId={id} />
       </div>
     </>
   );
