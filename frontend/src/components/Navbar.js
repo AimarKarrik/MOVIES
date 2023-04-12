@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,8 +7,11 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/graphics/imgs/movie-app logo.png';
 import profile from '../assets/images/profile1.jpg';
 import '../styles/Navbar.css';
+import Dropdown from './Dropdown';
 
 function NavBar() {
+  const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+
   return (
     <Navbar expand='lg'>
       <Container className='nav-container'>
@@ -36,9 +40,16 @@ function NavBar() {
               placeholder='Type to Search...'
             ></input>
           </div>
-          <NavLink className='profile' to='/profile'>
-            <img src={profile} alt='profile' />
-          </NavLink>
+        <div>
+          {isLoggedIn ? (
+            <Dropdown />
+          ) : (
+            <div className="auth-container">
+              <NavLink className='navlink' to="/signup" onClick={() => localStorage.setItem('loggedIn', 'true')}>Sign Up</NavLink>
+              <NavLink className='navlink' to="/login" onClick={() => localStorage.setItem('loggedIn', 'true')}>Log In</NavLink>
+        </div>
+          )}
+        </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

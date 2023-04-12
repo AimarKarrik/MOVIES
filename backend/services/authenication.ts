@@ -6,7 +6,7 @@ import { getUserById } from '../services/userService';
 
 export function verifyToken(req: Request, res: Response, next: NextFunction) {
     var excludedPaths: { path: string, method: string }[] = [
-        { path: "/auth/login", method: "GET" },
+        { path: "/auth/login", method: "POST" },
         { path: "/users/register", method: "POST" },
         { path: "/users/ById", method: "GET" },
         { path: "/screenplays", method: "GET" },
@@ -27,14 +27,14 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const token: string = req.headers.token as string;
     const session: Session | undefined = sessions.find(session => session.token === token);
     if (!session) {
-        return res.status(401).send({ status: 401, message: "Unauthorized" });
+        return res.status(401).send({ status: 401, message: "Unauthorized1" });
     }
 
     const now: Date = new Date();
     const diff = now.getTime() - session.createdAt.getTime();
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
-        return res.status(401).send({ status: 401, message: "Unauthorized" });
+        return res.status(401).send({ status: 401, message: "Unauthorized2" });
     }
 
     req.currentSession = session;
