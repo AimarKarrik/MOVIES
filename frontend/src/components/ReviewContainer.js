@@ -15,7 +15,6 @@ export default function ReviewContainer({ reviews, screenplayId }) {
   });
 
   const handleTitleChange = (value) => {
-    console.log(newReview);
     setNewReview({
       ...newReview,
       "title": value,
