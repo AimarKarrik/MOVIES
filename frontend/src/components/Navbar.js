@@ -7,13 +7,10 @@ import '../styles/Navbar.css';
 import { FaSearch } from 'react-icons/fa';
 import profile from '../assets/images/profile1.jpg';
 import { NavLink } from 'react-router-dom';
+import Dropdown from './Dropdown';
 
 function NavBar() {
   const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
-
-  const handleSignOut = () => {
-    localStorage.setItem('loggedIn', 'false');
-  };
 
   return (
     <Navbar expand="lg">
@@ -35,12 +32,7 @@ function NavBar() {
             <input type="text" className="input-search" placeholder="Type to Search..."></input>
           </div>
           {isLoggedIn ? (
-            <NavLink className='profile' to="/profile">
-              <img
-                src={profile}
-                alt="profile"
-              />
-            </NavLink>
+            <Dropdown />
           ) : (
             <div className="auth-container">
               <NavLink className='navlink' to="/signup" onClick={() => localStorage.setItem('loggedIn', 'true')}>Sign Up</NavLink>
