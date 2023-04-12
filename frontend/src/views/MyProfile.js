@@ -1,11 +1,12 @@
-import MovieCard from '../components/MovieCard';
+import MovieCard from '../components/ScreenplayCard';
 import NavBar from '../components/Navbar';
 import useMovies from '../hooks/useMovies';
 import '../styles/MyProfile.css';
+import ScreenplayList from './../components/ScreenplayList';
 
 export default function MyProfile() {
   const movies = useMovies();
-
+  console.log(movies)
   return (
     <>
       <NavBar />
@@ -26,22 +27,8 @@ export default function MyProfile() {
         </div>
       </div>
 
-      <div className='movie-category'>
-        <h1 className='category-title'>Liked List</h1>
-        <div className='movie-card-container'>
-          {movies.map((movie) => (
-            <MovieCard key={movie.id} movieData={movie} />
-          ))}
-        </div>
-      </div>
-      <div className='movie-category'>
-        <h1 className='category-title'>Reviews</h1>
-        <div className='movie-card-container'>
-          {movies.map((movie) => (
-            <MovieCard key={movie.id} movieData={movie} />
-          ))}
-        </div>
-      </div>
+      <ScreenplayList screenplays={movies} listTitle={"Liked Movies"} />
+      <ScreenplayList screenplays={movies} listTitle={"Followed Movies"} />
     </>
   );
 }

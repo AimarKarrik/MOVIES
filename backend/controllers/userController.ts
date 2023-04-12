@@ -12,9 +12,17 @@ router.get('/', async (req, res) => {
 
     const cleanUser = { ...user, password: undefined, id: undefined };
 
-    res.send({ status: 200, message: "User found", user: cleanUser, session: req.currentSession });
+    res.send({ status: 200, message: "OK", user: cleanUser});
 });
 
+router.get('/ById', async (req, res) => {
+    const id: number = parseInt(req.query.id as string);
+    const user: User | null = await getUserById(id);
+    if (!user) return res.status(404).send("User not found");
+
+    const cleanUser = { ...user, password: undefined, id: undefined };
+    res.send({ status: 200, message: "OK", user: cleanUser});
+});
 
 router.post('/register', async (req, res) => {
     const userData: { email: string, password: string, name: string } = {
@@ -24,10 +32,10 @@ router.post('/register', async (req, res) => {
     };
 
     if (userData.email.length === 0 || userData.password.length === 0 || userData.name.length === 0) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
     if (!userData.email || !userData.password || !userData.name) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     function validateEmail(email: string) {
@@ -36,7 +44,7 @@ router.post('/register', async (req, res) => {
     }
 
     if (!validateEmail(userData.email)) {
-        return res.status(400).send("Invalid email");
+        return res.status(400).send({ status: 400, message: "Invalid email", data: null });
     }
 
     const salt: string = await bcrypt.genSaltSync(10);
@@ -45,17 +53,19 @@ router.post('/register', async (req, res) => {
     const user: User = await createUser(userData);
 
     const cleanUser = { ...user, password: undefined, id: undefined };
-    return res.status(200).send({ status: 200, message: "User created", user: cleanUser });
+    return res.status(201).send({ status: 201, message: "Created", user: cleanUser });
 });
 
 
 router.delete('/', async (req, res) => {
 
     const user: User | null = await deleteUser(req.currentSession!.userId);
-    if (!user) return res.status(404).send("User not found");
+    if (!user) {
+        return res.status(404).send({ status: 404, message: "User not found", data: null });
+    }
 
     const cleanUser = { ...user, password: undefined, id: undefined };
-    return res.send(cleanUser);
+    return res.status(200).send({ status: 200, message: "OK", user: cleanUser });
 });
 
 
@@ -68,10 +78,10 @@ router.put('/', async (req, res) => {
     };
 
     if (userData.email.length === 0 || userData.password.length === 0 || userData.name.length === 0) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
     if (!userData.email || !userData.password || !userData.name) {
-        return res.status(400).send("Missing required fields");
+        return res.status(400).send({ status: 400, message: "Missing required fields", data: null });
     }
 
     function validateEmail(email: string) {
@@ -80,16 +90,16 @@ router.put('/', async (req, res) => {
     }
 
     if (!validateEmail(userData.email)) {
-        return res.status(400).send("Invalid email");
+        return res.status(400).send({ status: 400, message: "Invalid email", data: null });
     }
 
     const salt: string = await bcrypt.genSaltSync(10);
     userData.password = await bcrypt.hash(userData.password, salt);
 
     const updatedUser: User = await updateUser(userData);
-    if (!updatedUser) return res.status(404).send("User not found");
+    if (!updatedUser) return res.status(404).send({ status: 404, message: "User not found", data: null });
 
-    return res.send(updatedUser);
+    return res.send({ status: 200, message: "OK", user: updatedUser });
 });
 
 

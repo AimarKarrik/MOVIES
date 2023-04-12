@@ -8,6 +8,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     var excludedPaths: { path: string, method: string }[] = [
         { path: "/auth/login", method: "GET" },
         { path: "/users/register", method: "POST" },
+        { path: "/users/ById", method: "GET" },
         { path: "/screenplays", method: "GET" },
         { path: '/screenplays/ById', method: "GET" },
         { path: "/reviews/ByUser", method: "GET" },
@@ -35,7 +36,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
     const diffMinutes = Math.round(diff / 60000);
     if (diffMinutes > 30) {
 
-        return res.status(401).send({ status: 401, message: "Unauthorized1" });
+        return res.status(401).send({ status: 401, message: "Unauthorized" });
     }
 
     req.currentSession = session;
