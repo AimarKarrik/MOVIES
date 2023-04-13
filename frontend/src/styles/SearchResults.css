@@ -1,0 +1,59 @@
+.search-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+}
+
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 800;
+
+  color: #fff;
+}
+.users-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.user-list {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+.user-image {
+  width: 50px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background-image: url(../assets/images/profile1.jpg);
+  background-size: cover;
+}
+.user-name {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #fff;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
