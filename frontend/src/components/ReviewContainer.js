@@ -3,9 +3,6 @@ import { useState } from 'react';
 import ReviewCard from './ReviewCard';
 import '../styles/ReviewContainer.css';
 
-
-
-
 export default function ReviewContainer({ reviews, screenplayId }) {
   const [newReview, setNewReview] = useState({
     title: "",
@@ -69,9 +66,9 @@ export default function ReviewContainer({ reviews, screenplayId }) {
           <button type="submit" onClick={(e) => handleSubmit(e)}>Submit</button>
         </form>
       </div>
-      {reviews.map((review) => (
-        <ReviewCard review={review} />
-      ))}
+      {reviews.map((review, index) => (
+  <ReviewCard key={index} review={review} />
+))}
     </div>
   );
 }

@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FaSearch } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/graphics/imgs/movie-app logo.png';
-import profile from '../assets/images/profile1.jpg';
 import '../styles/Navbar.css';
 import Dropdown from './Dropdown';
 
