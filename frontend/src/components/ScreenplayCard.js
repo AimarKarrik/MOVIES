@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/images/movieposter.png'
 import '../styles/ScreenplayCard.css'
 
-
 export default function ScreenplayCard({ screenplay }) {
     const navigate = useNavigate();
 

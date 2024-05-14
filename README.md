@@ -58,3 +58,12 @@ substitute the username and password with your own.
     npm start
 ```
 
+# Frontend test running step by step guide
+
+ Run frontend tests.
+
+```bash
+    cd MOVIES
+    cd frontend
+    npm run test
+```
